@@ -76,6 +76,7 @@ vr::EVRInitError EteeDeviceDriver::Activate(uint32_t unObjectId) {
   // System Info
   vr::VRDriverInput()->CreateBooleanComponent(m_props, "/input/system/click", &m_inputComponentHandles[ComponentIndex::SYSTEM_CLICK]);
   vr::VRDriverInput()->CreateBooleanComponent(m_props, "/input/tracker_connection/click", &m_inputComponentHandles[ComponentIndex::TRACKERCONNECTION_CLICK]);
+  vr::VRDriverInput()->CreateBooleanComponent(m_props, "/input/adaptor_connection/click", &m_inputComponentHandles[ComponentIndex::ADAPTORCONNECTION_CLICK]);
 
   // Slider
   vr::VRDriverInput()->CreateBooleanComponent(m_props, "/input/slider/touch", &m_inputComponentHandles[ComponentIndex::SLIDER_TOUCH]);
@@ -249,6 +250,7 @@ void EteeDeviceDriver::OnInputUpdate(VRCommInputData_t data) {
 
   vr::VRDriverInput()->UpdateBooleanComponent(m_inputComponentHandles[ComponentIndex::SYSTEM_CLICK], data.system.systemClick, 0);
   vr::VRDriverInput()->UpdateBooleanComponent(m_inputComponentHandles[ComponentIndex::TRACKERCONNECTION_CLICK], data.system.trackerConnection, 0);
+  vr::VRDriverInput()->UpdateBooleanComponent(m_inputComponentHandles[ComponentIndex::ADAPTORCONNECTION_CLICK], data.system.adaptorConnection, 0);
 
   // Slider
   vr::VRDriverInput()->UpdateBooleanComponent(m_inputComponentHandles[ComponentIndex::SLIDER_TOUCH], data.slider.touch, 0);
