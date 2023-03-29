@@ -85,9 +85,12 @@ void ControllerPose::DiscoverTrackedDevice() {
       float newOffsetXPos = 0.0f, newOffsetYPos = 0.0f, newOffsetZPos = 0.0f;
       float newOffsetXRot = 0.0f, newOffsetYRot = 0.0f, newOffsetZRot = 0.0f;
 
+      bool adaptorConnection = isRightHand ? m_adaptorConnRight : m_adaptorConnLeft;
+
       // Identifying if it's a VIVE tracker
-      if (manufacturer == c_viveTrackerManufacturer) {
-        DebugDriverLog("VIVE tracker offsets applied to controller rendermodel.");
+      if (manufacturer == c_viveTrackerManufacturer && adaptorConnection) {
+        DriverLog("Adaptor Connection for %s hand: %s", isRightHand ? "right" : "left", adaptorConnection ? "true" : "false");
+        DriverLog("VIVE tracker offsets applied to controller rendermodel.");
 
         newOffsetXPos = vr::VRSettings()->GetFloat("vive_tracker_pose_settings", "x_offset_position");
         newOffsetYPos = vr::VRSettings()->GetFloat("vive_tracker_pose_settings", "y_offset_position");
@@ -99,8 +102,9 @@ void ControllerPose::DiscoverTrackedDevice() {
       }
 
       // Identifying if it's a Tundra tracker
-      else if (manufacturer == c_tundraTrackerManufacturer) {
-        DebugDriverLog("Tundra tracker offsets applied to controller rendermodel.");
+      else if (manufacturer == c_tundraTrackerManufacturer && adaptorConnection) {
+        DriverLog("Adaptor Connection for %s hand: %s", isRightHand ? "right" : "left", adaptorConnection ? "true" : "false");
+        DriverLog("Tundra tracker offsets applied to controller rendermodel.");
 
         newOffsetXPos = vr::VRSettings()->GetFloat("tundra_tracker_pose_settings", "x_offset_position");
         newOffsetYPos = vr::VRSettings()->GetFloat("tundra_tracker_pose_settings", "y_offset_position");
@@ -194,6 +198,18 @@ void ControllerPose::SetEteeTrackerIsConnected(bool eteeTrackerConnected) {
 
   // Commented out to disable the controller rendermodel from detaching from the tracker when tracker_connection is false.
   // m_eteeTrackerConnected = eteeTrackerConnected;
+}
+
+void ControllerPose::SetAdaptorIsConnected(bool adaptorConnected, bool isRight) {
+  DriverLog(
+      "eteeController reported eteeAdaptor (Smart) was %s for %s hand.",
+      adaptorConnected ? "connected" : "disconnected", isRight ? "right" : "left");
+
+  if (isRight) {
+    m_adaptorConnRight = adaptorConnected;
+  } else {
+    m_adaptorConnLeft = adaptorConnected;
+  }
 }
 
 void ControllerPose::SetShadowEteeTracker(short deviceId, bool isRightHand) {

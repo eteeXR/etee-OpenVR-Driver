@@ -324,6 +324,10 @@ void EteeDeviceDriver::OnInputUpdate(VRCommInputData_t data) {
     m_controllerPose->SetEteeTrackerIsConnected(data.system.trackerConnection);
   }
 
+  if (m_lastInput.system.adaptorConnection != data.system.adaptorConnection) {
+    m_controllerPose->SetAdaptorIsConnected(data.system.adaptorConnection, data.isRight);
+  }
+
   {
     std::lock_guard<std::mutex> lock(m_inputMutex);
 
