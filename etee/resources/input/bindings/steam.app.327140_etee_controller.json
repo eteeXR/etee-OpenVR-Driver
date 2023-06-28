@@ -1,0 +1,232 @@
+{
+   "action_manifest_version" : 0,
+   "alias_info" : {},
+   "app_key" : "steam.app.327140",
+   "bindings" : {
+      "/actions/tiltbrush" : {
+         "chords" : [
+            {
+               "inputs" : [
+                  [ "/user/hand/left/input/grip", "click" ],
+                  [ "/user/hand/left/input/finger/index", "click" ]
+               ],
+               "output" : "/actions/tiltbrush/in/ri_gripbinary"
+            },
+            {
+               "inputs" : [
+                  [ "/user/hand/right/input/grip", "click" ],
+                  [ "/user/hand/right/input/finger/index", "click" ]
+               ],
+               "output" : "/actions/tiltbrush/in/ri_gripbinary"
+            },
+            {
+               "inputs" : [
+                  [ "/user/hand/right/input/point_independent", "click" ],
+                  [ "/user/hand/right/input/slider_up", "click" ]
+               ],
+               "output" : "/actions/tiltbrush/in/ri_menubutton"
+            }
+         ],
+         "haptics" : [
+            {
+               "output" : "/actions/tiltbrush/out/haptic",
+               "path" : "/user/hand/left/output/haptic"
+            },
+            {
+               "output" : "/actions/tiltbrush/out/haptic",
+               "path" : "/user/hand/right/output/haptic"
+            }
+         ],
+         "poses" : [
+            {
+               "output" : "none",
+               "path" : "/user/hand/left/pose/skeleton_root"
+            },
+            {
+               "output" : "none",
+               "path" : "/user/hand/right/pose/skeleton_root"
+            },
+            {
+               "output" : "/actions/tiltbrush/in/pose",
+               "path" : "/user/hand/left/pose/raw"
+            },
+            {
+               "output" : "/actions/tiltbrush/in/pose",
+               "path" : "/user/hand/right/pose/raw"
+            }
+         ],
+         "sources" : [
+            {
+               "inputs" : {
+                  "long" : {
+                     "output" : "/actions/tiltbrush/in/ri_secondarybutton"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/left/input/sliderUp"
+            },
+            {
+               "inputs" : {
+                  "long" : {
+                     "output" : "/actions/tiltbrush/in/ri_primarybutton"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/left/input/sliderDown"
+            },
+            {
+               "inputs" : {
+                  "double" : {
+                     "output" : "/actions/tiltbrush/in/ri_menubutton"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/left/input/proximity"
+            },
+            {
+               "inputs" : {
+                  "long" : {
+                     "output" : "/actions/tiltbrush/in/ri_primarybuttontouch"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/sliderDown"
+            },
+            {
+               "inputs" : {
+                  "long" : {
+                     "output" : "/actions/tiltbrush/in/ri_secondarybuttontouch"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/sliderUp"
+            },
+            {
+               "inputs" : {},
+               "mode" : "button",
+               "parameters" : {
+                  "click_activate_threshold" : "0.6",
+                  "click_deactivate_threshold" : "0.5",
+                  "force_input" : "force"
+               },
+               "path" : "/user/hand/right/input/grip"
+            },
+            {
+               "inputs" : {},
+               "mode" : "button",
+               "parameters" : {
+                  "click_activate_threshold" : "0.6",
+                  "click_deactivate_threshold" : "0.5",
+                  "force_input" : "force"
+               },
+               "path" : "/user/hand/left/input/grip"
+            },
+            {
+               "inputs" : {
+                  "pull" : {
+                     "output" : "/actions/tiltbrush/in/ri_trigger"
+                  }
+               },
+               "mode" : "trigger",
+               "path" : "/user/hand/left/input/pinch"
+            },
+            {
+               "inputs" : {
+                  "long" : {
+                     "output" : "/actions/tiltbrush/in/ri_menubutton"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/proximity"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/tiltbrush/in/ri_padclick"
+                  },
+                  "position" : {
+                     "output" : "/actions/tiltbrush/in/ri_paddirectional"
+                  },
+                  "touch" : {
+                     "output" : "/actions/tiltbrush/in/ri_padtouch"
+                  }
+               },
+               "mode" : "trackpad",
+               "path" : "/user/hand/right/input/thumbpad"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/tiltbrush/in/ri_padclick"
+                  },
+                  "position" : {
+                     "output" : "/actions/tiltbrush/in/ri_paddirectional"
+                  },
+                  "touch" : {
+                     "output" : "/actions/tiltbrush/in/ri_padtouch"
+                  }
+               },
+               "mode" : "trackpad",
+               "path" : "/user/hand/left/input/thumbpad"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/tiltbrush/in/ri_trigger"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/pinch"
+            },
+            {
+               "inputs" : {
+                  "double" : {
+                     "output" : "/actions/tiltbrush/in/ri_secondarybutton"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/left/input/slider_up"
+            },
+            {
+               "inputs" : {
+                  "double" : {
+                     "output" : "/actions/tiltbrush/in/ri_primarybutton"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/left/input/slider_down"
+            },
+            {
+               "inputs" : {},
+               "mode" : "button",
+               "path" : "/user/hand/right/input/point_independent"
+            },
+            {
+               "inputs" : {},
+               "mode" : "button",
+               "path" : "/user/hand/right/input/slider_up"
+            },
+            {
+               "inputs" : {},
+               "mode" : "button",
+               "path" : "/user/hand/left/input/finger/index"
+            },
+            {
+               "inputs" : {},
+               "mode" : "button",
+               "path" : "/user/hand/right/input/finger/index"
+            }
+         ]
+      }
+   },
+   "category" : "steamvr_input",
+   "controller_type" : "etee_controller",
+   "description" : "Official TG0 game bindings for etee Controllers. While in-game, press the System Button and select 'Show Controls' in the bottom left to view controller layout.",
+   "name" : "My Tilt Brush configuration for etee Controller V2_1",
+   "options" : {
+      "mirror_actions" : false,
+      "simulated_controller_type" : "none",
+      "simulate_rendermodel" : false
+   },
+   "simulated_actions" : []
+}

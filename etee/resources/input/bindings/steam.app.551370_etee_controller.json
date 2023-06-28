@@ -1,0 +1,199 @@
+{
+   "action_manifest_version" : 0,
+   "alias_info" : {},
+   "app_key" : "steam.app.551370",
+   "bindings" : {
+      "/actions/default" : {
+         "chords" : [
+            {
+               "inputs" : [
+                  [ "/user/hand/right/input/point_independent", "click" ],
+                  [ "/user/hand/right/input/slider_up", "click" ]
+               ],
+               "output" : "/actions/default/in/touchpadbutton"
+            },
+            {
+               "inputs" : [
+                  [ "/user/hand/right/input/grip", "click" ],
+                  [ "/user/hand/right/input/finger/index", "click" ]
+               ],
+               "output" : "/actions/default/in/gripbutton"
+            }
+         ],
+         "haptics" : [
+            {
+               "output" : "/actions/default/out/haptic",
+               "path" : "/user/hand/left/output/haptic"
+            },
+            {
+               "output" : "/actions/default/out/haptic",
+               "path" : "/user/hand/right/output/haptic"
+            }
+         ],
+         "poses" : [],
+         "skeleton" : [],
+         "sources" : [
+            {
+               "inputs" : {
+                  "double" : {
+                     "output" : "/actions/default/in/menubutton"
+                  },
+                  "touch" : {
+                     "output" : "/actions/default/in/menubuttontouch"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/left/input/proximity"
+            },
+            {
+               "inputs" : {
+                  "position" : {
+                     "output" : "/actions/default/in/touchpadaxis"
+                  },
+                  "touch" : {
+                     "output" : "/actions/default/in/touchpadtouch"
+                  }
+               },
+               "mode" : "trackpad",
+               "path" : "/user/hand/left/input/thumbpad"
+            },
+            {
+               "inputs" : {
+                  "double" : {
+                     "output" : "/actions/default/in/secondbutton"
+                  },
+                  "touch" : {
+                     "output" : "/actions/default/in/secondbuttontouch"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/left/input/slider"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/default/in/gripbutton"
+                  }
+               },
+               "mode" : "button",
+               "parameters" : {
+                  "click_activate_threshold" : "1",
+                  "click_deactivate_threshold" : "0.9",
+                  "force_input" : "value"
+               },
+               "path" : "/user/hand/left/input/grip"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/default/in/maintriggeraxis"
+                  }
+               },
+               "mode" : "button",
+               "parameters" : {
+                  "click_activate_threshold" : "1",
+                  "click_deactivate_threshold" : "0.8",
+                  "force_input" : "value"
+               },
+               "path" : "/user/hand/left/input/pinch"
+            },
+            {
+               "inputs" : {},
+               "mode" : "button",
+               "parameters" : {
+                  "click_activate_threshold" : "0.85",
+                  "click_deactivate_threshold" : "0.7",
+                  "force_input" : "value"
+               },
+               "path" : "/user/hand/right/input/grip"
+            },
+            {
+               "inputs" : {
+                  "double" : {
+                     "output" : "/actions/default/in/menubutton"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/slider"
+            },
+            {
+               "inputs" : {
+                  "position" : {
+                     "output" : "/actions/default/in/touchpadaxis"
+                  },
+                  "touch" : {
+                     "output" : "/actions/default/in/touchpadtouch"
+                  }
+               },
+               "mode" : "trackpad",
+               "parameters" : {
+                  "exponent" : "4",
+                  "maxzone_pct" : "100"
+               },
+               "path" : "/user/hand/right/input/thumbpad"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/default/in/maintriggeraxis"
+                  }
+               },
+               "mode" : "button",
+               "parameters" : {
+                  "click_activate_threshold" : "1",
+                  "click_deactivate_threshold" : "0.8",
+                  "force_input" : "value"
+               },
+               "path" : "/user/hand/right/input/pinch"
+            },
+            {
+               "inputs" : {},
+               "mode" : "button",
+               "path" : "/user/hand/right/input/point_independent"
+            },
+            {
+               "inputs" : {},
+               "mode" : "button",
+               "path" : "/user/hand/right/input/slider_up"
+            },
+            {
+               "inputs" : {
+                  "double" : {
+                     "output" : "/actions/default/in/secondbutton"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/proximity"
+            },
+            {
+               "inputs" : {},
+               "mode" : "button",
+               "path" : "/user/hand/right/input/finger/index"
+            }
+         ]
+      },
+      "/actions/global" : {
+         "chords" : [],
+         "haptics" : [],
+         "poses" : [],
+         "skeleton" : [],
+         "sources" : []
+      },
+      "/actions/legacy" : {
+         "chords" : [],
+         "haptics" : [],
+         "poses" : [],
+         "skeleton" : [],
+         "sources" : []
+      }
+   },
+   "category" : "steamvr_input",
+   "controller_type" : "etee_controller",
+   "description" : "Official TG0 game bindings for etee Controllers. While in-game, press the System Button and select 'Show Controls' in the bottom left to view controller layout.",
+   "name" : "Default Gravity Sketch VR configuration for etee Controller V2_1",
+   "options" : {
+      "simulated_controller_type" : "none",
+      "simulate_rendermodel" : false
+   },
+   "simulated_actions" : []
+}

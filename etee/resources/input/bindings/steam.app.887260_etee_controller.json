@@ -1,0 +1,764 @@
+{
+   "action_manifest_version" : 0,
+   "alias_info" : {},
+   "app_key" : "steam.app.887260",
+   "bindings" : {
+      "/actions/buggybuddy" : {
+         "sources" : [
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/buggybuddy/in/turbo"
+                  },
+                  "position" : {
+                     "output" : "/actions/buggybuddy/in/steer"
+                  }
+               },
+               "mode" : "trackpad",
+               "path" : "/user/hand/left/input/thumbpad"
+            },
+            {
+               "inputs" : {
+                  "double" : {
+                     "output" : "/actions/buggybuddy/in/reset"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/left/input/slider"
+            },
+            {
+               "inputs" : {
+                  "double" : {
+                     "output" : "/actions/buggybuddy/in/reset"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/slider"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/buggybuddy/in/turbo"
+                  },
+                  "position" : {
+                     "output" : "/actions/buggybuddy/in/steer"
+                  }
+               },
+               "mode" : "trackpad",
+               "path" : "/user/hand/right/input/thumbpad"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/buggybuddy/in/brake"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/left/input/finger/thumb"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/buggybuddy/in/brake"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/finger/thumb"
+            },
+            {
+               "inputs" : {
+                  "pull" : {
+                     "output" : "/actions/buggybuddy/in/throttle"
+                  }
+               },
+               "mode" : "trigger",
+               "path" : "/user/hand/left/input/pinch"
+            },
+            {
+               "inputs" : {
+                  "pull" : {
+                     "output" : "/actions/buggybuddy/in/throttle"
+                  }
+               },
+               "mode" : "trigger",
+               "path" : "/user/hand/right/input/pinch"
+            }
+         ]
+      },
+      "/actions/default" : {
+         "chords" : [ {}, {} ],
+         "haptics" : [
+            {
+               "output" : "/actions/default/out/haptic",
+               "path" : "/user/hand/left/output/haptic"
+            },
+            {
+               "output" : "/actions/default/out/haptic",
+               "path" : "/user/hand/right/output/haptic"
+            }
+         ],
+         "poses" : [
+            {
+               "output" : "/actions/default/in/pose",
+               "path" : "/user/hand/left/pose/raw"
+            },
+            {
+               "output" : "/actions/default/in/pose",
+               "path" : "/user/hand/right/pose/raw"
+            }
+         ],
+         "skeleton" : [
+            {
+               "output" : "/actions/default/in/skeletonrighthand",
+               "path" : "/user/hand/left/input/skeleton/right"
+            },
+            {
+               "output" : "/actions/default/in/skeletonrighthand",
+               "path" : "/user/hand/right/input/skeleton/right"
+            },
+            {
+               "output" : "/actions/default/in/skeletonlefthand",
+               "path" : "/user/hand/left/input/skeleton/left"
+            }
+         ],
+         "sources" : [
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/default/in/apress"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/left/input/application_menu"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/default/in/apress"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/application_menu"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/default/in/bpress"
+                  },
+                  "position" : {
+                     "output" : "/actions/default/in/thumbstickposition"
+                  },
+                  "touch" : {
+                     "output" : "/actions/default/in/touchpadtouch"
+                  }
+               },
+               "mode" : "trackpad",
+               "path" : "/user/hand/left/input/trackpad"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/default/in/bpress"
+                  },
+                  "position" : {
+                     "output" : "/actions/default/in/thumbstickposition"
+                  },
+                  "touch" : {
+                     "output" : "/actions/default/in/touchpadtouch"
+                  }
+               },
+               "mode" : "trackpad",
+               "path" : "/user/hand/right/input/trackpad"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/default/in/use"
+                  },
+                  "pull" : {
+                     "output" : "/actions/default/in/trigger"
+                  }
+               },
+               "mode" : "trigger",
+               "path" : "/user/hand/left/input/trigger"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/default/in/use"
+                  },
+                  "pull" : {
+                     "output" : "/actions/default/in/trigger"
+                  }
+               },
+               "mode" : "trigger",
+               "path" : "/user/hand/right/input/trigger"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/default/in/grabpinch"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/left/input/pinch"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/default/in/grabpinch"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/pinch"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/default/in/grabgrip"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/left/input/grip"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/default/in/grabgrip"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/grip"
+            },
+            {
+               "inputs" : {
+                  "double" : {
+                     "output" : "/actions/default/in/menu"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/left/input/proximity"
+            },
+            {
+               "inputs" : {
+                  "double" : {
+                     "output" : "/actions/default/in/menu"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/proximity"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/default/in/interactui"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/left/input/pinch"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/default/in/interactui"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/pinch"
+            }
+         ]
+      },
+      "/actions/grenade" : {
+         "chords" : [
+            {
+               "inputs" : [
+                  [ "/user/hand/left/input/grip", "click" ],
+                  [ "/user/hand/left/input/thumbpad", "click" ]
+               ],
+               "output" : "/actions/grenade/in/primegrenade"
+            },
+            {
+               "inputs" : [
+                  [ "/user/hand/right/input/grip", "click" ],
+                  [ "/user/hand/right/input/thumbpad", "click" ]
+               ],
+               "output" : "/actions/grenade/in/primegrenade"
+            }
+         ],
+         "sources" : [
+            {
+               "inputs" : {},
+               "mode" : "button",
+               "parameters" : {
+                  "click_activate_threshold" : "0.75",
+                  "click_deactivate_threshold" : "0.7",
+                  "force_input" : "value"
+               },
+               "path" : "/user/hand/left/input/grip"
+            },
+            {
+               "inputs" : {},
+               "mode" : "button",
+               "parameters" : {
+                  "click_activate_threshold" : "0.75",
+                  "click_deactivate_threshold" : "0.7",
+                  "force_input" : "value"
+               },
+               "path" : "/user/hand/right/input/grip"
+            },
+            {
+               "inputs" : {},
+               "mode" : "button",
+               "path" : "/user/hand/left/input/thumbpad"
+            },
+            {
+               "inputs" : {},
+               "mode" : "button",
+               "path" : "/user/hand/right/input/thumbpad"
+            }
+         ]
+      },
+      "/actions/gun" : {
+         "sources" : [
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/gun/in/fire"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/left/input/pinch"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/gun/in/fire"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/pinch"
+            }
+         ]
+      },
+      "/actions/hands" : {
+         "sources" : [
+            {
+               "inputs" : {},
+               "mode" : "none",
+               "path" : "/user/hand/right/input/trackpad"
+            },
+            {
+               "inputs" : {},
+               "mode" : "trigger",
+               "path" : "/user/hand/right/input/trigger"
+            },
+            {
+               "inputs" : {},
+               "mode" : "button",
+               "path" : "/user/hand/right/input/grip"
+            }
+         ]
+      },
+      "/actions/raw" : {
+         "sources" : [
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/raw/in/apress"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/left/input/proximity"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/raw/in/apress"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/proximity"
+            },
+            {
+               "inputs" : {
+                  "touch" : {
+                     "output" : "/actions/raw/in/atouch"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/left/input/proximity"
+            },
+            {
+               "inputs" : {
+                  "touch" : {
+                     "output" : "/actions/raw/in/atouch"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/proximity"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/raw/in/bpress"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/left/input/slider"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/raw/in/bpress"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/slider"
+            },
+            {
+               "inputs" : {
+                  "touch" : {
+                     "output" : "/actions/raw/in/btouch"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/left/input/slider"
+            },
+            {
+               "inputs" : {
+                  "touch" : {
+                     "output" : "/actions/raw/in/btouch"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/slider"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/raw/in/triggerpress"
+                  },
+                  "pull" : {
+                     "output" : "/actions/raw/in/triggeraxis"
+                  },
+                  "touch" : {
+                     "output" : "/actions/raw/in/triggertouch"
+                  }
+               },
+               "mode" : "trigger",
+               "path" : "/user/hand/left/input/finger/index"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/raw/in/triggerpress"
+                  },
+                  "pull" : {
+                     "output" : "/actions/raw/in/triggeraxis"
+                  },
+                  "touch" : {
+                     "output" : "/actions/raw/in/triggertouch"
+                  }
+               },
+               "mode" : "trigger",
+               "path" : "/user/hand/right/input/finger/index"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/raw/in/touchpadpress"
+                  },
+                  "position" : {
+                     "output" : "/actions/raw/in/touchpadaxis"
+                  },
+                  "touch" : {
+                     "output" : "/actions/raw/in/touchpadtouch"
+                  }
+               },
+               "mode" : "trackpad",
+               "path" : "/user/hand/left/input/thumbpad"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/raw/in/touchpadpress"
+                  },
+                  "position" : {
+                     "output" : "/actions/raw/in/touchpadaxis"
+                  },
+                  "touch" : {
+                     "output" : "/actions/raw/in/touchpadtouch"
+                  }
+               },
+               "mode" : "trackpad",
+               "path" : "/user/hand/right/input/thumbpad"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/raw/in/thumbstickpress"
+                  },
+                  "position" : {
+                     "output" : "/actions/raw/in/thumbstickaxis"
+                  },
+                  "touch" : {
+                     "output" : "/actions/raw/in/thumbsticktouch"
+                  }
+               },
+               "mode" : "trackpad",
+               "path" : "/user/hand/left/input/thumbpad"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/raw/in/thumbstickpress"
+                  },
+                  "position" : {
+                     "output" : "/actions/raw/in/thumbstickaxis"
+                  },
+                  "touch" : {
+                     "output" : "/actions/raw/in/thumbsticktouch"
+                  }
+               },
+               "mode" : "trackpad",
+               "path" : "/user/hand/right/input/thumbpad"
+            },
+            {
+               "inputs" : {
+                  "pull" : {
+                     "output" : "/actions/raw/in/gripforceaxis"
+                  }
+               },
+               "mode" : "trigger",
+               "path" : "/user/hand/left/input/grip"
+            },
+            {
+               "inputs" : {
+                  "pull" : {
+                     "output" : "/actions/raw/in/gripforceaxis"
+                  }
+               },
+               "mode" : "trigger",
+               "path" : "/user/hand/right/input/grip"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/raw/in/topforceaxis"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/left/input/thumbpad"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/raw/in/topforceaxis"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/thumbpad"
+            }
+         ]
+      },
+      "/actions/rock" : {
+         "sources" : [
+            {
+               "inputs" : {
+                  "force" : {
+                     "output" : "/actions/rock/in/squeeze"
+                  }
+               },
+               "mode" : "force_sensor",
+               "path" : "/user/hand/left/input/grip"
+            },
+            {
+               "inputs" : {
+                  "force" : {
+                     "output" : "/actions/rock/in/squeeze"
+                  }
+               },
+               "mode" : "force_sensor",
+               "path" : "/user/hand/right/input/grip"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/rock/in/crush"
+                  }
+               },
+               "mode" : "button",
+               "parameters" : {
+                  "click_activate_threshold" : "0.8",
+                  "click_deactivate_threshold" : "0.7",
+                  "force_input" : "force",
+                  "haptic_amplitude" : "1"
+               },
+               "path" : "/user/hand/left/input/grip"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/rock/in/crush"
+                  }
+               },
+               "mode" : "button",
+               "parameters" : {
+                  "click_activate_threshold" : "0.8",
+                  "click_deactivate_threshold" : "0.7",
+                  "force_input" : "force",
+                  "haptic_amplitude" : "1"
+               },
+               "path" : "/user/hand/right/input/grip"
+            }
+         ]
+      },
+      "/actions/space" : {
+         "sources" : [
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/space/in/deleterselect"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/left/input/pinch"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/space/in/deleterselect"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/pinch"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/space/in/deleterdelete"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/left/input/pinch"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/space/in/deleterdelete"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/pinch"
+            }
+         ]
+      },
+      "/actions/squeezable" : {
+         "sources" : [
+            {
+               "inputs" : {
+                  "force" : {
+                     "output" : "/actions/squeezable/in/squeezegrip"
+                  }
+               },
+               "mode" : "force_sensor",
+               "path" : "/user/hand/left/input/grip"
+            },
+            {
+               "inputs" : {
+                  "force" : {
+                     "output" : "/actions/squeezable/in/squeezegrip"
+                  }
+               },
+               "mode" : "force_sensor",
+               "path" : "/user/hand/right/input/grip"
+            },
+            {
+               "inputs" : {
+                  "pull" : {
+                     "output" : "/actions/squeezable/in/squeezepinch"
+                  }
+               },
+               "mode" : "trigger",
+               "path" : "/user/hand/left/input/thumbpad_analog"
+            },
+            {
+               "inputs" : {
+                  "pull" : {
+                     "output" : "/actions/squeezable/in/squeezepinch"
+                  }
+               },
+               "mode" : "trigger",
+               "path" : "/user/hand/right/input/thumbpad_analog"
+            }
+         ]
+      },
+      "/actions/teleporting" : {
+         "chords" : [
+            {
+               "inputs" : [
+                  [ "/user/hand/left/input/point_independent", "click" ],
+                  [ "/user/hand/left/input/slider_up", "click" ]
+               ],
+               "output" : "/actions/teleporting/in/teleport"
+            },
+            {
+               "inputs" : [
+                  [ "/user/hand/right/input/point_independent", "click" ],
+                  [ "/user/hand/right/input/slider_up", "click" ]
+               ],
+               "output" : "/actions/teleporting/in/teleport"
+            }
+         ],
+         "sources" : [
+            {
+               "inputs" : {},
+               "mode" : "none",
+               "path" : "/user/hand/left/input/thumbpad_analog"
+            },
+            {
+               "inputs" : {},
+               "mode" : "none",
+               "path" : "/user/hand/right/input/thumbpad_analog"
+            },
+            {
+               "inputs" : {},
+               "mode" : "none",
+               "path" : "/user/hand/left/input/point"
+            },
+            {
+               "inputs" : {},
+               "mode" : "none",
+               "path" : "/user/hand/right/input/point"
+            },
+            {
+               "inputs" : {},
+               "mode" : "button",
+               "path" : "/user/hand/left/input/point_independent"
+            },
+            {
+               "inputs" : {},
+               "mode" : "button",
+               "path" : "/user/hand/right/input/point_independent"
+            },
+            {
+               "inputs" : {},
+               "mode" : "button",
+               "path" : "/user/hand/left/input/slider_up"
+            },
+            {
+               "inputs" : {},
+               "mode" : "button",
+               "path" : "/user/hand/right/input/slider_up"
+            }
+         ]
+      }
+   },
+   "category" : "steamvr_input",
+   "controller_type" : "etee_controller",
+   "description" : "Version 2_3: Point with slider to teleport, squeezable is on grab force sensor, and pinch to fire weapons or throttle or select/confirm selections ",
+   "interaction_profile" : "",
+   "name" : "Default Moondust: Knuckles Tech Demos configuration for etee Controller",
+   "options" : {},
+   "simulated_actions" : []
+}

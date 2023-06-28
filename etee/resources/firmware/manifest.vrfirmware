@@ -1,0 +1,15 @@
+{
+	"jsonid" : "vrfirmware",
+	"0xf0000109" : {
+		"Name" : "etee Tracker",
+		"CanIdentify" : true,
+		"IsManual": false,
+		"VRCVersion" : "1633401582",
+		"VRCBin": "{etee}/firmware/tracker/etee_tracker_application_v1633401582.fw",
+		"VRCArgs" : "--target=application",
+		"RadioVersion" : "1630468355",
+		"RadioBin" :  "{etee}/firmware/tracker/etee_tracker_radio_v1633401582.fw",
+		"RadioArgs" : "--target=nrf52"
+	},
+   "version" : "1"
+}
