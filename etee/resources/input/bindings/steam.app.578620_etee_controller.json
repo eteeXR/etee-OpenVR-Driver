@@ -1,0 +1,196 @@
+{
+   "action_manifest_version" : 0,
+   "alias_info" : {},
+   "app_key" : "steam.app.578620",
+   "bindings" : {
+      "/actions/default" : {
+         "chords" : [
+            {
+               "inputs" : [
+                  [ "/user/hand/left/input/thumbpad", "click" ],
+                  [ "/user/hand/left/input/finger/index", "click" ],
+                  [ "/user/hand/left/input/finger/ring", "click" ]
+               ],
+               "output" : "/actions/default/in/gesture"
+            },
+            {
+               "inputs" : [
+                  [ "/user/hand/right/input/finger/index", "click" ],
+                  [ "/user/hand/right/input/finger/ring", "click" ],
+                  [ "/user/hand/right/input/thumbpad", "click" ]
+               ],
+               "output" : "/actions/default/in/gesture"
+            },
+            {
+               "inputs" : [
+                  [ "/user/hand/left/input/finger/index", "click" ],
+                  [ "/user/hand/left/input/finger/ring", "click" ],
+                  [ "/user/hand/left/input/finger/thumb", "click" ]
+               ],
+               "output" : "/actions/default/in/gesture"
+            },
+            {
+               "inputs" : [
+                  [ "/user/hand/right/input/finger/index", "click" ],
+                  [ "/user/hand/right/input/finger/ring", "click" ],
+                  [ "/user/hand/right/input/finger/thumb", "click" ]
+               ],
+               "output" : "/actions/default/in/gesture"
+            }
+         ],
+         "haptics" : [
+            {
+               "output" : "/actions/default/out/haptic",
+               "path" : "/user/hand/left/output/haptic"
+            },
+            {
+               "output" : "/actions/default/out/haptic",
+               "path" : "/user/hand/right/output/haptic"
+            }
+         ],
+         "poses" : [
+            {
+               "output" : "/actions/default/in/pose",
+               "path" : "/user/hand/left/pose/raw"
+            },
+            {
+               "output" : "/actions/default/in/pose",
+               "path" : "/user/hand/right/pose/raw"
+            }
+         ],
+         "skeleton" : [
+            {
+               "output" : "/actions/default/in/skeletonrighthand",
+               "path" : "/user/hand/left/input/skeleton/right"
+            },
+            {
+               "output" : "/actions/default/in/skeletonrighthand",
+               "path" : "/user/hand/right/input/skeleton/right"
+            }
+         ],
+         "sources" : [
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/default/in/toggle grab"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/left/input/proximity"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/default/in/toggle grab"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/proximity"
+            },
+            {
+               "inputs" : {
+                  "position" : {
+                     "output" : "/actions/default/in/movesmooth"
+                  }
+               },
+               "mode" : "trackpad",
+               "path" : "/user/hand/left/input/thumbpad"
+            },
+            {
+               "inputs" : {
+                  "position" : {
+                     "output" : "/actions/default/in/movesmooth"
+                  }
+               },
+               "mode" : "trackpad",
+               "path" : "/user/hand/right/input/thumbpad"
+            },
+            {
+               "inputs" : {},
+               "mode" : "button",
+               "path" : "/user/hand/left/input/thumbpad_analog"
+            },
+            {
+               "inputs" : {},
+               "mode" : "button",
+               "path" : "/user/hand/right/input/thumbpad_analog"
+            },
+            {
+               "inputs" : {
+                  "pull" : {
+                     "output" : "/actions/default/in/grab"
+                  }
+               },
+               "mode" : "trigger",
+               "path" : "/user/hand/left/input/grip"
+            },
+            {
+               "inputs" : {
+                  "pull" : {
+                     "output" : "/actions/default/in/grab"
+                  }
+               },
+               "mode" : "trigger",
+               "path" : "/user/hand/right/input/grip"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/default/in/move"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/left/input/pinch"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/default/in/move"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/pinch"
+            },
+            {
+               "inputs" : {},
+               "mode" : "button",
+               "path" : "/user/hand/left/input/finger/index"
+            },
+            {
+               "inputs" : {},
+               "mode" : "button",
+               "path" : "/user/hand/right/input/finger/index"
+            },
+            {
+               "inputs" : {},
+               "mode" : "button",
+               "path" : "/user/hand/left/input/finger/ring"
+            },
+            {
+               "inputs" : {},
+               "mode" : "button",
+               "path" : "/user/hand/right/input/finger/ring"
+            },
+            {
+               "inputs" : {},
+               "mode" : "button",
+               "path" : "/user/hand/left/input/finger/thumb"
+            },
+            {
+               "inputs" : {},
+               "mode" : "button",
+               "path" : "/user/hand/right/input/finger/thumb"
+            }
+         ]
+      }
+   },
+   "category" : "steamvr_input",
+   "controller_type" : "etee_controller",
+   "description" : "Official TG0 game bindings for etee Controllers. While in-game, press the System Button and select 'Show Controls' in the bottom left to view controller layout.",
+   "name" : "Default GORN configuration for etee Controller V2_1",
+   "options" : {
+      "simulated_controller_type" : "none",
+      "simulate_rendermodel" : false
+   },
+   "simulated_actions" : []
+}

@@ -1,0 +1,899 @@
+{
+	"action_manifest_version" : 0,
+	"alias_info" : {
+	   "/actions/legacy/in/head_proximity" : {
+		  "alias_name" : "",
+		  "hidden" : true
+	   },
+	   "/actions/legacy/in/left_a_press" : {
+		  "alias_name" : "",
+		  "hidden" : true
+	   },
+	   "/actions/legacy/in/left_a_touch" : {
+		  "alias_name" : "",
+		  "hidden" : true
+	   },
+	   "/actions/legacy/in/left_applicationmenu_press" : {
+		  "alias_name" : "Pause/Menu",
+		  "hidden" : false
+	   },
+	   "/actions/legacy/in/left_applicationmenu_touch" : {
+		  "alias_name" : "",
+		  "hidden" : true
+	   },
+	   "/actions/legacy/in/left_axis0_press" : {
+		  "alias_name" : "Any Left",
+		  "hidden" : false
+	   },
+	   "/actions/legacy/in/left_axis0_touch" : {
+		  "alias_name" : "",
+		  "hidden" : true
+	   },
+	   "/actions/legacy/in/left_axis0_value" : {
+		  "alias_name" : "",
+		  "hidden" : true
+	   },
+	   "/actions/legacy/in/left_axis1_press" : {
+		  "alias_name" : "",
+		  "hidden" : true
+	   },
+	   "/actions/legacy/in/left_axis1_touch" : {
+		  "alias_name" : "",
+		  "hidden" : true
+	   },
+	   "/actions/legacy/in/left_axis1_value" : {
+		  "alias_name" : "",
+		  "hidden" : true
+	   },
+	   "/actions/legacy/in/left_axis2_press" : {
+		  "alias_name" : "",
+		  "hidden" : true
+	   },
+	   "/actions/legacy/in/left_axis2_touch" : {
+		  "alias_name" : "",
+		  "hidden" : true
+	   },
+	   "/actions/legacy/in/left_axis2_value1" : {
+		  "alias_name" : "",
+		  "hidden" : true
+	   },
+	   "/actions/legacy/in/left_axis2_value2" : {
+		  "alias_name" : "",
+		  "hidden" : true
+	   },
+	   "/actions/legacy/in/left_axis3_press" : {
+		  "alias_name" : "",
+		  "hidden" : true
+	   },
+	   "/actions/legacy/in/left_axis3_touch" : {
+		  "alias_name" : "",
+		  "hidden" : true
+	   },
+	   "/actions/legacy/in/left_axis3_value_e0" : {
+		  "alias_name" : "",
+		  "hidden" : true
+	   },
+	   "/actions/legacy/in/left_axis3_value_e1" : {
+		  "alias_name" : "",
+		  "hidden" : true
+	   },
+	   "/actions/legacy/in/left_axis4_press" : {
+		  "alias_name" : "",
+		  "hidden" : true
+	   },
+	   "/actions/legacy/in/left_axis4_touch" : {
+		  "alias_name" : "",
+		  "hidden" : true
+	   },
+	   "/actions/legacy/in/left_axis4_value_e0" : {
+		  "alias_name" : "",
+		  "hidden" : true
+	   },
+	   "/actions/legacy/in/left_axis4_value_e1" : {
+		  "alias_name" : "",
+		  "hidden" : true
+	   },
+	   "/actions/legacy/in/left_grip_press" : {
+		  "alias_name" : "",
+		  "hidden" : true
+	   },
+	   "/actions/legacy/in/left_grip_touch" : {
+		  "alias_name" : "",
+		  "hidden" : true
+	   },
+	   "/actions/legacy/in/left_system_press" : {
+		  "alias_name" : "",
+		  "hidden" : true
+	   },
+	   "/actions/legacy/in/left_system_touch" : {
+		  "alias_name" : "",
+		  "hidden" : true
+	   },
+	   "/actions/legacy/in/right_a_press" : {
+		  "alias_name" : "",
+		  "hidden" : true
+	   },
+	   "/actions/legacy/in/right_a_touch" : {
+		  "alias_name" : "",
+		  "hidden" : true
+	   },
+	   "/actions/legacy/in/right_applicationmenu_press" : {
+		  "alias_name" : "Pause/Menu",
+		  "hidden" : false
+	   },
+	   "/actions/legacy/in/right_applicationmenu_touch" : {
+		  "alias_name" : "",
+		  "hidden" : true
+	   },
+	   "/actions/legacy/in/right_axis0_press" : {
+		  "alias_name" : "Any Right",
+		  "hidden" : false
+	   },
+	   "/actions/legacy/in/right_axis0_touch" : {
+		  "alias_name" : "",
+		  "hidden" : true
+	   },
+	   "/actions/legacy/in/right_axis0_value" : {
+		  "alias_name" : "",
+		  "hidden" : true
+	   },
+	   "/actions/legacy/in/right_axis1_press" : {
+		  "alias_name" : "",
+		  "hidden" : true
+	   },
+	   "/actions/legacy/in/right_axis1_touch" : {
+		  "alias_name" : "",
+		  "hidden" : true
+	   },
+	   "/actions/legacy/in/right_axis1_value" : {
+		  "alias_name" : "",
+		  "hidden" : true
+	   },
+	   "/actions/legacy/in/right_axis2_press" : {
+		  "alias_name" : "",
+		  "hidden" : true
+	   },
+	   "/actions/legacy/in/right_axis2_touch" : {
+		  "alias_name" : "",
+		  "hidden" : true
+	   },
+	   "/actions/legacy/in/right_axis2_value1" : {
+		  "alias_name" : "",
+		  "hidden" : true
+	   },
+	   "/actions/legacy/in/right_axis2_value2" : {
+		  "alias_name" : "",
+		  "hidden" : true
+	   },
+	   "/actions/legacy/in/right_axis3_press" : {
+		  "alias_name" : "",
+		  "hidden" : true
+	   },
+	   "/actions/legacy/in/right_axis3_touch" : {
+		  "alias_name" : "",
+		  "hidden" : true
+	   },
+	   "/actions/legacy/in/right_axis3_value_e0" : {
+		  "alias_name" : "",
+		  "hidden" : true
+	   },
+	   "/actions/legacy/in/right_axis3_value_e1" : {
+		  "alias_name" : "",
+		  "hidden" : true
+	   },
+	   "/actions/legacy/in/right_axis4_press" : {
+		  "alias_name" : "",
+		  "hidden" : true
+	   },
+	   "/actions/legacy/in/right_axis4_touch" : {
+		  "alias_name" : "",
+		  "hidden" : true
+	   },
+	   "/actions/legacy/in/right_axis4_value_e0" : {
+		  "alias_name" : "",
+		  "hidden" : true
+	   },
+	   "/actions/legacy/in/right_axis4_value_e1" : {
+		  "alias_name" : "",
+		  "hidden" : true
+	   },
+	   "/actions/legacy/in/right_grip_press" : {
+		  "alias_name" : "",
+		  "hidden" : true
+	   },
+	   "/actions/legacy/in/right_grip_touch" : {
+		  "alias_name" : "",
+		  "hidden" : true
+	   },
+	   "/actions/legacy/in/right_system_press" : {
+		  "alias_name" : "",
+		  "hidden" : true
+	   },
+	   "/actions/legacy/in/right_system_touch" : {
+		  "alias_name" : "",
+		  "hidden" : true
+	   },
+	   "/actions/legacy_mirrored/in/a_press" : {
+		  "alias_name" : "",
+		  "hidden" : true
+	   },
+	   "/actions/legacy_mirrored/in/a_touch" : {
+		  "alias_name" : "",
+		  "hidden" : true
+	   },
+	   "/actions/legacy_mirrored/in/applicationmenu_press" : {
+		  "alias_name" : "Pause/Menu Button",
+		  "hidden" : false
+	   },
+	   "/actions/legacy_mirrored/in/applicationmenu_touch" : {
+		  "alias_name" : "",
+		  "hidden" : true
+	   },
+	   "/actions/legacy_mirrored/in/axis0_press" : {
+		  "alias_name" : "Any button",
+		  "hidden" : false
+	   },
+	   "/actions/legacy_mirrored/in/axis0_touch" : {
+		  "alias_name" : "Trackpad Touch",
+		  "hidden" : true
+	   },
+	   "/actions/legacy_mirrored/in/axis0_value" : {
+		  "alias_name" : "Trackpad Value",
+		  "hidden" : true
+	   },
+	   "/actions/legacy_mirrored/in/axis1_press" : {
+		  "alias_name" : "Select",
+		  "hidden" : true
+	   },
+	   "/actions/legacy_mirrored/in/axis1_touch" : {
+		  "alias_name" : "",
+		  "hidden" : true
+	   },
+	   "/actions/legacy_mirrored/in/axis1_value" : {
+		  "alias_name" : "Trigger Value",
+		  "hidden" : true
+	   },
+	   "/actions/legacy_mirrored/in/axis2_press" : {
+		  "alias_name" : "",
+		  "hidden" : true
+	   },
+	   "/actions/legacy_mirrored/in/axis2_touch" : {
+		  "alias_name" : "",
+		  "hidden" : true
+	   },
+	   "/actions/legacy_mirrored/in/axis2_value1" : {
+		  "alias_name" : "",
+		  "hidden" : true
+	   },
+	   "/actions/legacy_mirrored/in/axis2_value2" : {
+		  "alias_name" : "",
+		  "hidden" : true
+	   },
+	   "/actions/legacy_mirrored/in/axis3_press" : {
+		  "alias_name" : "",
+		  "hidden" : true
+	   },
+	   "/actions/legacy_mirrored/in/axis3_touch" : {
+		  "alias_name" : "",
+		  "hidden" : true
+	   },
+	   "/actions/legacy_mirrored/in/axis3_value_e0" : {
+		  "alias_name" : "",
+		  "hidden" : true
+	   },
+	   "/actions/legacy_mirrored/in/axis3_value_e1" : {
+		  "alias_name" : "",
+		  "hidden" : true
+	   },
+	   "/actions/legacy_mirrored/in/axis4_press" : {
+		  "alias_name" : "",
+		  "hidden" : true
+	   },
+	   "/actions/legacy_mirrored/in/axis4_touch" : {
+		  "alias_name" : "",
+		  "hidden" : true
+	   },
+	   "/actions/legacy_mirrored/in/axis4_value_e0" : {
+		  "alias_name" : "",
+		  "hidden" : true
+	   },
+	   "/actions/legacy_mirrored/in/axis4_value_e1" : {
+		  "alias_name" : "",
+		  "hidden" : true
+	   },
+	   "/actions/legacy_mirrored/in/grip_press" : {
+		  "alias_name" : "",
+		  "hidden" : true
+	   },
+	   "/actions/legacy_mirrored/in/grip_touch" : {
+		  "alias_name" : "",
+		  "hidden" : true
+	   },
+	   "/actions/legacy_mirrored/in/system_press" : {
+		  "alias_name" : "System Button",
+		  "hidden" : true
+	   },
+	   "/actions/legacy_mirrored/in/system_touch" : {
+		  "alias_name" : "",
+		  "hidden" : true
+	   }
+	},
+	"app_key" : "steam.app.620980",
+	"bindings" : {
+	   "/actions/htcvivecontroller" : {
+		  "poses" : [
+			 {
+				"output" : "/actions/htcvivecontroller/in/devicepose",
+				"path" : "/user/hand/left/pose/raw"
+			 },
+			 {
+				"output" : "/actions/htcvivecontroller/in/devicepose",
+				"path" : "/user/hand/right/pose/raw"
+			 }
+		  ],
+		  "sources" : [
+			 {
+				"inputs" : {
+				   "click" : {
+					  "output" : "/actions/htcvivecontroller/in/menu"
+				   }
+				},
+				"mode" : "trigger",
+				"path" : "/user/hand/left/input/pinch"
+			 },
+			 {
+				"inputs" : {
+				   "click" : {
+					  "output" : "/actions/htcvivecontroller/in/menu"
+				   }
+				},
+				"mode" : "trigger",
+				"path" : "/user/hand/right/input/pinch"
+			 }
+		  ]
+	   },
+	   "/actions/khrsimplecontroller" : {
+		  "sources" : [
+			 {
+				"inputs" : {},
+				"mode" : "none",
+				"path" : "/user/hand/left/input/pinch"
+			 },
+			 {
+				"inputs" : {},
+				"mode" : "none",
+				"path" : "/user/hand/right/input/pinch"
+			 }
+		  ]
+	   },
+	   "/actions/legacy" : {
+		  "haptics" : [
+			 {
+				"output" : "/actions/legacy/out/left_haptic",
+				"path" : "/user/hand/left/output/haptic"
+			 },
+			 {
+				"output" : "/actions/legacy/out/right_haptic",
+				"path" : "/user/hand/right/output/haptic"
+			 }
+		  ],
+		  "poses" : [
+			 {
+				"output" : "none",
+				"path" : "/user/hand/left/pose/front"
+			 },
+			 {
+				"output" : "none",
+				"path" : "/user/hand/right/pose/front"
+			 },
+			 {
+				"output" : "none",
+				"path" : "/user/hand/left/pose/tip"
+			 },
+			 {
+				"output" : "none",
+				"path" : "/user/hand/right/pose/tip"
+			 },
+			 {
+				"output" : "/actions/legacy/in/left_pose",
+				"path" : "/user/hand/left/pose/raw"
+			 },
+			 {
+				"output" : "/actions/legacy/in/right_pose",
+				"path" : "/user/hand/right/pose/raw"
+			 },
+			 {
+				"output" : "none",
+				"path" : "/user/hand/left/pose/base"
+			 },
+			 {
+				"output" : "none",
+				"path" : "/user/hand/right/pose/base"
+			 }
+		  ],
+		  "sources" : [
+			 {
+				"inputs" : {
+				   "press" : {
+					  "output" : "/actions/legacy/in/left_system_press"
+				   }
+				},
+				"mode" : "button",
+				"path" : "/user/hand/left/input/pinch"
+			 },
+			 {
+				"inputs" : {
+				   "pull" : {
+					  "output" : "/actions/legacy/in/left_axis1_value"
+				   },
+				   "touch" : {
+					  "output" : "/actions/legacy/in/left_axis1_touch"
+				   }
+				},
+				"mode" : "trigger",
+				"path" : "/user/hand/left/input/index"
+			 },
+			 {
+				"inputs" : {
+				   "press" : {
+					  "output" : "/actions/legacy/in/right_system_press"
+				   }
+				},
+				"mode" : "button",
+				"path" : "/user/hand/right/input/pinch"
+			 },
+			 {
+				"inputs" : {
+				   "press" : {
+					  "output" : "/actions/legacy/in/right_grip_press"
+				   }
+				},
+				"mode" : "button",
+				"path" : "/user/hand/right/input/grip"
+			 },
+			 {
+				"inputs" : {
+				   "click" : {
+					  "output" : "/actions/legacy/in/left_axis0_press"
+				   },
+				   "press" : {
+					  "output" : "/actions/legacy/in/left_grip_press"
+				   }
+				},
+				"mode" : "button",
+				"path" : "/user/hand/left/input/grip"
+			 },
+			 {
+				"inputs" : {
+				   "click" : {
+					  "output" : "/actions/legacy/in/right_axis0_press"
+				   },
+				   "position" : {
+					  "output" : "/actions/legacy/in/right_axis0_value"
+				   },
+				   "touch" : {
+					  "output" : "/actions/legacy/in/right_axis0_touch"
+				   }
+				},
+				"mode" : "trackpad",
+				"path" : "/user/hand/right/input/thumbpad"
+			 },
+			 {
+				"inputs" : {
+				   "pull" : {
+					  "output" : "/actions/legacy/in/right_axis1_value"
+				   },
+				   "touch" : {
+					  "output" : "/actions/legacy/in/right_axis1_touch"
+				   }
+				},
+				"mode" : "trigger",
+				"path" : "/user/hand/right/input/index"
+			 },
+			 {
+				"inputs" : {
+				   "click" : {
+					  "output" : "/actions/legacy/in/left_system_press"
+				   }
+				},
+				"mode" : "button",
+				"parameters" : {
+				   "click_activate_threshold" : "0.55",
+				   "click_deactivate_threshold" : "0.5"
+				},
+				"path" : "/user/hand/left/input/thumb"
+			 },
+			 {
+				"inputs" : {
+				   "click" : {
+					  "output" : "/actions/legacy/in/right_system_press"
+				   }
+				},
+				"mode" : "button",
+				"parameters" : {
+				   "click_activate_threshold" : "0.55",
+				   "click_deactivate_threshold" : "0.5"
+				},
+				"path" : "/user/hand/right/input/thumb"
+			 },
+			 {
+				"inputs" : {
+				   "click" : {
+					  "output" : "/actions/legacy/in/right_axis1_press"
+				   }
+				},
+				"mode" : "button",
+				"parameters" : {
+				   "click_activate_threshold" : "0.65",
+				   "click_deactivate_threshold" : "0.6",
+				   "force_input" : "click"
+				},
+				"path" : "/user/hand/right/input/index"
+			 },
+			 {
+				"inputs" : {
+				   "click" : {
+					  "output" : "/actions/legacy/in/left_applicationmenu_press"
+				   }
+				},
+				"mode" : "button",
+				"parameters" : {
+				   "force_input" : "click"
+				},
+				"path" : "/user/hand/left/input/proximity"
+			 },
+			 {
+				"inputs" : {
+				   "click" : {
+					  "output" : "/actions/legacy/in/left_axis1_press"
+				   }
+				},
+				"mode" : "button",
+				"parameters" : {
+				   "force_input" : "click"
+				},
+				"path" : "/user/hand/left/input/index"
+			 },
+			 {
+				"inputs" : {
+				   "click" : {
+					  "output" : "/actions/legacy/in/right_applicationmenu_press"
+				   }
+				},
+				"mode" : "button",
+				"path" : "/user/hand/right/input/proximity"
+			 },
+			 {
+				"inputs" : {
+				   "click" : {
+					  "output" : "/actions/legacy/in/right_axis0_press"
+				   }
+				},
+				"mode" : "button",
+				"parameters" : {
+				   "force_input" : "click"
+				},
+				"path" : "/user/hand/right/input/thumbpad"
+			 },
+			 {
+				"inputs" : {
+				   "click" : {
+					  "output" : "/actions/legacy/in/left_axis0_press"
+				   }
+				},
+				"mode" : "button",
+				"parameters" : {
+				   "force_input" : "click"
+				},
+				"path" : "/user/hand/left/input/thumbpad"
+			 },
+			 {
+				"inputs" : {
+				   "click" : {
+					  "output" : "/actions/legacy/in/right_axis0_press"
+				   }
+				},
+				"mode" : "button",
+				"path" : "/user/hand/right/input/finger/index"
+			 }
+		  ]
+	   },
+	   "/actions/legacy_mirrored" : {
+		  "haptics" : [
+			 {
+				"output" : "/actions/legacy_mirrored/out/haptic",
+				"path" : "/user/hand/left/output/haptic"
+			 },
+			 {
+				"output" : "/actions/legacy_mirrored/out/haptic",
+				"path" : "/user/hand/right/output/haptic"
+			 }
+		  ],
+		  "poses" : [
+			 {
+				"output" : "/actions/legacy_mirrored/in/pose",
+				"path" : "/user/hand/left/pose/super"
+			 },
+			 {
+				"output" : "/actions/legacy_mirrored/in/pose",
+				"path" : "/user/hand/right/pose/super"
+			 },
+			 {
+				"output" : "/actions/legacy_mirrored/in/pose",
+				"path" : "/user/hand/left/pose/raw"
+			 },
+			 {
+				"output" : "/actions/legacy_mirrored/in/pose",
+				"path" : "/user/hand/right/pose/raw"
+			 },
+			 {
+				"output" : "none",
+				"path" : "/user/hand/left/pose/tip"
+			 },
+			 {
+				"output" : "none",
+				"path" : "/user/hand/right/pose/tip"
+			 },
+			 {
+				"output" : "none",
+				"path" : "/user/hand/left/pose/front"
+			 },
+			 {
+				"output" : "none",
+				"path" : "/user/hand/right/pose/front"
+			 }
+		  ],
+		  "sources" : [
+			 {
+				"inputs" : {
+				   "pull" : {
+					  "output" : "/actions/legacy_mirrored/in/axis1_value"
+				   }
+				},
+				"mode" : "trigger",
+				"path" : "/user/hand/left/input/index"
+			 },
+			 {
+				"inputs" : {
+				   "pull" : {
+					  "output" : "/actions/legacy_mirrored/in/axis1_value"
+				   }
+				},
+				"mode" : "trigger",
+				"path" : "/user/hand/right/input/index"
+			 },
+			 {
+				"inputs" : {
+				   "click" : {
+					  "output" : "/simactions/2"
+				   }
+				},
+				"mode" : "trigger",
+				"path" : "/user/hand/left/input/index"
+			 },
+			 {
+				"inputs" : {
+				   "click" : {
+					  "output" : "/simactions/2"
+				   }
+				},
+				"mode" : "trigger",
+				"path" : "/user/hand/right/input/index"
+			 },
+			 {
+				"inputs" : {
+				   "click" : {
+					  "output" : "/simactions/2"
+				   }
+				},
+				"mode" : "button",
+				"parameters" : {
+				   "force_input" : "click"
+				},
+				"path" : "/user/hand/left/input/index"
+			 },
+			 {
+				"inputs" : {
+				   "click" : {
+					  "output" : "/simactions/2"
+				   }
+				},
+				"mode" : "button",
+				"parameters" : {
+				   "force_input" : "click"
+				},
+				"path" : "/user/hand/right/input/index"
+			 },
+			 {
+				"inputs" : {
+				   "click" : {
+					  "output" : "/actions/legacy_mirrored/in/axis0_press"
+				   }
+				},
+				"mode" : "button",
+				"parameters" : {
+				   "force_input" : "click"
+				},
+				"path" : "/user/hand/left/input/thumbpad"
+			 },
+			 {
+				"inputs" : {
+				   "click" : {
+					  "output" : "/actions/legacy_mirrored/in/axis0_press"
+				   }
+				},
+				"mode" : "button",
+				"path" : "/user/hand/left/input/grip"
+			 },
+			 {
+				"inputs" : {
+				   "click" : {
+					  "output" : "/actions/legacy_mirrored/in/axis0_press"
+				   }
+				},
+				"mode" : "button",
+				"path" : "/user/hand/right/input/grip"
+			 },
+			 {
+				"inputs" : {
+				   "click" : {
+					  "output" : "/actions/legacy_mirrored/in/axis0_press"
+				   }
+				},
+				"mode" : "button",
+				"path" : "/user/hand/right/input/thumbpad"
+			 },
+			 {
+				"inputs" : {
+				   "click" : {
+					  "output" : "/simactions/3"
+				   }
+				},
+				"mode" : "button",
+				"path" : "/user/hand/left/input/pinch"
+			 },
+			 {
+				"inputs" : {
+				   "click" : {
+					  "output" : "/simactions/3"
+				   }
+				},
+				"mode" : "button",
+				"path" : "/user/hand/right/input/pinch"
+			 },
+			 {
+				"inputs" : {
+				   "double" : {
+					  "output" : "/actions/legacy_mirrored/in/applicationmenu_press"
+				   }
+				},
+				"mode" : "button",
+				"path" : "/user/hand/left/input/proximity"
+			 },
+			 {
+				"inputs" : {
+				   "double" : {
+					  "output" : "/actions/legacy_mirrored/in/applicationmenu_press"
+				   }
+				},
+				"mode" : "button",
+				"path" : "/user/hand/right/input/proximity"
+			 }
+		  ]
+	   },
+	   "/actions/valveindexcontroller" : {
+		  "haptics" : [
+			 {
+				"output" : "/actions/valveindexcontroller/out/haptic",
+				"path" : "/user/hand/left/output/haptic"
+			 },
+			 {
+				"output" : "/actions/valveindexcontroller/out/haptic",
+				"path" : "/user/hand/right/output/haptic"
+			 }
+		  ],
+		  "poses" : [
+			 {
+				"output" : "/actions/valveindexcontroller/in/devicepose",
+				"path" : "/user/hand/left/pose/raw"
+			 },
+			 {
+				"output" : "/actions/valveindexcontroller/in/devicepose",
+				"path" : "/user/hand/right/pose/raw"
+			 }
+		  ],
+		  "sources" : [
+			 {
+				"inputs" : {
+				   "click" : {
+					  "output" : "/simactions/3"
+				   }
+				},
+				"mode" : "button",
+				"path" : "/user/hand/left/input/pinch"
+			 },
+			 {
+				"inputs" : {
+				   "click" : {
+					  "output" : "/simactions/3"
+				   }
+				},
+				"mode" : "button",
+				"path" : "/user/hand/right/input/pinch"
+			 },
+			 {
+				"inputs" : {
+				   "double" : {
+					  "output" : "/actions/valveindexcontroller/in/secondarybutton"
+				   }
+				},
+				"mode" : "button",
+				"path" : "/user/hand/left/input/proximity"
+			 },
+			 {
+				"inputs" : {
+				   "double" : {
+					  "output" : "/actions/valveindexcontroller/in/secondarybutton"
+				   }
+				},
+				"mode" : "button",
+				"path" : "/user/hand/right/input/proximity"
+			 },
+			 {
+				"inputs" : {
+				   "pull" : {
+					  "output" : "/actions/valveindexcontroller/in/trigger"
+				   }
+				},
+				"mode" : "trigger",
+				"path" : "/user/hand/left/input/finger/index"
+			 },
+			 {
+				"inputs" : {
+				   "pull" : {
+					  "output" : "/actions/valveindexcontroller/in/trigger"
+				   }
+				},
+				"mode" : "trigger",
+				"path" : "/user/hand/right/input/finger/index"
+			 },
+			 {
+				"inputs" : {
+				   "click" : {
+					  "output" : "/actions/valveindexcontroller/in/triggerpressed"
+				   }
+				},
+				"mode" : "trigger",
+				"path" : "/user/hand/left/input/pinch"
+			 },
+			 {
+				"inputs" : {
+				   "click" : {
+					  "output" : "/actions/valveindexcontroller/in/triggerpressed"
+				   }
+				},
+				"mode" : "trigger",
+				"path" : "/user/hand/right/input/pinch"
+			 }
+		  ]
+	   }
+	},
+	"category" : "openxr",
+	"controller_type" : "etee_controller",
+	"description" : "Version 2_4: Official Beat Saber bindings for etee Controllers. While in-game, press the System Button and select 'Show Controls' in the bottom left to view controller layout.",
+	"interaction_profile" : "/interaction_profiles/valve/index_controller",
+	"name" : "Default OpenXR bindings for etee Controller in Beat Saber",
+	"options" : {
+	   "mirror_actions" : true,
+	   "simulated_controller_type" : "vive_controller"
+	},
+	"simulated_actions" : [
+	   {
+		  "id" : 3,
+		  "name" : "Select",
+		  "output" : "/actions/legacy_mirrored/in/axis1_value",
+		  "type" : "fake_trigger"
+	   }
+	]
+ }
+ 

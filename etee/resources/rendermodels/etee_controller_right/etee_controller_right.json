@@ -1,0 +1,87 @@
+{
+	"thumbnail": "etee_controller_thumbnail_right.jpg",
+	"components": {
+		"body": {
+			"filename": "etee_controller_right.obj",
+			"component_local": {
+				"origin": [0.000, 0.000, 0.000],
+				"rotate_xyz": [0.0, 0.0, 0.0]
+			}
+		},
+		"skeleton_root": {
+			"component_local": {
+				"origin": [0.0, 0.000, 0.000],
+				"rotate_xyz": [0.0, 0.0, 0.0]
+			}
+		},
+		"status": {
+			"filename": "status_right.obj",
+			"component_local": {
+				"origin": [0.018795, -0.018914, -0.000385],
+				"rotate_xyz": [0, 0, 0]
+			},
+			"visibility": {
+				"default": false
+			}
+		},
+		"tip": {
+			"component_local": {
+				"origin": [0.000, 0.00, 0.00],
+				"rotate_xyz": [-55, 0.0, 0.0]
+			}
+		},
+		"base": {
+			"component_local": {
+				"origin": [0.000, 0.0, 0.11],
+				"rotate_xyz": [0.0, 0.0, 0.0]
+			}
+		},
+		"front": {
+			"component_local": {
+				"origin": [0.000, 0.0, 0.0],
+				"rotate_xyz": [90.0, 0.0, 0.0]
+			}
+		},
+		"back": {
+			"component_local": {
+				"origin": [0.000, 0.0, 0.0],
+				"rotate_xyz": [0.0, 0.0, 180]
+			}
+		},
+		"handgrip": {
+			"component_local": {
+				"origin": [0.000, -0.0125, 0.061865],
+				"rotate_xyz": [0.0, 0.0, 0.0]
+			}
+		},
+		"vrchat": {
+			"component_local": {
+				"origin": [0.00, 0.0, -0.03],
+				"rotate_xyz": [-15.0, 0.0, -45.0]
+			}
+		},
+		
+		"thumbpad_touch": {
+			"filename": "thumbpad_touch.obj",
+			"motion": {
+				"type": "trackpad",
+				"controller_axis": 0,
+				"component_path": "/input/thumbpad",
+				"center": [0.0, -0.003262, 0.004],
+				"rotate_xyz": [-54.0, 0.0, 0.0],
+				"touch_translate_x": [-0.0105, 0.0105],
+				"touch_translate_y": [0.0105, -0.0105]
+			},
+			"visibility": {
+				"default": false,
+				"touch": true,
+				"press": true,
+				"scroll": false
+			},
+			"component_local": {
+				"origin": [0.0, -0.003262, 0.003899],
+				"rotate_xyz": [0.0, 0.0, 0.0]
+			}
+		}
+	}
+}
