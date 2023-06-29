@@ -1,0 +1,156 @@
+{
+	"jsonid": "input_profile",
+	"controller_type": "etee_tracker_handed",
+	"legacy_binding": "{etee}/input/tracker_profiles_extra/legacy_bindings_etee_tracker_handed_rotated.json",
+	"override_device_class": "TrackedDeviceClass_Controller",
+	"input_bindingui_mode": "controller_handed",
+	"resource_root": "etee",
+	"priority": -1,
+	"should_show_binding_errors": true,
+	"input_bindingui_left": {
+		"transform": "scale(-1.5,-1.5)",
+		"image": "{etee}/icons/eteeTracker.svg"
+	},
+	"input_bindingui_right": {
+		"transform": "scale(1.5,1.5)",
+		"image": "{etee}/icons/eteeTracker.svg"
+	},
+	"input_source": {
+		"/input/tracker_connection": {
+			"type": "button",
+			"click": true,
+			"binding_image_point": [24, 15],
+			"order": 1
+		},
+		"/input/is_right_handed": {
+			"type": "button",
+			"click": true,
+			"binding_image_point": [24, 15],
+			"order": 2
+		},
+
+		"/pose/raw": {
+			"type": "pose",
+			"binding_image_point": [15, 25]
+		},
+		"/pose/front": {
+			"type": "pose",
+			"binding_image_point": [15, 25]
+		},
+		"/pose/back": {
+			"type": "pose",
+			"binding_image_point": [15, 25]
+		},
+		"/pose/pistol": {
+			"type": "pose",
+			"binding_image_point": [15, 25]
+		},
+		"/pose/front_rolled": {
+			"type": "pose",
+			"binding_image_point": [15, 25]
+		}
+	},
+	"input_components": {
+		"/input/tracker_connection/click": {
+			"bit_offset": 90,
+			"type": "bool"
+		},
+		"/input/is_right_handed/click": {
+			"bit_offset": 91,
+			"type": "bool"
+		},
+
+		"/output/haptic": {
+			"type": "vibration"
+		}
+	},
+	"default_bindings": [{
+			"app_key": "openvr.tool.steamvr_environments",
+			"binding_url": "legacy_bindings_etee_tracker_handed.json"
+		},
+		{
+			"app_key": "openvr.tool.steamvr vibration test.exe",
+			"binding_url": "legacy_bindings_etee_tracker_handed.json"
+		},
+		{
+			"app_key": "openvr.tool.svr-haptic-testing-tool.exe",
+			"binding_url": "legacy_bindings_etee_tracker_handed.json"
+		},
+		{
+			"app_key": "openvr.component.vrcompositor",
+			"binding_url": "legacy_bindings_etee_tracker_handed.json"
+		},
+		{
+			"app_key": "steam.app.1318090",
+			"binding_url": "legacy_bindings_etee_tracker_handed.json"
+		},
+		{
+			"app_key": "steam.app.1079800",
+			"binding_url": "legacy_bindings_etee_tracker_handed.json"
+		},
+		{
+			"app_key": "steam.app.1009850",
+			"binding_url": "legacy_bindings_etee_tracker_handed.json"
+		},
+		{
+			"app_key": "steam.app.887260",
+			"binding_url": "legacy_bindings_etee_tracker_handed.json"
+		},
+		{
+			"app_key": "steam.app.868020",
+			"binding_url": "legacy_bindings_etee_tracker_handed.json"
+		},
+		{
+			"app_key": "steam.app.823500",
+			"binding_url": "legacy_bindings_etee_tracker_handed.json"
+		},
+		{
+			"app_key": "steam.app.740250",
+			"binding_url": "legacy_bindings_etee_tracker_handed.json"
+		},
+		{
+			"app_key": "steam.app.620980",
+			"binding_url": "legacy_bindings_etee_tracker_handed.json"
+		},
+		{
+			"app_key": "steam.app.617830",
+			"binding_url": "legacy_bindings_etee_tracker_handed.json"
+		},
+		{
+			"app_key": "steam.app.578620",
+			"binding_url": "legacy_bindings_etee_tracker_handed.json"
+		},
+		{
+			"app_key": "steam.app.555160",
+			"binding_url": "legacy_bindings_etee_tracker_handed.json"
+		},
+		{
+			"app_key": "steam.app.551370",
+			"binding_url": "legacy_bindings_etee_tracker_handed.json"
+		},
+		{
+			"app_key": "steam.app.546560",
+			"binding_url": "legacy_bindings_etee_tracker_handed.json"
+		},
+		{
+			"app_key": "steam.app.534720",
+			"binding_url": "legacy_bindings_etee_tracker_handed.json"
+		},
+		{
+			"app_key": "steam.app.450390",
+			"binding_url": "legacy_bindings_etee_tracker_handed.json"
+		},
+		{
+			"app_key": "steam.app.438100",
+			"binding_url": "legacy_bindings_etee_tracker_handed.json"
+		},
+		{
+			"app_key": "steam.app.457420",
+			"binding_url": "legacy_bindings_etee_tracker_handed.json"
+		},
+		{
+			"app_key": "steam.app.327140",
+			"binding_url": "legacy_bindings_etee_tracker_handed.json"
+		}
+	]
+}

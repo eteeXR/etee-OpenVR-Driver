@@ -1,0 +1,475 @@
+{
+   "action_manifest_version" : 0,
+   "alias_info" : {},
+   "app_key" : "steam.app.555160",
+   "bindings" : {
+      "/actions/main" : {
+         "haptics" : [
+            {
+               "output" : "/actions/main/out/vibrateleft",
+               "path" : "/user/hand/left/output/haptic"
+            },
+            {
+               "output" : "/actions/main/out/vibrateright",
+               "path" : "/user/hand/right/output/haptic"
+            }
+         ],
+         "poses" : [
+            {
+               "output" : "none",
+               "path" : "/user/hand/left/pose/raw",
+               "requirement" : "optional"
+            },
+            {
+               "output" : "none",
+               "path" : "/user/hand/right/pose/raw"
+            },
+            {
+               "output" : "/actions/main/in/controllerleft",
+               "path" : "/user/hand/left/pose/vrchat"
+            },
+            {
+               "output" : "/actions/main/in/controllerright",
+               "path" : "/user/hand/right/pose/vrchat"
+            }
+         ],
+         "skeleton" : [
+            {
+               "output" : "/actions/main/in/skeletonleft",
+               "path" : "/user/hand/left/input/skeleton/left"
+            },
+            {
+               "output" : "/actions/main/in/skeletonright",
+               "path" : "/user/hand/right/input/skeleton/right"
+            }
+         ],
+         "sources" : [
+            {
+               "inputs" : {
+                  "north" : {
+                     "output" : "/actions/main/in/BoltReleaseLeft"
+                  }
+               },
+               "mode" : "dpad",
+               "parameters" : {
+                  "sub_mode" : "click"
+               },
+               "path" : "/user/hand/left/input/trackpad"
+            },
+            {
+               "inputs" : {
+                  "north" : {
+                     "output" : "/actions/main/in/BoltReleaseRight"
+                  }
+               },
+               "mode" : "dpad",
+               "parameters" : {
+                  "sub_mode" : "click"
+               },
+               "path" : "/user/hand/right/input/trackpad"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/main/in/CycleFireModeLeft"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/left/input/a"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/main/in/CycleFireModeRight"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/a"
+            },
+            {
+               "inputs" : {
+                  "grab" : {
+                     "output" : "/actions/main/in/GripLeft"
+                  }
+               },
+               "mode" : "grab",
+               "parameters" : {
+                  "value_release_threshold" : "0.75"
+               },
+               "path" : "/user/hand/left/input/grip"
+            },
+            {
+               "inputs" : {
+                  "grab" : {
+                     "output" : "/actions/main/in/GripRight"
+                  }
+               },
+               "mode" : "grab",
+               "parameters" : {
+                  "value_release_threshold" : "0.75"
+               },
+               "path" : "/user/hand/right/input/grip"
+            },
+            {
+               "inputs" : {
+                  "force" : {
+                     "output" : "/actions/main/in/GripForceLeft axis"
+                  }
+               },
+               "mode" : "force_sensor",
+               "path" : "/user/hand/left/input/grip"
+            },
+            {
+               "inputs" : {
+                  "force" : {
+                     "output" : "/actions/main/in/GripForceRight axis"
+                  }
+               },
+               "mode" : "force_sensor",
+               "path" : "/user/hand/right/input/grip"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/main/in/MagBoltReleaseLeft"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/left/input/b"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/main/in/MagBoltReleaseRight"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/b"
+            },
+            {
+               "inputs" : {
+                  "south" : {
+                     "output" : "/actions/main/in/ReleaseMagazineLeft"
+                  }
+               },
+               "mode" : "dpad",
+               "parameters" : {
+                  "sub_mode" : "click"
+               },
+               "path" : "/user/hand/left/input/trackpad"
+            },
+            {
+               "inputs" : {
+                  "south" : {
+                     "output" : "/actions/main/in/ReleaseMagazineRight"
+                  }
+               },
+               "mode" : "dpad",
+               "parameters" : {
+                  "sub_mode" : "click"
+               },
+               "path" : "/user/hand/right/input/trackpad"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/main/in/ScoreboardRight"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/b"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/main/in/Sprint"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/thumbstick"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/main/in/TriggerLeft"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/left/input/trigger"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/main/in/TriggerRight"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/trigger"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/main/in/WheelClickLeft"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/left/input/trigger"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/main/in/WheelOpenLeft"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/left/input/thumbstick"
+            },
+            {
+               "inputs" : {
+                  "position" : {
+                     "output" : "/actions/main/in/ArtificialTurn_X,ArtificialTurn_Y X Y_axis2d"
+                  }
+               },
+               "mode" : "joystick",
+               "parameters" : {
+                  "invert" : "y"
+               },
+               "path" : "/user/hand/left/input/thumbstick"
+            },
+            {
+               "inputs" : {
+                  "position" : {
+                     "output" : "/actions/main/in/Move_X,Move_Y X Y_axis2d"
+                  }
+               },
+               "mode" : "joystick",
+               "parameters" : {
+                  "invert" : "y"
+               },
+               "path" : "/user/hand/right/input/thumbstick"
+            },
+            {
+               "inputs" : {
+                  "position" : {
+                     "output" : "/actions/main/in/SpectatorMove_X,SpectatorMove_Y X Y_axis2d"
+                  }
+               },
+               "mode" : "joystick",
+               "parameters" : {
+                  "invert" : "y"
+               },
+               "path" : "/user/hand/left/input/thumbstick"
+            },
+            {
+               "inputs" : {
+                  "pull" : {
+                     "output" : "/actions/main/in/TriggerAxisLeft axis"
+                  }
+               },
+               "mode" : "trigger",
+               "parameters" : {
+                  "invert" : "y"
+               },
+               "path" : "/user/hand/left/input/trigger"
+            },
+            {
+               "inputs" : {
+                  "pull" : {
+                     "output" : "/actions/main/in/TriggerAxisRight axis"
+                  }
+               },
+               "mode" : "trigger",
+               "parameters" : {
+                  "invert" : "y"
+               },
+               "path" : "/user/hand/right/input/trigger"
+            },
+            {
+               "inputs" : {
+                  "position" : {
+                     "output" : "/actions/main/in/WheelLeft_X,WheelLeft_Y X Y_axis2d"
+                  }
+               },
+               "mode" : "joystick",
+               "parameters" : {
+                  "invert" : "y"
+               },
+               "path" : "/user/hand/left/input/thumbstick"
+            },
+            {
+               "inputs" : {
+                  "position" : {
+                     "output" : "/actions/main/in/WheelRight_X,WheelRight_Y X Y_axis2d"
+                  }
+               },
+               "mode" : "joystick",
+               "parameters" : {
+                  "invert" : "y"
+               },
+               "path" : "/user/hand/right/input/thumbstick"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/main/in/triggerleft"
+                  },
+                  "pull" : {
+                     "output" : "/actions/main/in/triggeraxisleft axis"
+                  }
+               },
+               "mode" : "trigger",
+               "path" : "/user/hand/left/input/pinch"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/main/in/triggerright"
+                  },
+                  "pull" : {
+                     "output" : "/actions/main/in/triggeraxisright axis"
+                  }
+               },
+               "mode" : "trigger",
+               "path" : "/user/hand/right/input/pinch"
+            },
+            {
+               "inputs" : {
+                  "double" : {
+                     "output" : "/actions/main/in/magboltreleaseleft"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/left/input/proximity"
+            },
+            {
+               "inputs" : {
+                  "position" : {
+                     "output" : "/actions/main/in/move_x,move_y x y_axis2d"
+                  }
+               },
+               "mode" : "trackpad",
+               "path" : "/user/hand/left/input/thumbpad"
+            },
+            {
+               "inputs" : {
+                  "east" : {
+                     "output" : "/actions/main/in/turnright"
+                  },
+                  "west" : {
+                     "output" : "/actions/main/in/turnleft"
+                  }
+               },
+               "mode" : "dpad",
+               "parameters" : {
+                  "deadzone_pct" : "90",
+                  "overlap_pct" : "15",
+                  "sub_mode" : "click"
+               },
+               "path" : "/user/hand/right/input/thumbpad"
+            },
+            {
+               "inputs" : {
+                  "double" : {
+                     "output" : "/actions/main/in/cyclefiremodeleft"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/left/input/slider"
+            },
+            {
+               "inputs" : {
+                  "double" : {
+                     "output" : "/actions/main/in/cyclefiremoderight"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/slider"
+            },
+            {
+               "inputs" : {
+                  "north" : {
+                     "output" : "/actions/main/in/boltreleaseleft"
+                  }
+               },
+               "mode" : "dpad",
+               "parameters" : {
+                  "sub_mode" : "click"
+               },
+               "path" : "/user/hand/left/input/thumbpad"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/main/in/scoreboardleft"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/left/input/proximity"
+            },
+            {
+               "inputs" : {
+                  "double" : {
+                     "output" : "/actions/main/in/magboltreleaseright"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/proximity"
+            },
+            {
+               "inputs" : {
+                  "north" : {
+                     "output" : "/actions/main/in/boltreleaseright"
+                  }
+               },
+               "mode" : "dpad",
+               "parameters" : {
+                  "deadzone_pct" : "90",
+                  "overlap_pct" : "15",
+                  "sub_mode" : "click"
+               },
+               "path" : "/user/hand/right/input/thumbpad"
+            },
+            {
+               "inputs" : {
+                  "south" : {
+                     "output" : "/actions/main/in/magboltreleaseright"
+                  }
+               },
+               "mode" : "dpad",
+               "parameters" : {
+                  "deadzone_pct" : "90",
+                  "overlap_pct" : "15",
+                  "sub_mode" : "click"
+               },
+               "path" : "/user/hand/right/input/thumbpad"
+            },
+            {
+               "inputs" : {
+                  "south" : {
+                     "output" : "/actions/main/in/magboltreleaseleft"
+                  }
+               },
+               "mode" : "dpad",
+               "parameters" : {
+                  "deadzone_pct" : "85",
+                  "overlap_pct" : "15",
+                  "sub_mode" : "click"
+               },
+               "path" : "/user/hand/left/input/thumbpad"
+            }
+         ]
+      }
+   },
+   "category" : "steamvr_input",
+   "controller_type" : "etee_controller",
+   "description" : "Version 0.  Please, use this as a template to create your own game bindings.",
+   "interaction_profile" : "",
+   "name" : "Default draft bindings for etee Controller in Pavlov VR.",
+   "options" : {
+      "compatibility_mode" : true,
+      "simulate_hmd" : false,
+      "simulate_rendermodel" : false,
+      "simulated_controller_type" : "none"
+   },
+   "simulated_actions" : []
+}

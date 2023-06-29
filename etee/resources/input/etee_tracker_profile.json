@@ -1,0 +1,57 @@
+{
+	"jsonid": "input_profile",
+	"controller_type": "vive_tracker",
+	"input_bindingui_mode": "single_device",
+	"input_bindingui_right": {
+		"transform": "scale(1.5,1.5)",
+		"image": "{etee}/icons/eteeTracker.svg"
+	},
+	"priority": 6,
+	"tracker_types": {
+		"TrackerRole_Handed": "{etee}/input/tracker_profiles_extra/etee_tracker_profile_handed.json",
+		"TrackerRole_LeftFoot": "{etee}/input/tracker_profiles_extra/etee_tracker_left_foot_profile.json",
+		"TrackerRole_RightFoot": "{etee}/input/tracker_profiles_extra/etee_tracker_right_foot_profile.json",
+		"TrackerRole_LeftShoulder": "{etee}/input/tracker_profiles_extra/etee_tracker_left_shoulder_profile.json",
+		"TrackerRole_RightShoulder": "{etee}/input/tracker_profiles_extra/etee_tracker_right_shoulder_profile.json",
+		"TrackerRole_LeftElbow": "{etee}/input/tracker_profiles_extra/etee_tracker_left_elbow_profile.json",
+		"TrackerRole_RightElbow": "{etee}/input/tracker_profiles_extra/etee_tracker_right_elbow_profile.json",
+		"TrackerRole_LeftKnee": "{etee}/input/tracker_profiles_extra/etee_tracker_left_knee_profile.json",
+		"TrackerRole_RightKnee": "{etee}/input/tracker_profiles_extra/etee_tracker_right_knee_profile.json",
+		"TrackerRole_Waist": "{etee}/input/tracker_profiles_extra/etee_tracker_waist_profile.json",
+		"TrackerRole_Chest": "{etee}/input/tracker_profiles_extra/etee_tracker_chest_profile.json",
+		"TrackerRole_Camera": "{etee}/input/tracker_profiles_extra/etee_tracker_camera_profile.json",
+		"TrackerRole_Keyboard": "{etee}/input/tracker_profiles_extra/etee_tracker_keyboard_profile.json"
+	},
+	"input_source": {
+		"/pose/raw": {
+			"type": "pose",
+			"binding_image_point": [63, 148]
+		},
+		"/input/tracker_connection": {
+			"type": "button",
+			"click": true,
+			"binding_image_point": [24, 15],
+			"order": 1
+		},
+		"/input/is_right_handed": {
+			"type": "button",
+			"click": true,
+			"binding_image_point": [24, 15],
+			"order": 2
+		}
+	},
+	"input_components": {
+		"/input/tracker_connection/click": {
+			"bit_offset": 90,
+			"type": "bool"
+		},
+		"/input/is_right_handed/click": {
+			"bit_offset": 91,
+			"type": "bool"
+		},
+
+		"/output/haptic": {
+			"type": "vibration"
+		}
+	}
+}

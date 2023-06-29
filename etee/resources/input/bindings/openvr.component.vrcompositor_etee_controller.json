@@ -1,0 +1,256 @@
+{
+	"action_manifest_version": 0,
+	"alias_info": {},
+	"app_key": "openvr.component.vrcompositor",
+	"bindings": {
+		"/actions/dualanalog": {
+			"sources": [{
+					"inputs": {
+						"click": {
+							"output": "/actions/dualanalog/in/leftclick"
+						}
+					},
+					"mode": "button",
+					"path": "/user/hand/left/input/pinch"
+				},
+				{
+					"inputs": {
+						"click": {
+							"output": "/actions/dualanalog/in/leftclick"
+						},
+						"touch": {
+							"output": "/actions/dualanalog/in/lefttouch"
+						}
+					},
+					"mode": "button",
+					"path": "/user/hand/left/input/thumbpad"
+				},
+				{
+					"inputs": {
+						"click": {
+							"output": "/actions/dualanalog/in/modeswitch1"
+						}
+					},
+					"mode": "button",
+					"path": "/user/hand/left/input/proximity"
+				}
+			]
+		},
+		"/actions/lasermouse": {
+			"haptics": [{
+					"output": "/actions/lasermouse/out/haptic",
+					"path": "/user/hand/left/output/haptic"
+				},
+				{
+					"output": "/actions/lasermouse/out/haptic",
+					"path": "/user/hand/right/output/haptic"
+				}
+			],
+			"poses": [{
+					"output": "/actions/lasermouse/in/pointer",
+					"path": "/user/hand/left/pose/tip"
+				},
+				{
+					"output": "/actions/lasermouse/in/pointer",
+					"path": "/user/hand/right/pose/tip"
+				}
+			],
+			"sources": [{
+					"inputs": {
+						"double": {
+							"output": "/actions/lasermouse/in/home"
+						}
+					},
+					"mode": "button",
+					"path": "/user/hand/left/input/proximity"
+				},
+				{
+					"inputs": {
+						"click": {
+							"output": "/actions/lasermouse/in/leftclick"
+						}
+					},
+					"mode": "button",
+					"path": "/user/hand/left/input/pinch"
+				},
+				{
+					"inputs": {
+						"click": {
+							"output": "/actions/lasermouse/in/lockmouseposition"
+						}
+					},
+					"mode": "button",
+					"path": "/user/hand/left/input/pinch"
+				},
+				{
+					"inputs": {
+						"double": {
+							"output": "/actions/lasermouse/in/back"
+						}
+					},
+					"mode": "button",
+					"path": "/user/hand/left/input/slider"
+				},
+				{
+					"inputs": {
+						"click": {
+							"output": "/actions/lasermouse/in/leftclick"
+						}
+					},
+					"mode": "button",
+					"path": "/user/hand/right/input/pinch"
+				},
+				{
+					"inputs": {
+						"click": {
+							"output": "/actions/lasermouse/in/lockmouseposition"
+						}
+					},
+					"mode": "button",
+					"path": "/user/hand/right/input/pinch"
+				},
+				{
+					"inputs": {
+						"double": {
+							"output": "/actions/lasermouse/in/home"
+						}
+					},
+					"mode": "button",
+					"path": "/user/hand/right/input/proximity"
+				},
+				{
+					"inputs": {
+						"double": {
+							"output": "/actions/lasermouse/in/back"
+						}
+					},
+					"mode": "button",
+					"path": "/user/hand/right/input/slider"
+				}
+			]
+		},
+		"/actions/lasermouse_secondary": {
+			"sources": [{
+					"inputs": {
+						"click": {
+							"output": "/actions/lasermouse_secondary/in/switchlaserhand"
+						}
+					},
+					"mode": "button",
+					"path": "/user/hand/left/input/point"
+				},
+				{
+					"inputs": {
+						"click": {
+							"output": "/actions/lasermouse_secondary/in/switchlaserhand"
+						}
+					},
+					"mode": "button",
+					"path": "/user/hand/right/input/point"
+				},
+				{
+					"inputs": {
+						"click": {
+							"output": "/actions/lasermouse_secondary/in/switchlaserhand"
+						}
+					},
+					"mode": "button",
+					"path": "/user/hand/left/input/thumbpad"
+				},
+				{
+					"inputs": {
+						"click": {
+							"output": "/actions/lasermouse_secondary/in/switchlaserhand"
+						}
+					},
+					"mode": "button",
+					"path": "/user/hand/right/input/thumbpad"
+				}
+			]
+		},
+		"/actions/scroll_discrete": {
+			"sources": [{
+					"inputs": {
+						"scroll": {
+							"output": "/actions/scroll_discrete/in/scroll"
+						}
+					},
+					"mode": "scroll",
+					"path": "/user/hand/left/input/slider"
+				},
+				{
+					"inputs": {
+						"scroll": {
+							"output": "/actions/scroll_discrete/in/scroll"
+						}
+					},
+					"mode": "scroll",
+					"path": "/user/hand/right/input/slider"
+				}
+			]
+		},
+		"/actions/scroll_smooth": {
+			"sources": [{
+					"inputs": {
+						"scroll": {
+							"output": "/actions/scroll_smooth/in/scroll"
+						}
+					},
+					"mode": "scroll",
+					"parameters": {
+						"scroll_mode": "smooth"
+					},
+					"path": "/user/hand/left/input/slider"
+				},
+				{
+					"inputs": {
+						"scroll": {
+							"output": "/actions/scroll_smooth/in/scroll"
+						}
+					},
+					"mode": "scroll",
+					"parameters": {
+						"scroll_mode": "smooth"
+					},
+					"path": "/user/hand/right/input/slider"
+				}
+			]
+		},
+		"/actions/system": {
+			"sources": [{
+					"inputs": {
+						"click": {
+							"output": "/actions/system/in/toggledashboard"
+						},
+						"held": {
+							"output": "/actions/system/in/systembuttonchord"
+						}
+					},
+					"mode": "button",
+					"path": "/user/hand/left/input/system"
+				},
+				{
+					"inputs": {
+						"click": {
+							"output": "/actions/system/in/toggledashboard"
+						},
+						"held": {
+							"output": "/actions/system/in/systembuttonchord"
+						}
+					},
+					"mode": "button",
+					"path": "/user/hand/right/input/system"
+				}
+			]
+		}
+	},
+	"category": "steamvr_input",
+	"controller_type": "etee_controller",
+	"description": "Official TG0 Dashboard bindings for etee Controllers. While in-game, press the System Button and select 'Show Controls' in the bottom left to view controller layout.",
+	"name": "Default etee Controller bindings for SteamVR Dashboard",
+	"options": {
+		"simulated_controller_type" : "none",
+		"simulate_rendermodel" : false
+	},
+	"simulated_actions": []
+}
