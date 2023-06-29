@@ -10,7 +10,7 @@
     "major_num" : 1,
     "minor_num" : 4,
     "patch_num" : 1,
-    "build_label" : "alpha",
+    "build_label" : "beta",
     "build_label_num" : 1
   },
   "etee_tracker_pose_settings": {
