@@ -1,0 +1,54 @@
+{
+	"language_tag": "en_US",
+	
+	"etee_tracker_handed": "etee Tracker in Hand",
+	"etee_tracker_left_foot": "etee Tracker on Left Foot",
+	"etee_tracker_right_foot": "etee Tracker on Right Foot",
+	"etee_tracker_left_shoulder": "etee Tracker on Left Shoulder",
+	"etee_tracker_right_shoulder": "etee Tracker on Right Shoulder",
+	"etee_tracker_left_elbow": "etee Tracker on Left Elbow",
+	"etee_tracker_right_elbow": "etee Tracker on Right Elbow",
+	"etee_tracker_left_knee": "etee Tracker on Left Knee",
+	"etee_tracker_right_knee": "etee Tracker on Right Knee",
+	"etee_tracker_waist": "etee Tracker on Waist",
+	"etee_tracker_chest": "etee Tracker on Chest",
+	"etee_tracker_camera": "etee Tracker on Camera",
+	"etee_tracker_keyboard": "etee Tracker on Keyboard",
+	
+	"/input/system": "System Button",
+	"/input/tracker_connection": "Tracker Connection",
+	"/input/is_right_handed": "Is Right Hand",
+	"/input/slider": "Slider",
+	"/input/slider_up": "Slider Up Button",
+	"/input/slider_down": "Slider Down Button",
+	"/input/thumbpad": "Trackpad",
+	"/input/proximity": "Tap Zone",
+
+	"/input/grip": "Grip Gesture",
+	"/input/pinch": "Trackpad Pinch Gesture",
+	"/input/pinch_thumbfinger": "Side Pinch Gesture",
+	"/input/point_independent": "Point Gesture",
+	
+	"/input/finger/thumb": "Thumb Finger",
+	"/input/finger/index": "Index Finger",
+	"/input/finger/middle": "Middle Finger",
+	"/input/finger/ring": "Ring Finger",
+	"/input/finger/pinky":  "Pinky Finger",
+
+	"/pose/raw": "Pose Raw",
+	"/pose/base": "Pose Base",
+	"/pose/tip": "Pose Tip",
+	"/pose/front": "Pose Front",
+	"/pose/back": "Pose Back",
+	"/pose/handgrip": "Pose Grip",
+	"/pose/skeleton_root": "Pose Skeleton",
+	"/pose/vrchat": "Pose for VRChat",
+
+	"/input/skeleton/left": "Left Skeleton",
+	"/input/skeleton/right": "Right Skeleton",
+	"/output/haptic": "Haptic",
+	
+	"etee_raw": "etee Raw",
+	"etee_controller": "etee Controller",
+	"etee_tracker": "etee Tracker"
+}
