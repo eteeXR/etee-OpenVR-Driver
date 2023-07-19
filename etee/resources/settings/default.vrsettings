@@ -30,7 +30,7 @@
     "left_y_offset_rotation": 0.0,
     "left_z_offset_rotation": 0.0
   },
-  "vive_tracker_pose_settings": {
+  "vive_tracker_smart_adaptor_pose_settings": {
     "x_offset_position": 0.0,
     "y_offset_position": -0.05,
     "z_offset_position": 0.02,
@@ -39,7 +39,7 @@
     "y_offset_rotation": 0.0,
     "z_offset_rotation": 0.0
   },
-    "tundra_tracker_pose_settings": {
+    "tundra_tracker_smart_adaptor_pose_settings": {
     "x_offset_position": 0.05,
     "y_offset_position": 0.0,
     "z_offset_position": 0.02,
@@ -47,6 +47,40 @@
     "x_offset_rotation": 270.0,
     "y_offset_rotation": 0.0,
     "z_offset_rotation": 0.0
+  },
+    "vive_tracker_basic_adaptor_pose_settings": {
+    "right_x_offset_position": 0.042453,
+    "right_y_offset_position": -0.043442,
+    "right_z_offset_position": 0.065678,
+
+    "right_x_offset_rotation": -2.6695,
+    "right_y_offset_rotation": -97.9,
+    "right_z_offset_rotation": -44.1,
+
+    "left_x_offset_position": 0.0,
+    "left_y_offset_position": -0.05,
+    "left_z_offset_position": 0.02,
+
+    "left_x_offset_rotation": 180.0,
+    "left_y_offset_rotation": 90.0,
+    "left_z_offset_rotation": 0.0
+  },
+    "tundra_tracker_basic_adaptor_pose_settings": {
+    "right_x_offset_position": 0.05,
+    "right_y_offset_position": 0.0,
+    "right_z_offset_position": 0.02,
+
+    "right_x_offset_rotation": 90.0,
+    "right_y_offset_rotation": 0.0,
+    "right_z_offset_rotation": 0.0,
+
+    "left_x_offset_position": 0.05,
+    "left_y_offset_position": 0.0,
+    "left_z_offset_position": 0.02,
+
+    "left_x_offset_rotation": 90.0,
+    "left_y_offset_rotation": 0.0,
+    "left_z_offset_rotation": 0.0
   },
   "etee_haptic_settings": {
     "enabled": true
