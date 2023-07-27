@@ -49,38 +49,38 @@
     "z_offset_rotation": 0.0
   },
     "vive_tracker_basic_adaptor_pose_settings": {
-    "right_x_offset_position": 0.042453,
-    "right_y_offset_position": -0.043442,
+    "right_x_offset_position": -0.043442,
+    "right_y_offset_position": 0.0,
     "right_z_offset_position": 0.065678,
 
-    "right_x_offset_rotation": -2.6695,
-    "right_y_offset_rotation": -97.9,
-    "right_z_offset_rotation": -44.1,
+    "right_x_offset_rotation": 44.1,
+    "right_y_offset_rotation": -2.6695,
+    "right_z_offset_rotation": 97.9,
+
+    "left_x_offset_position": 0.042453,
+    "left_y_offset_position": 0.0,
+    "left_z_offset_position": 0.065678,
+
+    "left_x_offset_rotation": -44.053,
+    "left_y_offset_rotation": -2.6695,
+    "left_z_offset_rotation": 262.109
+  },
+  "tundra_tracker_basic_adaptor_pose_settings": {
+    "right_x_offset_position": 0.0,
+    "right_y_offset_position": -0.056,
+    "right_z_offset_position": 0.065678,
+
+    "right_x_offset_rotation": 44.1,
+    "right_y_offset_rotation": 272.6695,
+    "right_z_offset_rotation": 90.0,
 
     "left_x_offset_position": 0.0,
-    "left_y_offset_position": -0.05,
-    "left_z_offset_position": 0.02,
+    "left_y_offset_position": 0.056,
+    "left_z_offset_position": 0.065678,
 
-    "left_x_offset_rotation": 180.0,
-    "left_y_offset_rotation": 90.0,
-    "left_z_offset_rotation": 0.0
-  },
-    "tundra_tracker_basic_adaptor_pose_settings": {
-    "right_x_offset_position": 0.05,
-    "right_y_offset_position": 0.0,
-    "right_z_offset_position": 0.02,
-
-    "right_x_offset_rotation": 90.0,
-    "right_y_offset_rotation": 0.0,
-    "right_z_offset_rotation": 0.0,
-
-    "left_x_offset_position": 0.05,
-    "left_y_offset_position": 0.0,
-    "left_z_offset_position": 0.02,
-
-    "left_x_offset_rotation": 90.0,
-    "left_y_offset_rotation": 0.0,
-    "left_z_offset_rotation": 0.0
+    "left_x_offset_rotation": 134.1,
+    "left_y_offset_rotation": 92.6695,
+    "left_z_offset_rotation": 90.0
   },
   "etee_haptic_settings": {
     "enabled": true
