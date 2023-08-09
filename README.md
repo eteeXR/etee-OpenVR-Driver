@@ -102,6 +102,8 @@ This repository contains the [OpenVR][url-openvr-repo] driver source files and d
     git clone https://github.com/eteeXR/etee-OpenVR-Driver.git
     ```
 
+---
+
 <a name="driver-setup"></a>
 
 ### Step 2: Driver setup
@@ -121,6 +123,8 @@ To deploy the selected etee VR driver, follow the instructions in Step 3.
 > **Description**: Build and test your own custom driver changes in SteamVR.
 
 Otherwise, if you want to test your code changes, please check our [***Building*** documentation](BUILDING.md) in the wiki.
+
+---
 
 <a name="add-driver"></a>
 
