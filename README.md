@@ -15,6 +15,8 @@
 <p align="center">
    Official Driver for the eteeControllers in SteamVR.
    <br />
+   <a href="https://github.com/eteeXR/etee-OpenVR-Driver/wiki"><strong>Explore the wiki »</strong></a>
+   <br />
    <a href="https://github.com/eteeXR/etee-OpenVR-Driver/issues">Report Bug</a>
    ·
    <a href="https://github.com/eteeXR/etee-OpenVR-Driver/issues">Request Feature</a>
@@ -77,6 +79,7 @@
         <li><a href="#semantic-type-prefixes">Semantic Type Prefixes</a></li>
       </ul>
     </li>
+    <li><a href="#authors">Authors</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
   </ol>
@@ -158,7 +161,7 @@ For example, if you're using a **deployable driver**, first unzip the version of
 	],
 	"external_drivers" : 
 	[
-		"C:\\Users\\MyUser\Documents\\etee-OpenVR-Driver\\deployable\\etee-vr-driver_1.4.1-release\\etee"
+		"C:\\Users\\MyUser\\Documents\\etee-OpenVR-Driver\\deployable\\etee-vr-driver_1.4.1-release\\etee"
 	],
 	"jsonid" : "vrpathreg",
 	"log" : 
@@ -205,6 +208,11 @@ The etee OpenVR driver will automatically activate when an eteeDongle is detecte
 </p>
 
 ### Hardware Setup
+
+The device firmware versions required for this driver version is:
+* eteeController(s) Firmware: `1.3.7.stable.0` or higher.
+
+> **Note**: Firmware for etee devices can be updated through the official [eteeConnect][url-eteeconnect] app, under the ‘Settings ‣ Firmware’ Section.
 
 For further information on how to prepare your physical devices, check our [Quickstart Guide][url-eteexr-svr-qsg].
 
@@ -265,6 +273,17 @@ For more references and guides on semantic code messages, see:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- AUTHORS-->
+## Authors
+
+This repository was created by the [TG0][url-tg0-website] team, for the [etee][url-eteexr-website] brand.
+
+Code and documentation authors include:
+- Daniel Willmott
+- Pilar Zhang Qiu
+- Harvey Upton
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LICENSE -->
 ## License
@@ -295,6 +314,7 @@ For further support or queries, you can contact us:
 [url-tg0-website]: https://tg0.co.uk/
 [url-eteexr-website]: https://eteexr.com/
 [url-eteexr-svr-qsg]: https://eteexr.com/pages/eteecontroller-steamvr-guide
+[url-eteeconnect]: https://store.steampowered.com/app/1590110/eteeConnect/
 [url-issues-tab]: https://github.com/eteeXR/etee-OpenVR-Driver/issues
 [url-semantic-type-prefixes-1]: https://dev.to/puritanic/how-are-you-writing-a-commit-message-1ih7
 [url-semantic-type-prefixes-2]: http://karma-runner.github.io/1.0/dev/git-commit-msg.html
