@@ -65,7 +65,7 @@ To launch SteamVR for debugging:
 2. Select `ALL_BUILD Debug Properties`
 
 <p align="center">
-  <img width="350" src="./wiki/img/Screenshots/Setup/vs-code-debugger-1.png">
+  <img width="350" src="./wiki-resources/Screenshots/Setup/vs-code-debugger-1.png">
   <br/>
   <em> ALL_BUILD Debug Properties</em>
 </p>
@@ -77,7 +77,7 @@ To launch SteamVR for debugging:
   <br/>
 
 <p align="center">
-  <img width="900" src="./wiki/img/Screenshots/Setup/vs-code-debugger-2.png">
+  <img width="900" src="./wiki-resources/Screenshots/Setup/vs-code-debugger-2.png">
   <br/>
   <em> Debugging Configuration Properties </em>
 </p>

@@ -9,8 +9,8 @@
 <!-- PROJECT LOGO -->
 <br />
 
-![Logo Dark](./wiki/img/Logos/banner-dark-mode.png#gh-dark-mode-only)
-![Logo Light](./wiki/img/Logos/banner-light-mode.png#gh-light-mode-only)
+![Logo Dark](./wiki-resources/Logos/banner-dark-mode.png#gh-dark-mode-only)
+![Logo Light](./wiki-resources/Logos/banner-light-mode.png#gh-light-mode-only)
 
 <p align="center">
    Official Driver for the eteeControllers in SteamVR.
@@ -199,7 +199,7 @@ This driver allows the etee hardware devices to connect the [SteamVR][url-steamv
 The etee OpenVR driver will automatically activate when an eteeDongle is detected in a PC or laptop COM port. If the driver is active, you will see the controller icons change to the etee ones.
 
 <p align="center">
-  <img width="300" src="./wiki/img/Screenshots/svr_status_window.png">
+  <img width="300" src="./wiki-resources/Screenshots/svr_status_window.png">
   <br/>
   <em>etee devices icons active in the SteamVR Status Window.</em>
 </p>
