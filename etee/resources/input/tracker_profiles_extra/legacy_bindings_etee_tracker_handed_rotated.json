@@ -1,0 +1,28 @@
+{
+	"bindings": {
+		"/actions/legacy": {
+			"haptics": [{
+					"output": "/actions/legacy/out/left_haptic",
+					"path": "/user/hand/left/output/haptic"
+				},
+				{
+					"output": "/actions/legacy/out/right_haptic",
+					"path": "/user/hand/right/output/haptic"
+				}
+			],
+			"poses": [{
+					"output": "/actions/legacy/in/Left_Pose",
+					"path": "/user/hand/left/pose/front_rolled"
+				},
+				{
+					"output": "/actions/legacy/in/Right_Pose",
+					"path": "/user/hand/right/pose/front_rolled"
+				}
+			],
+			"sources": []
+		}
+	},
+	"controller_type": "vive_tracker_handed",
+	"description": "",
+	"name": "Default bindings for legacy applications for rotated etee Trackers in Hand"
+}
