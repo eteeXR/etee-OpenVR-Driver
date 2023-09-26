@@ -284,13 +284,17 @@
 			"app_key": "steam.app.916840",
 			"binding_url": "bindings/steam.app.916840_etee_controller.json"
 		},
-		{
-            "app_key": "steam.app.1318090",
-            "binding_url": "bindings/steam.app.1318090_etee_controller.json"
-		},
-		{
-            "app_key": "steam.app.555160",
-            "binding_url": "bindings/steam.app.555160_etee_controller.json"
-		}
+    {
+      "app_key": "steam.app.1318090",
+      "binding_url": "bindings/steam.app.1318090_etee_controller.json"
+    },
+    {
+      "app_key": "steam.app.555160",
+      "binding_url": "bindings/steam.app.555160_etee_controller.json"
+    },
+    {
+      "app_key": "steam.app.629730",
+      "binding_url": "bindings/steam.app.629730_etee_controller.json"
+    }
 	]
 }
