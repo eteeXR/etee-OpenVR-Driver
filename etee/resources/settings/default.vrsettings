@@ -9,7 +9,7 @@
   "driver_etee_version" : {
     "major_num" : 1,
     "minor_num" : 4,
-    "patch_num" : 1,
+    "patch_num" : 2,
     "build_label" : "release",
     "build_label_num" : 0
   },
