@@ -1,3 +1,4 @@
+
 {
 	"jsonid": "input_profile",
 	"controller_type": "etee_controller",
@@ -270,7 +271,11 @@
 		},
 		{
 			"app_key": "steam.app.438100",
-			"binding_url": "bindings/steam.app.438100_etee_controller.json"
+			"binding_url": "bindings/steam.app.438100_etee_controller_with_eteeTracker_AVRTundra.json"
+		},
+		{
+			"app_key": "steam.app.438100",
+			"binding_url": "bindings/steam.app.438100_etee_controller_with_AVRVive.json"
 		},
 		{
 			"app_key": "steam.app.457420",
