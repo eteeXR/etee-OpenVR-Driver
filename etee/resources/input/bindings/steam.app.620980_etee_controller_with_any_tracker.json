@@ -874,9 +874,9 @@
    },
    "category" : "openxr",
    "controller_type" : "etee_controller",
-   "description" : "Version 3_1: Official Beat Saber bindings for etee Controllers. While in-game, press the System Button and select 'Show Controls' in the bottom left to view controller layout.",
+   "description" : "Official Beat Saber bindings for etee Controllers. While in-game, press the System Button and select 'Show Controls' in the bottom left to view controller layout.",
    "interaction_profile" : "/interaction_profiles/valve/index_controller",
-   "name" : "Default Beat Saber configuration for etee Controller V3_1",
+   "name" : "[ANY TRACKER] Default Beat Saber configuration for etee Controller V3_1",
    "options" : {
       "mirror_actions" : true,
       "simulated_controller_type" : "vive_controller"

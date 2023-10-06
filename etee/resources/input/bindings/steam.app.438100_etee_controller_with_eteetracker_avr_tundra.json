@@ -833,7 +833,7 @@
    "controller_type" : "etee_controller",
    "description" : "Official VRChat bindings for etee Controllers. While in-game, press the System Button and select 'Show Controls' in the bottom left to view controller layout.",
    "interaction_profile" : "",
-   "name" : "[eteeTracker & AVR Tundra Tracker] Default VRChat configuration for etee Controller V3_1",
+   "name" : "[ETEETRACKER & AVR TUNDRA TRACKER] Default VRChat configuration for etee Controller V3_1",
    "options" : {
       "mirror_actions" : false,
       "simulate_hmd" : false,
