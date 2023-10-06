@@ -16,12 +16,20 @@
          ],
          "poses" : [
             {
-               "output" : "/actions/default/in/pose",
+               "output" : "none",
                "path" : "/user/hand/left/pose/raw"
             },
             {
-               "output" : "/actions/default/in/pose",
+               "output" : "none",
                "path" : "/user/hand/right/pose/raw"
+            },
+            {
+               "output" : "/actions/default/in/pose",
+               "path" : "/user/hand/left/pose/vrchat"
+            },
+            {
+               "output" : "/actions/default/in/pose",
+               "path" : "/user/hand/right/pose/vrchat"
             }
          ],
          "skeleton" : [
@@ -712,8 +720,9 @@
    },
    "category" : "steamvr_input",
    "controller_type" : "etee_controller",
-   "description" : "Official TG0 game bindings for etee Controllers. While in-game, press the System Button and select 'Show Controls' in the bottom left to view controller layout.",
-   "name" : "Default The Lab configuration for etee Controller V2_1",
+   "description" : "Official The Lab bindings for etee Controllers. While in-game, press the System Button and select 'Show Controls' in the bottom left to view controller layout.",
+   "interaction_profile" : "",
+   "name" : "[ETEETRACKER & AVR TUNDRA TRACKER] Default The Lab configuration for etee Controller V3_1",
    "options" : {
       "mirror_actions" : false,
       "simulate_rendermodel" : true,
