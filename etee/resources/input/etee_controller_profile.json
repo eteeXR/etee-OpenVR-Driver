@@ -1,3 +1,4 @@
+
 {
 	"jsonid": "input_profile",
 	"controller_type": "etee_controller",
@@ -240,11 +241,11 @@
 		},
 		{
 			"app_key": "steam.app.620980",
-			"binding_url": "bindings/steam.app.620980_etee_controller.json"
+			"binding_url": "bindings/steam.app.620980_etee_controller_with_any_tracker.json"
 		},
 		{
 			"app_key": "steam.app.617830",
-			"binding_url": "bindings/steam.app.617830_etee_controller.json"
+			"binding_url": "bindings/steam.app.617830_etee_controller_with_any_tracker.json"
 		},
 		{
 			"app_key": "steam.app.578620",
@@ -260,7 +261,7 @@
 		},
 		{
 			"app_key": "steam.app.546560",
-			"binding_url": "bindings/steam.app.546560_etee_controller.json"
+			"binding_url": "bindings/steam.app.546560_etee_controller_with_any_tracker.json"
 		},
 		{
 			"app_key": "steam.app.534720",
@@ -272,11 +273,19 @@
 		},
 		{
 			"app_key": "steam.app.450390",
-			"binding_url": "bindings/steam.app.450390_etee_controller.json"
+			"binding_url": "bindings/steam.app.450390_etee_controller_with_eteetracker_avr_tundra.json"
+		},
+		{
+			"app_key": "steam.app.450390",
+			"binding_url": "bindings/steam.app.450390_etee_controller_with_avr_vive.json"
 		},
 		{
 			"app_key": "steam.app.438100",
-			"binding_url": "bindings/steam.app.438100_etee_controller.json"
+			"binding_url": "bindings/steam.app.438100_etee_controller_with_eteetracker_avr_tundra.json"
+		},
+		{
+			"app_key": "steam.app.438100",
+			"binding_url": "bindings/steam.app.438100_etee_controller_with_avr_vive.json"
 		},
 		{
 			"app_key": "steam.app.457420",
@@ -290,13 +299,21 @@
 			"app_key": "steam.app.916840",
 			"binding_url": "bindings/steam.app.916840_etee_controller.json"
 		},
-		{
-            "app_key": "steam.app.1318090",
-            "binding_url": "bindings/steam.app.1318090_etee_controller.json"
-		},
-		{
-            "app_key": "steam.app.555160",
-            "binding_url": "bindings/steam.app.555160_etee_controller.json"
-		}
+    {
+      "app_key": "steam.app.1318090",
+      "binding_url": "bindings/steam.app.1318090_etee_controller.json"
+    },
+    {
+      "app_key": "steam.app.555160",
+      "binding_url": "bindings/steam.app.555160_etee_controller.json"
+    },
+    {
+      "app_key": "steam.app.629730",
+      "binding_url": "bindings/steam.app.629730_etee_controller_with_any_tracker.json"
+    },
+    {
+      "app_key": "steam.app.858260",
+      "binding_url": "bindings/steam.app.858260_etee_controller_with_any_tracker.json"
+    }
 	]
 }
