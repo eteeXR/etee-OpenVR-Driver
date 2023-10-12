@@ -3,127 +3,211 @@
    "alias_info" : {
       "/actions/legacy/in/head_proximity" : {
          "alias_name" : "",
-         "hidden" : false
+         "hidden" : true
       },
       "/actions/legacy/in/left_a_press" : {
          "alias_name" : "Mic Toggle",
          "hidden" : false
       },
+      "/actions/legacy/in/left_a_touch" : {
+         "alias_name" : "",
+         "hidden" : true
+      },
+      "/actions/legacy/in/left_applicationmenu_press" : {
+         "alias_name" : "Left Quick Menu",
+         "hidden" : false
+      },
+      "/actions/legacy/in/left_applicationmenu_touch" : {
+         "alias_name" : "Left B touch",
+         "hidden" : false
+      },
       "/actions/legacy/in/left_axis0_press" : {
-         "alias_name" : "Gesture Toggle Left",
+         "alias_name" : "Left Action menu",
+         "hidden" : false
+      },
+      "/actions/legacy/in/left_axis0_touch" : {
+         "alias_name" : "",
+         "hidden" : false
+      },
+      "/actions/legacy/in/left_axis0_value" : {
+         "alias_name" : "",
+         "hidden" : false
+      },
+      "/actions/legacy/in/left_axis1_press" : {
+         "alias_name" : "Left Interact",
+         "hidden" : false
+      },
+      "/actions/legacy/in/left_axis1_touch" : {
+         "alias_name" : "",
+         "hidden" : true
+      },
+      "/actions/legacy/in/left_axis1_value" : {
+         "alias_name" : "Left Gesture Weight",
          "hidden" : false
       },
       "/actions/legacy/in/left_axis2_press" : {
-         "alias_name" : "",
+         "alias_name" : "Left Gesture Toggle ",
          "hidden" : false
       },
       "/actions/legacy/in/left_axis2_touch" : {
          "alias_name" : "",
          "hidden" : false
       },
+      "/actions/legacy/in/left_axis2_value2" : {
+         "alias_name" : "",
+         "hidden" : true
+      },
       "/actions/legacy/in/left_axis3_press" : {
          "alias_name" : "",
-         "hidden" : false
+         "hidden" : true
       },
       "/actions/legacy/in/left_axis3_touch" : {
          "alias_name" : "",
-         "hidden" : false
+         "hidden" : true
       },
       "/actions/legacy/in/left_axis3_value_e0" : {
          "alias_name" : "",
-         "hidden" : false
+         "hidden" : true
       },
       "/actions/legacy/in/left_axis3_value_e1" : {
          "alias_name" : "",
-         "hidden" : false
+         "hidden" : true
       },
       "/actions/legacy/in/left_axis4_press" : {
          "alias_name" : "",
-         "hidden" : false
+         "hidden" : true
       },
       "/actions/legacy/in/left_axis4_touch" : {
          "alias_name" : "",
-         "hidden" : false
+         "hidden" : true
       },
       "/actions/legacy/in/left_axis4_value_e0" : {
          "alias_name" : "",
-         "hidden" : false
+         "hidden" : true
       },
       "/actions/legacy/in/left_axis4_value_e1" : {
          "alias_name" : "",
-         "hidden" : false
+         "hidden" : true
       },
       "/actions/legacy/in/left_grip_press" : {
-         "alias_name" : "Hold Left",
+         "alias_name" : "Left Grab",
          "hidden" : false
       },
       "/actions/legacy/in/left_grip_touch" : {
-         "alias_name" : "Grab Left",
+         "alias_name" : "Left Light Grip",
          "hidden" : false
       },
       "/actions/legacy/in/left_system_press" : {
          "alias_name" : "",
-         "hidden" : false
+         "hidden" : true
       },
       "/actions/legacy/in/left_system_touch" : {
          "alias_name" : "",
-         "hidden" : false
+         "hidden" : true
       },
       "/actions/legacy/in/right_a_press" : {
          "alias_name" : "Jump",
          "hidden" : false
       },
-      "/actions/legacy/in/right_axis0_press" : {
-         "alias_name" : "Gesture Toggle Right",
+      "/actions/legacy/in/right_a_touch" : {
+         "alias_name" : "",
+         "hidden" : true
+      },
+      "/actions/legacy/in/right_applicationmenu_press" : {
+         "alias_name" : "Right Quick Menu",
          "hidden" : false
+      },
+      "/actions/legacy/in/right_applicationmenu_touch" : {
+         "alias_name" : "Right B touch",
+         "hidden" : false
+      },
+      "/actions/legacy/in/right_axis0_press" : {
+         "alias_name" : "Right Action menu",
+         "hidden" : false
+      },
+      "/actions/legacy/in/right_axis0_touch" : {
+         "alias_name" : "",
+         "hidden" : false
+      },
+      "/actions/legacy/in/right_axis0_value" : {
+         "alias_name" : "",
+         "hidden" : false
+      },
+      "/actions/legacy/in/right_axis1_press" : {
+         "alias_name" : "Right Interact",
+         "hidden" : false
+      },
+      "/actions/legacy/in/right_axis1_touch" : {
+         "alias_name" : "",
+         "hidden" : true
+      },
+      "/actions/legacy/in/right_axis1_value" : {
+         "alias_name" : "Right Gesture Weight",
+         "hidden" : false
+      },
+      "/actions/legacy/in/right_axis2_press" : {
+         "alias_name" : "Right Gesture Toggle ",
+         "hidden" : false
+      },
+      "/actions/legacy/in/right_axis2_touch" : {
+         "alias_name" : "",
+         "hidden" : false
+      },
+      "/actions/legacy/in/right_axis2_value1" : {
+         "alias_name" : "",
+         "hidden" : false
+      },
+      "/actions/legacy/in/right_axis2_value2" : {
+         "alias_name" : "",
+         "hidden" : true
       },
       "/actions/legacy/in/right_axis3_press" : {
          "alias_name" : "",
-         "hidden" : false
+         "hidden" : true
       },
       "/actions/legacy/in/right_axis3_touch" : {
          "alias_name" : "",
-         "hidden" : false
+         "hidden" : true
       },
       "/actions/legacy/in/right_axis3_value_e0" : {
          "alias_name" : "",
-         "hidden" : false
+         "hidden" : true
       },
       "/actions/legacy/in/right_axis3_value_e1" : {
          "alias_name" : "",
-         "hidden" : false
+         "hidden" : true
       },
       "/actions/legacy/in/right_axis4_press" : {
          "alias_name" : "",
-         "hidden" : false
+         "hidden" : true
       },
       "/actions/legacy/in/right_axis4_touch" : {
          "alias_name" : "",
-         "hidden" : false
+         "hidden" : true
       },
       "/actions/legacy/in/right_axis4_value_e0" : {
          "alias_name" : "",
-         "hidden" : false
+         "hidden" : true
       },
       "/actions/legacy/in/right_axis4_value_e1" : {
          "alias_name" : "",
-         "hidden" : false
+         "hidden" : true
       },
       "/actions/legacy/in/right_grip_press" : {
-         "alias_name" : "Hold Right",
+         "alias_name" : "Right Grab",
          "hidden" : false
       },
       "/actions/legacy/in/right_grip_touch" : {
-         "alias_name" : "Grab Right",
+         "alias_name" : "Right Light Grip",
          "hidden" : false
       },
       "/actions/legacy/in/right_system_press" : {
          "alias_name" : "",
-         "hidden" : false
+         "hidden" : true
       },
       "/actions/legacy/in/right_system_touch" : {
          "alias_name" : "",
-         "hidden" : false
+         "hidden" : true
       },
       "/actions/legacy_mirrored/in/axis2_press" : {
          "alias_name" : "",
@@ -173,6 +257,7 @@
    "app_key" : "steam.app.438100",
    "bindings" : {
       "/actions/legacy" : {
+         "chords" : [ {} ],
          "haptics" : [
             {
                "output" : "/actions/legacy/out/left_haptic",
@@ -185,12 +270,20 @@
          ],
          "poses" : [
             {
-               "output" : "/actions/legacy/in/Left_Pose",
+               "output" : "none",
                "path" : "/user/hand/left/pose/vrchat"
             },
             {
-               "output" : "/actions/legacy/in/Right_Pose",
+               "output" : "none",
                "path" : "/user/hand/right/pose/vrchat"
+            },
+            {
+               "output" : "/actions/legacy/in/right_pose",
+               "path" : "/user/hand/right/pose/raw"
+            },
+            {
+               "output" : "/actions/legacy/in/left_pose",
+               "path" : "/user/hand/left/pose/raw"
             }
          ],
          "sources" : [
@@ -282,9 +375,6 @@
             },
             {
                "inputs" : {
-                  "click" : {
-                     "output" : "/actions/legacy/in/left_axis0_press"
-                  },
                   "position" : {
                      "output" : "/actions/legacy/in/left_axis0_value"
                   },
@@ -293,6 +383,9 @@
                   }
                },
                "mode" : "joystick",
+               "parameters" : {
+                  "deadzone_pct" : "95"
+               },
                "path" : "/user/hand/left/input/thumbpad"
             },
             {
@@ -305,6 +398,9 @@
                   }
                },
                "mode" : "joystick",
+               "parameters" : {
+                  "deadzone_pct" : "90"
+               },
                "path" : "/user/hand/right/input/thumbpad"
             },
             {
@@ -381,7 +477,7 @@
             },
             {
                "inputs" : {
-                  "touch" : {
+                  "click" : {
                      "output" : "/actions/legacy/in/right_axis2_touch"
                   }
                },
@@ -402,30 +498,6 @@
                   "haptic_amplitude" : "0"
                },
                "path" : "/user/hand/left/input/thumbpad"
-            },
-            {
-               "inputs" : {
-                  "click" : {
-                     "output" : "/actions/legacy/in/left_axis1_press"
-                  },
-                  "touch" : {
-                     "output" : "/actions/legacy/in/left_a_touch"
-                  }
-               },
-               "mode" : "button",
-               "path" : "/user/hand/left/input/pinch"
-            },
-            {
-               "inputs" : {
-                  "click" : {
-                     "output" : "/actions/legacy/in/right_axis1_press"
-                  },
-                  "touch" : {
-                     "output" : "/actions/legacy/in/right_a_touch"
-                  }
-               },
-               "mode" : "button",
-               "path" : "/user/hand/right/input/pinch"
             },
             {
                "inputs" : {
@@ -542,21 +614,67 @@
             },
             {
                "inputs" : {
-                  "held" : {
+                  "double" : {
+                     "output" : "/actions/legacy/in/left_axis0_press"
+                  },
+                  "long" : {
                      "output" : "/actions/legacy/in/left_applicationmenu_press"
                   }
                },
                "mode" : "button",
+               "parameters" : {
+                  "force_input" : "click"
+               },
                "path" : "/user/hand/left/input/proximity"
             },
             {
                "inputs" : {
-                  "held" : {
+                  "double" : {
+                     "output" : "/actions/legacy/in/right_axis0_press"
+                  },
+                  "long" : {
                      "output" : "/actions/legacy/in/right_applicationmenu_press"
                   }
                },
                "mode" : "button",
                "path" : "/user/hand/right/input/proximity"
+            },
+            {
+               "inputs" : {},
+               "mode" : "button",
+               "path" : "/user/hand/left/input/thumbpad"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/legacy/in/right_axis1_press"
+                  }
+               },
+               "mode" : "button",
+               "parameters" : {
+                  "click_activate_threshold" : "0.8",
+                  "click_deactivate_threshold" : "0.7",
+                  "force_input" : "value",
+                  "haptic_amplitude" : "0.6",
+                  "haptic_duration" : "0.1"
+               },
+               "path" : "/user/hand/right/input/pinch_thumbfinger"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/legacy/in/left_axis1_press"
+                  }
+               },
+               "mode" : "button",
+               "parameters" : {
+                  "click_activate_threshold" : "0.8",
+                  "click_deactivate_threshold" : "0.7",
+                  "force_input" : "value",
+                  "haptic_amplitude" : "0.6",
+                  "haptic_duration" : "0.1"
+               },
+               "path" : "/user/hand/left/input/pinch_thumbfinger"
             }
          ]
       },
@@ -717,9 +835,9 @@
    },
    "category" : "legacy",
    "controller_type" : "etee_controller",
-   "description" : "Version 2_3: Official VRChat bindings for etee Controllers. While in-game, press the System Button and select 'Show Controls' in the bottom left to view controller layout.",
+   "description" : "Official VRChat bindings for etee Controllers. While in-game, press the System Button and select 'Show Controls' in the bottom left to view controller layout.",
    "interaction_profile" : "",
-   "name" : "Default VRChat configuration for etee Controller",
+   "name" : "[AVR VIVE TRACKER] Default VRChat configuration for etee Controller V3_1",
    "options" : {
       "mirror_actions" : false,
       "simulate_hmd" : false,
