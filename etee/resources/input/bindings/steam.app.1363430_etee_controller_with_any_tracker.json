@@ -1,0 +1,252 @@
+{
+   "action_manifest_version" : 0,
+   "alias_info" : {},
+   "app_key" : "steam.app.1363430",
+   "bindings" : {
+      "/actions/main" : {
+         "haptics" : [
+            {
+               "output" : "/actions/main/out/vibrateleft",
+               "path" : "/user/hand/left/output/haptic"
+            },
+            {
+               "output" : "/actions/main/out/vibrateright",
+               "path" : "/user/hand/right/output/haptic"
+            }
+         ],
+         "poses" : [
+            {
+               "output" : "/actions/main/in/controllerleft",
+               "path" : "/user/hand/left/pose/raw",
+               "requirement" : "optional"
+            },
+            {
+               "output" : "/actions/main/in/controllerright",
+               "path" : "/user/hand/right/pose/raw"
+            }
+         ],
+         "skeleton" : [
+            {
+               "output" : "/actions/main/in/skeletonleft",
+               "path" : "/user/hand/left/input/skeleton/left"
+            },
+            {
+               "output" : "/actions/main/in/skeletonright",
+               "path" : "/user/hand/right/input/skeleton/right"
+            }
+         ],
+         "sources" : [
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/main/in/altgrableft"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/left/input/pinch"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/main/in/altgrabright"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/pinch"
+            },
+            {
+               "inputs" : {
+                  "position" : {
+                     "output" : "/actions/main/in/turnaxisleft_x,turnaxisleft_y x y_axis2d"
+                  }
+               },
+               "mode" : "trackpad",
+               "parameters" : {
+                  "deadzone_pct" : "95"
+               },
+               "path" : "/user/hand/left/input/thumbpad"
+            },
+            {
+               "inputs" : {
+                  "position" : {
+                     "output" : "/actions/main/in/turnaxisright_x,turnaxisright_y x y_axis2d"
+                  }
+               },
+               "mode" : "trackpad",
+               "parameters" : {
+                  "deadzone_pct" : "95"
+               },
+               "path" : "/user/hand/right/input/thumbpad"
+            },
+            {
+               "inputs" : {
+                  "position" : {
+                     "output" : "/actions/main/in/continuousturnaxisright_x,continuousturnaxisright_y x y_axis2d"
+                  }
+               },
+               "mode" : "trackpad",
+               "parameters" : {
+                  "deadzone_pct" : "95"
+               },
+               "path" : "/user/hand/right/input/thumbpad"
+            },
+            {
+               "inputs" : {
+                  "position" : {
+                     "output" : "/actions/main/in/continuousturnaxisleft_x,continuousturnaxisleft_y x y_axis2d"
+                  }
+               },
+               "mode" : "trackpad",
+               "parameters" : {
+                  "deadzone_pct" : "95"
+               },
+               "path" : "/user/hand/left/input/thumbpad"
+            },
+            {
+               "inputs" : {
+                  "double" : {
+                     "output" : "/actions/main/in/togglemenu"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/left/input/proximity"
+            },
+            {
+               "inputs" : {
+                  "double" : {
+                     "output" : "/actions/main/in/togglemenu"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/proximity"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/main/in/clicmenuleft"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/left/input/pinch_thumbfinger"
+            },
+            {
+               "inputs" : {
+                  "south" : {
+                     "output" : "/actions/main/in/reloadleft"
+                  }
+               },
+               "mode" : "dpad",
+               "parameters" : {
+                  "sub_mode" : "click"
+               },
+               "path" : "/user/hand/left/input/thumbpad"
+            },
+            {
+               "inputs" : {
+                  "south" : {
+                     "output" : "/actions/main/in/reloadright"
+                  }
+               },
+               "mode" : "dpad",
+               "parameters" : {
+                  "sub_mode" : "click"
+               },
+               "path" : "/user/hand/right/input/thumbpad"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/main/in/clicmenuright"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/pinch_thumbfinger"
+            },
+            {
+               "inputs" : {
+                  "grab" : {
+                     "output" : "/actions/main/in/grableft"
+                  }
+               },
+               "mode" : "grab",
+               "parameters" : {
+                  "value_hold_threshold" : "1.1",
+                  "value_release_threshold" : "0.2"
+               },
+               "path" : "/user/hand/left/input/grip"
+            },
+            {
+               "inputs" : {
+                  "grab" : {
+                     "output" : "/actions/main/in/grabright"
+                  }
+               },
+               "mode" : "grab",
+               "parameters" : {
+                  "value_hold_threshold" : "1.1",
+                  "value_release_threshold" : "0.25"
+               },
+               "path" : "/user/hand/right/input/grip"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/main/in/fireright"
+                  }
+               },
+               "mode" : "button",
+               "parameters" : {
+                  "click_activate_threshold" : "0.6",
+                  "click_deactivate_threshold" : "0.3",
+                  "force_input" : "click"
+               },
+               "path" : "/user/hand/right/input/finger/index"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/main/in/fireleft"
+                  }
+               },
+               "mode" : "button",
+               "parameters" : {
+                  "click_activate_threshold" : "0.6",
+                  "click_deactivate_threshold" : "0.3",
+                  "force_input" : "click"
+               },
+               "path" : "/user/hand/left/input/finger/index"
+            },
+            {
+               "inputs" : {
+                  "double" : {
+                     "output" : "/actions/main/in/switchleft"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/left/input/slider_up"
+            },
+            {
+               "inputs" : {
+                  "double" : {
+                     "output" : "/actions/main/in/switchright"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/slider_up"
+            }
+         ]
+      }
+   },
+   "category" : "steamvr_input",
+   "controller_type" : "etee_controller",
+   "description" : "Official TG0 game bindings for etee Controllers. While in-game, press the System Button and select 'Show Controls' in the bottom left to view controller layout.",
+   "interaction_profile" : "",
+   "name" : "[ANY TRACKER] Default Propagation VR configuration for etee Controller V3_1",
+   "options" : {
+      "compatibility_mode" : true,
+      "simulate_hmd" : true,
+      "simulate_rendermodel" : true,
+      "simulated_controller_type" : "none"
+   },
+   "simulated_actions" : []
+}
