@@ -270,16 +270,20 @@
          ],
          "poses" : [
             {
-               "output" : "/actions/legacy/in/Left_Pose",
+               "output" : "none",
                "path" : "/user/hand/left/pose/vrchat"
             },
             {
-               "output" : "/actions/legacy/in/right_pose",
+               "output" : "none",
                "path" : "/user/hand/right/pose/vrchat"
             },
             {
-               "output" : "none",
+               "output" : "/actions/legacy/in/right_pose",
                "path" : "/user/hand/right/pose/raw"
+            },
+            {
+               "output" : "/actions/legacy/in/left_pose",
+               "path" : "/user/hand/left/pose/raw"
             }
          ],
          "sources" : [
@@ -833,7 +837,7 @@
    "controller_type" : "etee_controller",
    "description" : "Official VRChat bindings for etee Controllers. While in-game, press the System Button and select 'Show Controls' in the bottom left to view controller layout.",
    "interaction_profile" : "",
-   "name" : "[ETEETRACKER & AVR TUNDRA TRACKER] Default VRChat configuration for etee Controller V3_1",
+   "name" : "[ALTERNATIVE RAW POSE] Default VRChat configuration for etee Controller V3_1",
    "options" : {
       "mirror_actions" : false,
       "simulate_hmd" : false,
