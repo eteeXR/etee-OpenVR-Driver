@@ -1,0 +1,328 @@
+{
+   "action_manifest_version" : 0,
+   "alias_info" : {},
+   "app_key" : "steam.app.739630",
+   "bindings" : {
+      "/actions/htcvivecontroller" : {
+         "haptics" : [
+            {
+               "output" : "/actions/htcvivecontroller/out/haptic",
+               "path" : "/user/hand/left/output/haptic"
+            },
+            {
+               "output" : "/actions/htcvivecontroller/out/haptic",
+               "path" : "/user/hand/right/output/haptic"
+            }
+         ],
+         "poses" : [
+            {
+               "output" : "/actions/htcvivecontroller/in/pointer",
+               "path" : "/user/hand/left/pose/tip"
+            },
+            {
+               "output" : "/actions/htcvivecontroller/in/pointer",
+               "path" : "/user/hand/right/pose/tip"
+            },
+            {
+               "output" : "none",
+               "path" : "/user/hand/left/pose/raw"
+            },
+            {
+               "output" : "/actions/htcvivecontroller/in/devicepose",
+               "path" : "/user/hand/right/pose/raw"
+            },
+            {
+               "output" : "/actions/htcvivecontroller/in/devicepose",
+               "path" : "/user/hand/left/pose/vrchat"
+            },
+            {
+               "output" : "none",
+               "path" : "/user/hand/right/pose/vrchat"
+            }
+         ],
+         "sources" : [
+            {
+               "inputs" : {
+                  "grab" : {
+                     "output" : "/actions/htcvivecontroller/in/grip"
+                  }
+               },
+               "mode" : "grab",
+               "path" : "/user/hand/left/input/grip"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/htcvivecontroller/in/grippressed"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/left/input/grip"
+            },
+            {
+               "inputs" : {
+                  "position" : {
+                     "output" : "/actions/htcvivecontroller/in/trackpad"
+                  }
+               },
+               "mode" : "trackpad",
+               "path" : "/user/hand/left/input/thumbpad"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/htcvivecontroller/in/trigger"
+                  },
+                  "double" : {
+                     "output" : "/actions/htcvivecontroller/in/menu"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/left/input/proximity"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/htcvivecontroller/in/select"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/left/input/pinch_thumbfinger"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/htcvivecontroller/in/triggerpressed"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/left/input/pinch_thumbfinger"
+            },
+            {
+               "inputs" : {
+                  "grab" : {
+                     "output" : "/actions/htcvivecontroller/in/grip"
+                  }
+               },
+               "mode" : "grab",
+               "path" : "/user/hand/right/input/grip"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/htcvivecontroller/in/grippressed"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/grip"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/htcvivecontroller/in/select"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/pinch_thumbfinger"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/htcvivecontroller/in/triggerpressed"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/pinch_thumbfinger"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/htcvivecontroller/in/trigger"
+                  },
+                  "double" : {
+                     "output" : "/actions/htcvivecontroller/in/menu"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/proximity"
+            },
+            {
+               "inputs" : {
+                  "position" : {
+                     "output" : "/actions/htcvivecontroller/in/trackpad"
+                  }
+               },
+               "mode" : "trackpad",
+               "path" : "/user/hand/right/input/thumbpad"
+            }
+         ]
+      },
+      "/actions/oculustouchcontroller" : {
+         "sources" : []
+      },
+      "/actions/valveindexcontroller" : {
+         "chords" : [],
+         "haptics" : [
+            {
+               "output" : "/actions/valveindexcontroller/out/haptic",
+               "path" : "/user/hand/left/output/haptic"
+            },
+            {
+               "output" : "/actions/valveindexcontroller/out/haptic",
+               "path" : "/user/hand/right/output/haptic"
+            }
+         ],
+         "poses" : [
+            {
+               "output" : "/actions/valveindexcontroller/in/devicepose",
+               "path" : "/user/hand/left/pose/grip"
+            },
+            {
+               "output" : "/actions/valveindexcontroller/in/devicepose",
+               "path" : "/user/hand/right/pose/grip"
+            },
+            {
+               "output" : "/actions/valveindexcontroller/in/pointer",
+               "path" : "/user/hand/left/pose/tip"
+            },
+            {
+               "output" : "/actions/valveindexcontroller/in/pointer",
+               "path" : "/user/hand/right/pose/tip"
+            },
+            {
+               "output" : "none",
+               "path" : "/user/hand/left/pose/vrchat"
+            },
+            {
+               "output" : "none",
+               "path" : "/user/hand/right/pose/vrchat"
+            }
+         ],
+         "sources" : [
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/valveindexcontroller/in/system"
+                  }
+               },
+               "mode" : "button",
+               "parameters" : {
+                  "force_input" : "click"
+               },
+               "path" : "/user/hand/left/input/system"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/valveindexcontroller/in/systemtouched"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/left/input/system"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/valveindexcontroller/in/system"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/system"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/valveindexcontroller/in/systemtouched"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/system"
+            },
+            {
+               "inputs" : {
+                  "position" : {
+                     "output" : "/actions/valveindexcontroller/in/thumbstick"
+                  }
+               },
+               "mode" : "trackpad",
+               "path" : "/user/hand/left/input/thumbpad"
+            },
+            {
+               "inputs" : {
+                  "position" : {
+                     "output" : "/actions/valveindexcontroller/in/thumbstick"
+                  }
+               },
+               "mode" : "trackpad",
+               "path" : "/user/hand/right/input/thumbpad"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/valveindexcontroller/in/primarytouched"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/left/input/proximity"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/valveindexcontroller/in/primarytouched"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/proximity"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/valveindexcontroller/in/gripforce"
+                  }
+               },
+               "mode" : "trigger",
+               "path" : "/user/hand/left/input/grip"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/valveindexcontroller/in/gripforce"
+                  }
+               },
+               "mode" : "trigger",
+               "path" : "/user/hand/right/input/grip"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/valveindexcontroller/in/triggerpressed"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/left/input/pinch_thumbfinger"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/valveindexcontroller/in/triggerpressed"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/pinch_thumbfinger"
+            }
+         ]
+      }
+   },
+   "category" : "openxr",
+   "controller_type" : "etee_controller",
+   "description" : "Official TG0 game bindings for etee Controllers. While in-game, press the System Button and select 'Show Controls' in the bottom left to view controller layout.",
+   "interaction_profile" : "/interaction_profiles/htc/vive_controller",
+   "name" : "[ANY TRACKER] Default Phasmophobia configuration for etee Controller V3_1",
+   "options" : {
+      "compatibility_mode" : true,
+      "simulate_hmd" : true,
+      "simulate_rendermodel" : true,
+      "simulated_controller_type" : "knuckles"
+   },
+   "simulated_actions" : []
+}
