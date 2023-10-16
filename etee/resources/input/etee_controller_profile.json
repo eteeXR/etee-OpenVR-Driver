@@ -275,11 +275,11 @@
 		},
 		{
 			"app_key": "steam.app.438100",
-			"binding_url": "bindings/steam.app.438100_etee_controller_with_eteetracker_avr_tundra.json"
+			"binding_url": "bindings/steam.app.438100_etee_controller_with_any_tracker.json"
 		},
 		{
 			"app_key": "steam.app.438100",
-			"binding_url": "bindings/steam.app.438100_etee_controller_with_avr_vive.json"
+			"binding_url": "bindings/steam.app.438100_etee_controller_with_raw_pose.json"
 		},
 		{
 			"app_key": "steam.app.457420",
