@@ -231,7 +231,7 @@
 		},
 		{
 			"app_key": "steam.app.823500",
-			"binding_url": "bindings/steam.app.823500_etee_controller.json"
+			"binding_url": "bindings/steam.app.823500_etee_controller_with_any_tracker.json"
 		},
 		{
 			"app_key": "steam.app.620980",
