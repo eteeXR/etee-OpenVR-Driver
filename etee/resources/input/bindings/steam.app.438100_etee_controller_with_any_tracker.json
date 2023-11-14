@@ -270,20 +270,16 @@
          ],
          "poses" : [
             {
-               "output" : "none",
+               "output" : "/actions/legacy/in/Left_Pose",
                "path" : "/user/hand/left/pose/vrchat"
             },
             {
-               "output" : "none",
+               "output" : "/actions/legacy/in/right_pose",
                "path" : "/user/hand/right/pose/vrchat"
             },
             {
-               "output" : "/actions/legacy/in/right_pose",
+               "output" : "none",
                "path" : "/user/hand/right/pose/raw"
-            },
-            {
-               "output" : "/actions/legacy/in/left_pose",
-               "path" : "/user/hand/left/pose/raw"
             }
          ],
          "sources" : [
@@ -384,7 +380,7 @@
                },
                "mode" : "joystick",
                "parameters" : {
-                  "deadzone_pct" : "95"
+                  "deadzone_pct" : "30"
                },
                "path" : "/user/hand/left/input/thumbpad"
             },
@@ -399,7 +395,7 @@
                },
                "mode" : "joystick",
                "parameters" : {
-                  "deadzone_pct" : "90"
+                  "deadzone_pct" : "30"
                },
                "path" : "/user/hand/right/input/thumbpad"
             },
@@ -482,9 +478,7 @@
                   }
                },
                "mode" : "button",
-               "parameters" : {
-                  "haptic_amplitude" : "0"
-               },
+               "parameters" : {},
                "path" : "/user/hand/right/input/thumbpad"
             },
             {
@@ -494,9 +488,7 @@
                   }
                },
                "mode" : "button",
-               "parameters" : {
-                  "haptic_amplitude" : "0"
-               },
+               "parameters" : {},
                "path" : "/user/hand/left/input/thumbpad"
             },
             {
@@ -837,7 +829,7 @@
    "controller_type" : "etee_controller",
    "description" : "Official VRChat bindings for etee Controllers. While in-game, press the System Button and select 'Show Controls' in the bottom left to view controller layout.",
    "interaction_profile" : "",
-   "name" : "[AVR VIVE TRACKER] Default VRChat configuration for etee Controller V3_1",
+   "name" : "[ANY TRACKER] Default VRChat configuration for etee Controller V3_2",
    "options" : {
       "mirror_actions" : false,
       "simulate_hmd" : false,
