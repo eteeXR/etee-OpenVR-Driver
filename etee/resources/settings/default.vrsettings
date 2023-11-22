@@ -49,15 +49,15 @@
     "z_offset_rotation": 0.0
   },
     "vive_tracker_basic_adaptor_pose_settings": {
-    "right_x_offset_position": -0.055442,
+    "right_x_offset_position": -0.045442,
     "right_y_offset_position": 0.0,
-    "right_z_offset_position": 0.065678,
+    "right_z_offset_position": 0.060678,
 
     "right_x_offset_rotation": 44.1,
     "right_y_offset_rotation": -2.6695,
     "right_z_offset_rotation": 97.9,
 
-    "left_x_offset_position": 0.054453,
+    "left_x_offset_position": 0.044453,
     "left_y_offset_position": 0.0,
     "left_z_offset_position": 0.060678,
 
