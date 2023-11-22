@@ -98,6 +98,7 @@ vr::EVRInitError EteeDeviceDriver::Activate(uint32_t unObjectId) {
 
   vr::VRDriverInput()->CreateBooleanComponent(m_props, "/input/thumbpad/touch", &m_inputComponentHandles[ComponentIndex::TRACKPAD_TOUCH]);
   vr::VRDriverInput()->CreateBooleanComponent(m_props, "/input/thumbpad/click", &m_inputComponentHandles[ComponentIndex::TRACKPAD_CLICK]);
+  //vr::VRDriverInput()->CreateScalarComponent(m_props, "/input/thumbpad/pull", &m_inputComponentHandles[ComponentIndex::TRACKPAD_VALUE], vr::VRScalarType_Absolute, vr::VRScalarUnits_NormalizedOneSided);
   vr::VRDriverInput()->CreateScalarComponent(
       m_props, "/input/thumbpad/force", &m_inputComponentHandles[ComponentIndex::TRACKPAD_FORCE], vr::VRScalarType_Absolute, vr::VRScalarUnits_NormalizedOneSided);
 
@@ -263,7 +264,7 @@ void EteeDeviceDriver::OnInputUpdate(VRCommInputData_t data) {
   vr::VRDriverInput()->UpdateBooleanComponent(m_inputComponentHandles[ComponentIndex::SLIDER_DOWN_CLICK], data.slider.downTouch, 0);
 
   // Thumbpad
-  vr::VRDriverInput()->UpdateScalarComponent(m_inputComponentHandles[ComponentIndex::TRACKPAD_VALUE], data.thumbpad.value, 0);
+  //vr::VRDriverInput()->UpdateScalarComponent(m_inputComponentHandles[ComponentIndex::TRACKPAD_VALUE], data.thumbpad.value, 0);
   vr::VRDriverInput()->UpdateScalarComponent(m_inputComponentHandles[ComponentIndex::TRACKPAD_FORCE], data.thumbpad.force, 0);
   vr::VRDriverInput()->UpdateBooleanComponent(m_inputComponentHandles[ComponentIndex::TRACKPAD_TOUCH], data.thumbpad.touch, 0);
   vr::VRDriverInput()->UpdateBooleanComponent(m_inputComponentHandles[ComponentIndex::TRACKPAD_CLICK], data.thumbpad.click, 0);
