@@ -388,14 +388,6 @@
             },
             {
                "output" : "none",
-               "path" : "/user/hand/left/pose/handgrip"
-            },
-            {
-               "output" : "none",
-               "path" : "/user/hand/right/pose/handgrip"
-            },
-            {
-               "output" : "none",
                "path" : "/user/hand/left/pose/tip"
             },
             {

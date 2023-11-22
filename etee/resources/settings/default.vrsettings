@@ -11,7 +11,7 @@
     "minor_num" : 4,
     "patch_num" : 3,
     "build_label" : "test_dj",
-    "build_label_num" : 2
+    "build_label_num" : 3
   },
   "etee_tracker_pose_settings": {
     "right_x_offset_position": 0.0,
@@ -49,7 +49,7 @@
     "z_offset_rotation": 0.0
   },
     "vive_tracker_basic_adaptor_pose_settings": {
-    "right_x_offset_position": -0.043442,
+    "right_x_offset_position": -0.055442,
     "right_y_offset_position": 0.0,
     "right_z_offset_position": 0.065678,
 
@@ -57,9 +57,9 @@
     "right_y_offset_rotation": -2.6695,
     "right_z_offset_rotation": 97.9,
 
-    "left_x_offset_position": 0.042453,
+    "left_x_offset_position": 0.054453,
     "left_y_offset_position": 0.0,
-    "left_z_offset_position": 0.065678,
+    "left_z_offset_position": 0.060678,
 
     "left_x_offset_rotation": -44.053,
     "left_y_offset_rotation": -2.6695,

@@ -56,8 +56,20 @@
 		},
 		"vrchat": {
 			"component_local": {
-				"origin": [0.00, 0.0, -0.03],
-				"rotate_xyz": [-15.0, 0.0, 45.0]
+				"origin": [-0.015, 0.0, -0.03],
+				"rotate_xyz": [-15.0, 0.0, 48.0]
+			}
+		},
+		"vrchat_smartadaptor": {
+			"component_local": {
+				"origin": [0.015, 0.0, -0.025],
+				"rotate_xyz": [-15.0, 0.0, -48.0]
+			}
+		},
+		"vrchat_basicadaptor": {
+			"component_local": {
+				"origin": [0.015, -0.0085, -0.0452],
+				"rotate_xyz": [-21.7, 0.2, 43.0]
 			}
 		},
 		

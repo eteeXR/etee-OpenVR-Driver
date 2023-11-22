@@ -41,9 +41,10 @@
 	"/pose/tip": "Pose Tip",
 	"/pose/front": "Pose Front",
 	"/pose/back": "Pose Back",
-	"/pose/handgrip": "Pose Grip",
 	"/pose/skeleton_root": "Pose Skeleton",
-	"/pose/vrchat": "Pose for VRChat",
+	"/pose/vrchat": "VRChat [etee TRK]",
+	"/pose/vrchat_smartadaptor": "VRChat [AVR Smart]",
+	"/pose/vrchat_basicadaptor": "VRChat [AVR Basic]",
 
 	"/input/skeleton/left": "Left Skeleton",
 	"/input/skeleton/right": "Right Skeleton",

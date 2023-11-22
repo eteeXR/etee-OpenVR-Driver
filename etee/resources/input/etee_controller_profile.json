@@ -161,17 +161,21 @@
 			"type": "pose",
 			"binding_image_point": [40, 57]
 		},
-		"/pose/handgrip": {
-			"type": "pose",
-			"binding_image_point": [40, 57]
-		},
 		"/pose/vrchat": {
 			"type": "pose",
-			"binding_image_point": [40, 57]
+			"binding_image_point": [40, 65]
+		},
+		"/pose/vrchat_smartadaptor": {
+			"type": "pose",
+			"binding_image_point": [10, 95]
+		},
+		"/pose/vrchat_basicadaptor": {
+			"type": "pose",
+			"binding_image_point": [10, 125]
 		},
 		"/pose/skeleton_root": {
 			"type": "pose",
-			"binding_image_point": [47, 13]
+			"binding_image_point": [47, 155]
 		},
 		"/input/skeleton/left": {
 			"type": "skeleton",
