@@ -270,16 +270,32 @@
          ],
          "poses" : [
             {
-               "output" : "/actions/legacy/in/Left_Pose",
+               "output" : "none",
                "path" : "/user/hand/left/pose/vrchat"
             },
             {
-               "output" : "/actions/legacy/in/right_pose",
+               "output" : "none",
                "path" : "/user/hand/right/pose/vrchat"
             },
             {
                "output" : "none",
                "path" : "/user/hand/right/pose/raw"
+            },
+            {
+               "output" : "none",
+               "path" : "/user/hand/left/pose/vrchat_smartadaptor"
+            },
+            {
+               "output" : "none",
+               "path" : "/user/hand/right/pose/vrchat_smartadaptor"
+            },
+            {
+               "output" : "/actions/legacy/in/left_pose",
+               "path" : "/user/hand/left/pose/vrchat_basicadaptor"
+            },
+            {
+               "output" : "/actions/legacy/in/right_pose",
+               "path" : "/user/hand/right/pose/vrchat_basicadaptor"
             }
          ],
          "sources" : [
@@ -478,7 +494,6 @@
                   }
                },
                "mode" : "button",
-               "parameters" : {},
                "path" : "/user/hand/right/input/thumbpad"
             },
             {
@@ -488,7 +503,6 @@
                   }
                },
                "mode" : "button",
-               "parameters" : {},
                "path" : "/user/hand/left/input/thumbpad"
             },
             {
@@ -565,15 +579,6 @@
             },
             {
                "inputs" : {
-                "double": {
-                  "output": "/actions/legacy/in/right_applicationmenu_press"
-                }
-               },
-               "mode" : "button",
-               "path" : "/user/hand/right/input/slider"
-            },
-            {
-               "inputs" : {
                   "pull" : {
                      "output" : "/actions/legacy/in/left_axis1_value"
                   }
@@ -589,25 +594,6 @@
                },
                "mode" : "trigger",
                "path" : "/user/hand/right/input/pinch"
-            },
-            {
-               "inputs" : {
-                "double": {
-                  "output": "/actions/legacy/in/left_axis0_press"
-                }
-               },
-               "mode" : "button",
-               "path" : "/user/hand/left/input/slider"
-            },
-            {
-               "inputs" : {},
-               "mode" : "none",
-               "path" : "/user/hand/right/input/slider"
-            },
-            {
-               "inputs" : {},
-               "mode" : "button",
-               "path" : "/user/hand/left/input/thumbpad"
             },
             {
                "inputs" : {
@@ -640,6 +626,42 @@
                   "haptic_duration" : "0.1"
                },
                "path" : "/user/hand/left/input/pinch_thumbfinger"
+            },
+            {
+               "inputs" : {
+                  "double" : {
+                     "output" : "/actions/legacy/in/right_axis0_press"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/slider_up"
+            },
+            {
+               "inputs" : {
+                  "double" : {
+                     "output" : "/actions/legacy/in/right_applicationmenu_press"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/slider_down"
+            },
+            {
+               "inputs" : {
+                  "double" : {
+                     "output" : "/actions/legacy/in/left_axis0_press"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/left/input/slider_up"
+            },
+            {
+               "inputs" : {
+                  "double" : {
+                     "output" : "/actions/legacy/in/left_applicationmenu_press"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/left/input/slider_down"
             }
          ]
       },
@@ -802,7 +824,7 @@
    "controller_type" : "etee_controller",
    "description" : "Official VRChat bindings for etee Controllers. While in-game, press the System Button and select 'Show Controls' in the bottom left to view controller layout.",
    "interaction_profile" : "",
-   "name" : "[BASIC ADAPTOR] Default VRChat configuration for etee Controller V3_2",
+   "name" : "[BASIC ADAPTOR] Default VRChat configuration for etee Controller V3_4",
    "options" : {
       "mirror_actions" : false,
       "simulate_hmd" : false,
