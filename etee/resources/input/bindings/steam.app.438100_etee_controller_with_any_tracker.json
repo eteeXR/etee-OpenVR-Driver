@@ -401,6 +401,9 @@
             },
             {
                "inputs" : {
+                  "click" : {
+                     "output" : "/actions/legacy/in/left_axis1_press"
+                  },
                   "pull" : {
                      "output" : "/actions/legacy/in/left_axis3_value_e0"
                   }
@@ -437,6 +440,9 @@
             },
             {
                "inputs" : {
+                  "click" : {
+                     "output" : "/actions/legacy/in/right_axis1_press"
+                  },
                   "pull" : {
                      "output" : "/actions/legacy/in/right_axis3_value_e0"
                   }
@@ -478,7 +484,6 @@
                   }
                },
                "mode" : "button",
-               "parameters" : {},
                "path" : "/user/hand/right/input/thumbpad"
             },
             {
@@ -488,7 +493,6 @@
                   }
                },
                "mode" : "button",
-               "parameters" : {},
                "path" : "/user/hand/left/input/thumbpad"
             },
             {
@@ -829,7 +833,7 @@
    "controller_type" : "etee_controller",
    "description" : "Official VRChat bindings for etee Controllers. While in-game, press the System Button and select 'Show Controls' in the bottom left to view controller layout.",
    "interaction_profile" : "",
-   "name" : "[ANY TRACKER] Default VRChat configuration for etee Controller V3_2",
+   "name" : "[ANY TRACKER] Default VRChat configuration for etee Controller V3_4",
    "options" : {
       "mirror_actions" : false,
       "simulate_hmd" : false,
