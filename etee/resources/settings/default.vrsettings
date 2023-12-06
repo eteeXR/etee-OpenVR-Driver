@@ -11,7 +11,7 @@
     "minor_num" : 4,
     "patch_num" : 4,
     "build_label" : "beta",
-    "build_label_num" : 1
+    "build_label_num" : 2
   },
   "etee_tracker_pose_settings": {
     "right_x_offset_position": 0.0,
@@ -24,7 +24,7 @@
 
     "left_x_offset_position": 0.0,
     "left_y_offset_position": 0.0,
-    "left_z_offset_position": 0.0,
+    "left_z_offset_position": -0.00542,
 
     "left_x_offset_rotation": 0.0,
     "left_y_offset_rotation": 0.0,
