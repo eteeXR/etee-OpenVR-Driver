@@ -9,9 +9,9 @@
   "driver_etee_version" : {
     "major_num" : 1,
     "minor_num" : 4,
-    "patch_num" : 4,
+    "patch_num" : 5,
     "build_label" : "alpha",
-    "build_label_num" : 2
+    "build_label_num" : 1
   },
   "etee_tracker_pose_settings": {
     "right_x_offset_position": 0.0,
@@ -30,7 +30,7 @@
     "left_y_offset_rotation": 0.0,
     "left_z_offset_rotation": 0.0
   },
-  "vive_tracker_pose_settings": {
+  "vive_tracker_smart_adaptor_pose_settings": {
     "x_offset_position": 0.0,
     "y_offset_position": -0.05,
     "z_offset_position": 0.02,
@@ -39,7 +39,7 @@
     "y_offset_rotation": 0.0,
     "z_offset_rotation": 0.0
   },
-    "tundra_tracker_pose_settings": {
+    "tundra_tracker_smart_adaptor_pose_settings": {
     "x_offset_position": 0.05,
     "y_offset_position": 0.0,
     "z_offset_position": 0.02,
@@ -47,6 +47,40 @@
     "x_offset_rotation": 270.0,
     "y_offset_rotation": 0.0,
     "z_offset_rotation": 0.0
+  },
+    "vive_tracker_basic_adaptor_pose_settings": {
+    "right_x_offset_position": -0.043442,
+    "right_y_offset_position": 0.0,
+    "right_z_offset_position": 0.065678,
+
+    "right_x_offset_rotation": 44.1,
+    "right_y_offset_rotation": -2.6695,
+    "right_z_offset_rotation": 97.9,
+
+    "left_x_offset_position": 0.042453,
+    "left_y_offset_position": 0.0,
+    "left_z_offset_position": 0.065678,
+
+    "left_x_offset_rotation": -44.053,
+    "left_y_offset_rotation": -2.6695,
+    "left_z_offset_rotation": 262.109
+  },
+  "tundra_tracker_basic_adaptor_pose_settings": {
+    "right_x_offset_position": 0.0,
+    "right_y_offset_position": -0.056,
+    "right_z_offset_position": 0.065678,
+
+    "right_x_offset_rotation": 44.1,
+    "right_y_offset_rotation": 272.6695,
+    "right_z_offset_rotation": 90.0,
+
+    "left_x_offset_position": 0.0,
+    "left_y_offset_position": 0.056,
+    "left_z_offset_position": 0.065678,
+
+    "left_x_offset_rotation": 134.1,
+    "left_y_offset_rotation": 92.6695,
+    "left_z_offset_rotation": 90.0
   },
   "etee_haptic_settings": {
     "enabled": true
