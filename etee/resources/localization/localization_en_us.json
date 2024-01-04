@@ -17,6 +17,7 @@
 	
 	"/input/system": "System Button",
 	"/input/tracker_connection": "Tracker Connection",
+	"/input/adaptor_connection": "3DPT Adaptor Connection",
 	"/input/is_right_handed": "Is Right Hand",
 	"/input/slider": "Slider",
 	"/input/slider_up": "Slider Up Button",

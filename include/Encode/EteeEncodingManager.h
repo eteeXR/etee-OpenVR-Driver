@@ -9,8 +9,12 @@ class EteeEncodingManager {
   EteeEncodingManager(float maxAnalogValue)
       : m_maxAnalogValue(maxAnalogValue) {};
 
+  // eteeTracker and Smart 3DPT Adaptor status flags
   bool prevTrackerConnLeft;
   bool prevTrackerConnRight;
+
+  bool prevAdaptorConnLeft;
+  bool prevAdaptorConnRight;
 
   // decode the given string into a VRInputData_t
   VRCommInputData_t DecodeInputPacket(const std::string& input);
