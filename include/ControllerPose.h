@@ -17,6 +17,7 @@ class ControllerPose {
   void SetEteeTrackerIsConnected(bool eteeTrackerConnected);
 
   void SetShadowEteeTracker(short deviceId, bool isRightHand);
+  void SetAdaptorIsConnected(bool adaptorConnected, bool isRight);
 
  private:
   void DiscoverTrackedDevice();
@@ -27,6 +28,9 @@ class ControllerPose {
   std::atomic<bool> m_trackerIsEteeTracker;
   std::atomic<bool> m_eteeTrackerConnected;
   std::atomic<bool> m_eteeTrackerThruRole;
+
+  bool m_adaptorConnRight;
+  bool m_adaptorConnLeft;
 
   VRPoseConfiguration m_configuration;
   VRControllerState m_state;

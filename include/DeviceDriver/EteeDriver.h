@@ -33,8 +33,10 @@ struct DeviceEvent {
 };
 
 enum ComponentIndex : int {
+  // System
   SYSTEM_CLICK,
   TRACKERCONNECTION_CLICK,
+  ADAPTORCONNECTION_CLICK,
 
   // Trackpad
   // TRACKPAD_VALUE,
