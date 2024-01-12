@@ -424,8 +424,8 @@ HapticEventData EteeDeviceDriver::OnHapticEvent(const vr::VREvent_HapticVibratio
   }
 
   const float duration = std::clamp(hapticEvent.fDurationSeconds, 0.f, 10.f);
-  const float frequency = std::clamp(hapticEvent.fFrequency, 1000000.f / 65535.f, 1000000.f / 300.f);
-  const float amplitude = std::clamp(hapticEvent.fAmplitude, 0.f, 1.f);
+  const float frequency = 170.0f;
+  const float amplitude = std::clamp(hapticEvent.fAmplitude, 0.f, 1.f) / 2.0f;
   DebugDriverLog("Received haptic vibration: freq: %f amp: %f dur: %f", frequency, amplitude, duration);
 
   if (duration <= 0.f) {
