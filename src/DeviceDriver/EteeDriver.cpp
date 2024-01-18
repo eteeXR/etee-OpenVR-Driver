@@ -76,6 +76,7 @@ vr::EVRInitError EteeDeviceDriver::Activate(uint32_t unObjectId) {
   // System Info
   vr::VRDriverInput()->CreateBooleanComponent(m_props, "/input/system/click", &m_inputComponentHandles[ComponentIndex::SYSTEM_CLICK]);
   vr::VRDriverInput()->CreateBooleanComponent(m_props, "/input/tracker_connection/click", &m_inputComponentHandles[ComponentIndex::TRACKERCONNECTION_CLICK]);
+  vr::VRDriverInput()->CreateBooleanComponent(m_props, "/input/adaptor_connection/click", &m_inputComponentHandles[ComponentIndex::ADAPTORCONNECTION_CLICK]);
 
   // Slider
   vr::VRDriverInput()->CreateBooleanComponent(m_props, "/input/slider/touch", &m_inputComponentHandles[ComponentIndex::SLIDER_TOUCH]);
@@ -250,6 +251,7 @@ void EteeDeviceDriver::OnInputUpdate(VRCommInputData_t data) {
 
   vr::VRDriverInput()->UpdateBooleanComponent(m_inputComponentHandles[ComponentIndex::SYSTEM_CLICK], data.system.systemClick, 0);
   vr::VRDriverInput()->UpdateBooleanComponent(m_inputComponentHandles[ComponentIndex::TRACKERCONNECTION_CLICK], data.system.trackerConnection, 0);
+  vr::VRDriverInput()->UpdateBooleanComponent(m_inputComponentHandles[ComponentIndex::ADAPTORCONNECTION_CLICK], data.system.adaptorConnection, 0);
 
   // Slider
   vr::VRDriverInput()->UpdateBooleanComponent(m_inputComponentHandles[ComponentIndex::SLIDER_TOUCH], data.slider.touch, 0);
@@ -321,6 +323,10 @@ void EteeDeviceDriver::OnInputUpdate(VRCommInputData_t data) {
 
   if (m_lastInput.system.trackerConnection != data.system.trackerConnection) {
     m_controllerPose->SetEteeTrackerIsConnected(data.system.trackerConnection);
+  }
+
+  if (m_lastInput.system.adaptorConnection != data.system.adaptorConnection) {
+    m_controllerPose->SetAdaptorIsConnected(data.system.adaptorConnection, data.isRight);
   }
 
   {
@@ -418,11 +424,15 @@ HapticEventData EteeDeviceDriver::OnHapticEvent(const vr::VREvent_HapticVibratio
   }
 
   const float duration = std::clamp(hapticEvent.fDurationSeconds, 0.f, 10.f);
-  const float frequency = std::clamp(hapticEvent.fFrequency, 1000000.f / 65535.f, 1000000.f / 300.f);
-  const float amplitude = std::clamp(hapticEvent.fAmplitude, 0.f, 1.f);
+  float frequency = std::clamp(hapticEvent.fFrequency, 1000000.f / 65535.f, 1000000.f / 300.f);
+  float amplitude = std::clamp(hapticEvent.fAmplitude, 0.f, 1.f);
   DebugDriverLog("Received haptic vibration: freq: %f amp: %f dur: %f", frequency, amplitude, duration);
 
-  if (duration <= 0.f) {
+  frequency = 170.0f;
+  amplitude = amplitude / 2.0f;
+  DebugDriverLog("Mapped haptic vibration: freq: %f amp: %f dur: %f", frequency, amplitude, duration);
+
+  if (duration < 0.f) {
     const int onDurationUs = (int)(amplitude * 4000.f);
     return {
         onDurationUs,

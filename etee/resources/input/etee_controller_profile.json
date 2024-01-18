@@ -30,13 +30,19 @@
 			"binding_image_point": [24, 15],
 			"order": 2
 		},
+		"/input/adaptor_connection": {
+			"type": "button",
+			"click": true,
+			"binding_image_point": [24, 15],
+			"order": 3
+		},
 		"/input/proximity": {
 			"type": "trigger",
 			"touch": true,
 			"click": true,
 			"value": true,
 			"binding_image_point": [24, 15],
-			"order": 3
+			"order": 4
 		},
 		"/input/thumbpad": {
 			"type": "trackpad",
@@ -44,26 +50,26 @@
 			"click": true,
 			"force" : true,
 			"binding_image_point": [47, 13],
-			"order": 4
+			"order": 5
 		},
 		"/input/slider": {
 			"type": "trackpad",
 			"click": true,
 			"touch": true,
 			"binding_image_point": [54, 35],
-			"order": 5
+			"order": 6
 		},
 		"/input/slider_up": {
 			"type": "button",
 			"click": true,
 			"binding_image_point": [54, 35],
-			"order": 6
+			"order": 7
 		},
 		"/input/slider_down": {
 			"type": "button",
 			"click": true,
 			"binding_image_point": [54, 35],
-			"order": 7
+			"order": 8
 		},
 		"/input/grip": {
 			"type": "trigger",
@@ -73,27 +79,27 @@
 			"touch" : true,
 			"input_activity_path" : "/input/grip/force",
 			"binding_image_point": [40, 92],
-			"order": 8
+			"order": 9
 		},
 		"/input/pinch": {
 			"type": "trigger",
 			"value": true,
 			"click": true,
 			"binding_image_point": [40, 92],
-			"order": 9
+			"order": 10
 		},
 		"/input/pinch_thumbfinger": {
 			"type": "trigger",
 			"value": true,
 			"click": true,
 			"binding_image_point": [40, 92],
-			"order": 10
+			"order": 11
 		},
 		"/input/point_independent": {
 			"type": "button",
 			"click": true,
 			"binding_image_point": [40, 92],
-			"order": 12
+			"order": 13
 		},
 		"/input/finger/thumb": {
 			"type": "trigger",
@@ -101,7 +107,7 @@
 			"click": true,
 			"touch": true,
 			"binding_image_point": [40, 25],
-			"order": 13
+			"order": 14
 		},
 		"/input/finger/index": {
 			"type": "trigger",
@@ -109,7 +115,7 @@
 			"click": true,
 			"touch": true,
 			"binding_image_point": [40, 41],
-			"order": 14
+			"order": 15
 		},
 		"/input/finger/middle": {
 			"type": "trigger",
@@ -117,7 +123,7 @@
 			"click": true,
 			"touch": true,
 			"binding_image_point": [40, 57],
-			"order": 15
+			"order": 16
 		},
 		"/input/finger/ring": {
 			"type": "trigger",
@@ -125,7 +131,7 @@
 			"click": true,
 			"touch": true,
 			"binding_image_point": [40, 75],
-			"order": 16
+			"order": 17
 		},
 		"/input/finger/pinky": {
 			"type": "trigger",
@@ -133,7 +139,7 @@
 			"click": true,
 			"touch": true,
 			"binding_image_point": [40, 92],
-			"order": 17
+			"order": 18
 		},
 		"/pose/raw": {
 			"type": "pose",

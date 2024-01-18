@@ -45,14 +45,16 @@ struct VRStateEvent_t {
 
 struct SystemData_t {
   SystemData_t() {}
-  SystemData_t(bool systemClick, bool trackerConnection, float battery, bool batteryCharging, bool batteryChargeComplete)
+  SystemData_t(bool systemClick, bool trackerConnection, bool adaptorConnection, float battery, bool batteryCharging, bool batteryChargeComplete)
       : systemClick(systemClick),
         trackerConnection(trackerConnection),
+        adaptorConnection(adaptorConnection),
         battery(battery),
         batteryCharging(batteryCharging),
         batteryChargeComplete(batteryChargeComplete){};
   bool systemClick;
   bool trackerConnection;
+  bool adaptorConnection;
   float battery;
   bool batteryCharging;
   bool batteryChargeComplete;
@@ -191,6 +193,7 @@ enum class InputSerialBytePosition : int {
   kBatteryCharging = 11,
   kSliderUpTouch = 11,
   kSliderDownTouch = 11,
+  kAdaptorConnection = 11,
   kBatteryChargeComplete = 12,  // Byte 12
   kBatteryLevel = 12,
   kPointAClicked = 13,  // Byte 13
@@ -243,6 +246,7 @@ enum class InputSerialBitPosition : int {
   kBatteryCharging = 4,
   kSliderUpTouch = 5,
   kSliderDownTouch = 6,
+  kAdaptorConnection = 7,
   kBatteryChargeComplete = 0,  // Byte 12
   kBatteryLevel = 1,
   kPointAClicked = 0,  // Byte 13
@@ -295,6 +299,7 @@ enum class InputSerialBitLength : int {
   kBatteryCharging = 1,
   kSliderUpTouch = 1,
   kSliderDownTouch = 1,
+  kAdaptorConnection = 1,
   kBatteryChargeComplete = 1,  // Byte 12
   kBatteryLevel = 7,
   kPointAClicked = 1,  // Byte 13

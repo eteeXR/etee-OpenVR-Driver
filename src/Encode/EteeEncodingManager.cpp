@@ -57,6 +57,11 @@ VRCommInputData_t EteeEncodingManager::DecodeInputPacket(const std::string& in) 
       static_cast<int>(InputSerialBytePosition::kTrackerConnection),
       static_cast<int>(InputSerialBitPosition::kTrackerConnection),
       static_cast<int>(InputSerialBitLength::kTrackerConnection));
+  commData.system.adaptorConnection = GetDataUnsigned<bool>(
+      c_input,
+      static_cast<int>(InputSerialBytePosition::kAdaptorConnection),
+      static_cast<int>(InputSerialBitPosition::kAdaptorConnection),
+      static_cast<int>(InputSerialBitLength::kAdaptorConnection));
   commData.system.battery = (GetDataUnsigned<float>(
                                 c_input,
                                 static_cast<int>(InputSerialBytePosition::kBatteryLevel),
@@ -408,6 +413,7 @@ VRCommInputData_t EteeEncodingManager::DecodeInputPacket(const std::string& in) 
   commData.fingers[3].pull = remapFingerValues(finger4Pull);
   commData.fingers[4].pull = remapFingerValues(finger5Pull);
 
+  // eteeTracker Connection
   if (commData.isRight == true && commData.system.trackerConnection != prevTrackerConnRight) {
     prevTrackerConnRight = commData.system.trackerConnection;
     DriverLog("Tracker connection for %s hand is: %s", commData.isRight ? "right" : "left", commData.system.trackerConnection ? "true" : "false");
@@ -416,6 +422,17 @@ VRCommInputData_t EteeEncodingManager::DecodeInputPacket(const std::string& in) 
   else if (commData.isRight == false && commData.system.trackerConnection != prevTrackerConnLeft) {
     prevTrackerConnLeft = commData.system.trackerConnection;
     DriverLog("Tracker connection for %s hand is: %s", commData.isRight ? "right" : "left", commData.system.trackerConnection ? "true" : "false");
+  }
+
+  // Smart 3DPT Adaptor Connection
+  if (commData.isRight == true && commData.system.adaptorConnection != prevAdaptorConnRight) {
+    prevAdaptorConnRight = commData.system.adaptorConnection;
+    DriverLog("Smart 3DPT adaptor connection for %s hand is: %s", commData.isRight ? "right" : "left", commData.system.adaptorConnection ? "true" : "false");
+  }
+
+  else if (commData.isRight == false && commData.system.adaptorConnection != prevAdaptorConnLeft) {
+    prevAdaptorConnLeft = commData.system.adaptorConnection;
+    DriverLog("Smart 3DPT adaptor connection for %s hand is: %s", commData.isRight ? "right" : "left", commData.system.adaptorConnection ? "true" : "false");
   }
 
   return commData;
