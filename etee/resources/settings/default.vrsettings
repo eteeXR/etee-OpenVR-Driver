@@ -10,8 +10,8 @@
     "major_num" : 1,
     "minor_num" : 4,
     "patch_num" : 5,
-    "build_label" : "haptics",
-    "build_label_num" : 1
+    "build_label" : "dev",
+    "build_label_num" : 2
   },
   "etee_tracker_pose_settings": {
     "right_x_offset_position": 0.0,
