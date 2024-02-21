@@ -1,4 +1,3 @@
-
 {
 	"jsonid": "input_profile",
 	"controller_type": "etee_controller",
@@ -8,7 +7,7 @@
 	"input_bindingui_mode": "controller_handed",
 	"should_show_binding_errors": true,
 	"compatibility_mode_controller_type": "knuckles",
-	"remapping" : "{etee}/input/etee_controller_remapping.json",
+	"remapping": "{etee}/input/etee_controller_remapping.json",
 	"input_bindingui_left": {
 		"transform": "scale(1.0,1.0)",
 		"image": "{etee}/icons/eteeController_left.svg"
@@ -21,19 +20,28 @@
 		"/input/system": {
 			"type": "button",
 			"click": true,
-			"binding_image_point": [54, 113],
+			"binding_image_point": [
+				54,
+				113
+			],
 			"order": 1
 		},
 		"/input/tracker_connection": {
 			"type": "button",
 			"click": true,
-			"binding_image_point": [24, 15],
+			"binding_image_point": [
+				24,
+				15
+			],
 			"order": 2
 		},
 		"/input/adaptor_connection": {
 			"type": "button",
 			"click": true,
-			"binding_image_point": [24, 15],
+			"binding_image_point": [
+				24,
+				15
+			],
 			"order": 3
 		},
 		"/input/proximity": {
@@ -41,64 +49,91 @@
 			"touch": true,
 			"click": true,
 			"value": true,
-			"binding_image_point": [24, 15],
+			"binding_image_point": [
+				24,
+				15
+			],
 			"order": 4
 		},
 		"/input/thumbpad": {
 			"type": "trackpad",
 			"touch": true,
 			"click": true,
-			"force" : true,
-			"binding_image_point": [47, 13],
+			"force": true,
+			"binding_image_point": [
+				47,
+				13
+			],
 			"order": 5
 		},
 		"/input/slider": {
 			"type": "trackpad",
 			"click": true,
 			"touch": true,
-			"binding_image_point": [54, 35],
+			"binding_image_point": [
+				54,
+				35
+			],
 			"order": 6
 		},
 		"/input/slider_up": {
 			"type": "button",
 			"click": true,
-			"binding_image_point": [54, 35],
+			"binding_image_point": [
+				54,
+				35
+			],
 			"order": 7
 		},
 		"/input/slider_down": {
 			"type": "button",
 			"click": true,
-			"binding_image_point": [54, 35],
+			"binding_image_point": [
+				54,
+				35
+			],
 			"order": 8
 		},
 		"/input/grip": {
 			"type": "trigger",
 			"value": true,
-			"force" : true,
-			"click" : true,
-			"touch" : true,
-			"input_activity_path" : "/input/grip/force",
-			"binding_image_point": [40, 92],
+			"force": true,
+			"click": true,
+			"touch": true,
+			"input_activity_path": "/input/grip/force",
+			"binding_image_point": [
+				40,
+				92
+			],
 			"order": 9
 		},
 		"/input/pinch": {
 			"type": "trigger",
 			"value": true,
 			"click": true,
-			"binding_image_point": [40, 92],
+			"binding_image_point": [
+				40,
+				92
+			],
 			"order": 10
 		},
 		"/input/pinch_thumbfinger": {
 			"type": "trigger",
 			"value": true,
 			"click": true,
-			"binding_image_point": [40, 92],
+			"binding_image_point": [
+				40,
+				92
+			],
 			"order": 11
 		},
 		"/input/point_independent": {
 			"type": "button",
 			"click": true,
-			"binding_image_point": [40, 92],
+			"binding_image_point": [
+				40,
+				92
+			],
 			"order": 13
 		},
 		"/input/finger/thumb": {
@@ -106,7 +141,10 @@
 			"value": true,
 			"click": true,
 			"touch": true,
-			"binding_image_point": [40, 25],
+			"binding_image_point": [
+				40,
+				25
+			],
 			"order": 14
 		},
 		"/input/finger/index": {
@@ -114,7 +152,10 @@
 			"value": true,
 			"click": true,
 			"touch": true,
-			"binding_image_point": [40, 41],
+			"binding_image_point": [
+				40,
+				41
+			],
 			"order": 15
 		},
 		"/input/finger/middle": {
@@ -122,7 +163,10 @@
 			"value": true,
 			"click": true,
 			"touch": true,
-			"binding_image_point": [40, 57],
+			"binding_image_point": [
+				40,
+				57
+			],
 			"order": 16
 		},
 		"/input/finger/ring": {
@@ -130,7 +174,10 @@
 			"value": true,
 			"click": true,
 			"touch": true,
-			"binding_image_point": [40, 75],
+			"binding_image_point": [
+				40,
+				75
+			],
 			"order": 17
 		},
 		"/input/finger/pinky": {
@@ -138,60 +185,96 @@
 			"value": true,
 			"click": true,
 			"touch": true,
-			"binding_image_point": [40, 92],
+			"binding_image_point": [
+				40,
+				92
+			],
 			"order": 18
 		},
 		"/pose/raw": {
 			"type": "pose",
-			"binding_image_point": [47, 13]
+			"binding_image_point": [
+				47,
+				13
+			]
 		},
 		"/pose/base": {
 			"type": "pose",
-			"binding_image_point": [54, 113]
+			"binding_image_point": [
+				54,
+				113
+			]
 		},
 		"/pose/tip": {
 			"type": "pose",
-			"binding_image_point": [47, 13]
+			"binding_image_point": [
+				47,
+				13
+			]
 		},
 		"/pose/front": {
 			"type": "pose",
-			"binding_image_point": [54, 35]
+			"binding_image_point": [
+				54,
+				35
+			]
 		},
 		"/pose/back": {
 			"type": "pose",
-			"binding_image_point": [40, 57]
+			"binding_image_point": [
+				40,
+				57
+			]
 		},
 		"/pose/handgrip": {
 			"type": "pose",
-			"binding_image_point": [40, 57]
+			"binding_image_point": [
+				40,
+				57
+			]
 		},
 		"/pose/vrchat": {
 			"type": "pose",
-			"binding_image_point": [40, 57]
+			"binding_image_point": [
+				40,
+				57
+			]
 		},
 		"/pose/skeleton_root": {
 			"type": "pose",
-			"binding_image_point": [47, 13]
+			"binding_image_point": [
+				47,
+				13
+			]
 		},
 		"/input/skeleton/left": {
 			"type": "skeleton",
 			"skeleton": "/skeleton/hand/left",
 			"side": "left",
-			"binding_image_point": [47, 13]
+			"binding_image_point": [
+				47,
+				13
+			]
 		},
 		"/input/skeleton/right": {
 			"type": "skeleton",
 			"skeleton": "/skeleton/hand/right",
 			"side": "right",
-			"binding_image_point": [47, 13]
+			"binding_image_point": [
+				47,
+				13
+			]
 		},
-
 		"/output/haptic": {
 			"type": "vibration",
-			"binding_image_point": [40, 57]
+			"binding_image_point": [
+				40,
+				57
+			]
 		}
 	},
-	"default_bindings": [{
+	"default_bindings": [
+		{
 			"app_key": "openvr.tool.steamvr_environments",
 			"binding_url": "bindings/openvr.tool.steamvr_environments_etee_controller.json"
 		},
@@ -299,18 +382,18 @@
 			"app_key": "steam.app.916840",
 			"binding_url": "bindings/steam.app.916840_etee_controller.json"
 		},
-    {
-      "app_key": "steam.app.1318090",
-      "binding_url": "bindings/steam.app.1318090_etee_controller.json"
-    },
-    {
-      "app_key": "steam.app.555160",
-      "binding_url": "bindings/steam.app.555160_etee_controller.json"
-    },
-    {
-      "app_key": "steam.app.629730",
-      "binding_url": "bindings/steam.app.629730_etee_controller_with_any_tracker.json"
-    },
+		{
+			"app_key": "steam.app.1318090",
+			"binding_url": "bindings/steam.app.1318090_etee_controller.json"
+		},
+		{
+			"app_key": "steam.app.555160",
+			"binding_url": "bindings/steam.app.555160_etee_controller.json"
+		},
+		{
+			"app_key": "steam.app.629730",
+			"binding_url": "bindings/steam.app.629730_etee_controller_with_any_tracker.json"
+		},
 		{
 			"app_key": "steam.app.858260",
 			"binding_url": "bindings/steam.app.858260_etee_controller_with_any_tracker.json"
@@ -322,6 +405,10 @@
 		{
 			"app_key": "steam.app.1363430",
 			"binding_url": "bindings/steam.app.1363430_etee_controller_with_any_tracker.json"
+		},
+		{
+			"app_key": "steam.app.400940",
+			"binding_url": "bindings/steam.app.400940_etee_controller_with_any_tracker.json"
 		}
 	]
 }

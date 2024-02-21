@@ -1,0 +1,209 @@
+{
+   "action_manifest_version" : 0,
+   "alias_info" : {},
+   "app_key" : "steam.app.400940",
+   "bindings" : {
+      "/actions/buggy" : {
+         "chords" : [],
+         "haptics" : [],
+         "poses" : [],
+         "skeleton" : [],
+         "sources" : []
+      },
+      "/actions/default" : {
+         "chords" : [],
+         "haptics" : [
+            {
+               "output" : "/actions/default/out/haptic",
+               "path" : "/user/hand/left/output/haptic"
+            },
+            {
+               "output" : "/actions/default/out/haptic",
+               "path" : "/user/hand/right/output/haptic"
+            }
+         ],
+         "poses" : [
+            {
+               "output" : "/actions/default/in/controllerpose",
+               "path" : "/user/hand/left/pose/raw"
+            },
+            {
+               "output" : "/actions/default/in/controllerpose",
+               "path" : "/user/hand/right/pose/raw"
+            }
+         ],
+         "skeleton" : [
+            {
+               "output" : "/actions/default/in/skeletonlefthand",
+               "path" : "/user/hand/left/input/skeleton/left"
+            },
+            {
+               "output" : "/actions/default/in/skeletonrighthand",
+               "path" : "/user/hand/right/input/skeleton/right"
+            }
+         ],
+         "sources" : [
+            {
+               "inputs" : {
+                  "position" : {
+                     "output" : "/actions/default/in/slide"
+                  }
+               },
+               "mode" : "trackpad",
+               "path" : "/user/hand/left/input/thumbpad"
+            },
+            {
+               "inputs" : {
+                  "position" : {
+                     "output" : "/actions/default/in/smoothturn"
+                  }
+               },
+               "mode" : "trackpad",
+               "path" : "/user/hand/right/input/thumbpad"
+            },
+            {
+               "inputs" : {
+                  "grab" : {
+                     "output" : "/actions/default/in/knucklesgrab"
+                  }
+               },
+               "mode" : "grab",
+               "path" : "/user/hand/left/input/grip"
+            },
+            {
+               "inputs" : {
+                  "grab" : {
+                     "output" : "/actions/default/in/knucklesgrab"
+                  }
+               },
+               "mode" : "grab",
+               "path" : "/user/hand/right/input/grip"
+            },
+            {
+               "inputs" : {
+                  "pull" : {
+                     "output" : "/actions/default/in/usetool"
+                  }
+               },
+               "mode" : "trigger",
+               "path" : "/user/hand/left/input/pinch"
+            },
+            {
+               "inputs" : {
+                  "pull" : {
+                     "output" : "/actions/default/in/usetool"
+                  }
+               },
+               "mode" : "trigger",
+               "path" : "/user/hand/right/input/pinch"
+            },
+            {
+               "inputs" : {
+                  "east" : {
+                     "output" : "/actions/default/in/snapturnright"
+                  },
+                  "west" : {
+                     "output" : "/actions/default/in/snapturnleft"
+                  }
+               },
+               "mode" : "dpad",
+               "parameters" : {
+                  "sub_mode" : "touch"
+               },
+               "path" : "/user/hand/right/input/thumbpad"
+            },
+            {
+               "inputs" : {
+                  "pull" : {
+                     "output" : "/actions/default/in/gothroughportal"
+                  }
+               },
+               "mode" : "trigger",
+               "path" : "/user/hand/left/input/pinch"
+            },
+            {
+               "inputs" : {
+                  "pull" : {
+                     "output" : "/actions/default/in/gothroughportal"
+                  }
+               },
+               "mode" : "trigger",
+               "path" : "/user/hand/right/input/pinch"
+            },
+            {
+               "inputs" : {
+                  "held" : {
+                     "output" : "/actions/default/in/inventory"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/left/input/proximity"
+            },
+            {
+               "inputs" : {
+                  "held" : {
+                     "output" : "/actions/default/in/toolselect"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/slider_up"
+            },
+            {
+               "inputs" : {
+                  "held" : {
+                     "output" : "/actions/default/in/toolselect"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/left/input/slider_up"
+            },
+            {
+               "inputs" : {
+                  "held" : {
+                     "output" : "/actions/default/in/inventory"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/proximity"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/default/in/closeportal"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/left/input/slider_down"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/default/in/closeportal"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/slider_down"
+            }
+         ]
+      },
+      "/actions/platformer" : {
+         "chords" : [],
+         "haptics" : [],
+         "poses" : [],
+         "skeleton" : [],
+         "sources" : []
+      }
+   },
+   "category" : "steamvr_input",
+   "controller_type" : "etee_controller",
+   "description" : "Official bindings for etee Controllers. While in-game, press the System Button and select 'Show Controls' in the bottom left to view controller layout.",
+   "interaction_profile" : "",
+   "name" : "[ANY TRACKER] Default Budget Cuts 1 configuration for etee Controller V3_1",
+   "options" : {
+      "compatibility_mode" : true,
+      "simulate_hmd" : true,
+      "simulate_rendermodel" : true,
+      "simulated_controller_type" : "knuckles"
+   },
+   "simulated_actions" : []
+}
