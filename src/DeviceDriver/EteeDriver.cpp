@@ -429,7 +429,7 @@ HapticEventData EteeDeviceDriver::OnHapticEvent(const vr::VREvent_HapticVibratio
   DebugDriverLog("Received haptic vibration: freq: %f amp: %f dur: %f", frequency, amplitude, duration);
 
   frequency = 170.0f;
-  amplitude = amplitude / 2.0f;
+  amplitude = amplitude / 4.0f;
   DebugDriverLog("Mapped haptic vibration: freq: %f amp: %f dur: %f", frequency, amplitude, duration);
 
   if (duration < 0.f) {
