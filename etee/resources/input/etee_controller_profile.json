@@ -371,6 +371,14 @@
 			"binding_url": "bindings/steam.app.438100_etee_controller_with_raw_pose.json"
 		},
 		{
+			"app_key": "steam.app.438100",
+			"binding_url": "bindings/steam.app.438100_etee_controller_with_any_tracker_new_skeleton.json"
+		},
+		{
+			"app_key": "steam.app.438100",
+			"binding_url": "bindings/steam.app.438100_etee_controller_with_raw_pose_new_skeleton.json"
+		},
+		{
 			"app_key": "steam.app.457420",
 			"binding_url": "bindings/steam.app.457420_etee_controller.json"
 		},
