@@ -14,7 +14,9 @@ EteeDeviceDriver::EteeDeviceDriver(
       m_isActive(false),
       m_lastInput(false),
       m_deviceEventCallback(std::move(deviceEventCallback)),
-      m_controllerPose(std::make_unique<ControllerPose>(m_configuration.pose)) {}
+      m_controllerPose(std::make_unique<ControllerPose>(m_configuration.pose)) {
+  m_batteryRingBuffer.Init(128);
+}
 
 bool EteeDeviceDriver::IsRightHand() const {
   return m_configuration.role == vr::TrackedControllerRole_RightHand;
@@ -319,7 +321,14 @@ void EteeDeviceDriver::OnInputUpdate(VRCommInputData_t data) {
   vr::VRDriverInput()->UpdateBooleanComponent(m_inputComponentHandles[ComponentIndex::POINT_B_CLICK], data.gesture.pointBClick, 0);
 
   // Battery percentage
-  vr::VRProperties()->SetFloatProperty(m_props, vr::Prop_DeviceBatteryPercentage_Float, data.system.battery);
+  if (m_batteryRingBuffer.IsValid()) {
+    // Push the current battery value to the ring buffer so that we can eliminate random "battery low" warnings
+    m_batteryRingBuffer.Push((uint8_t)(data.system.battery * 100.0f));
+    vr::VRProperties()->SetFloatProperty(m_props, vr::Prop_DeviceBatteryPercentage_Float, m_batteryRingBuffer.MostCommonElement() / 100.0f);
+  } else {
+    // Fallback to raw battery value
+    vr::VRProperties()->SetFloatProperty(m_props, vr::Prop_DeviceBatteryPercentage_Float, data.system.battery);
+  }
 
   if (m_lastInput.system.trackerConnection != data.system.trackerConnection) {
     m_controllerPose->SetEteeTrackerIsConnected(data.system.trackerConnection);

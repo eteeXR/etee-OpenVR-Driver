@@ -14,6 +14,7 @@
 #include "DeviceDriver/DeviceDriver.h"
 #include "Encode/EteeEncodingManager.h"
 #include "Util/Bones.h"
+#include "Util/RingBuffer.h"
 
 enum class DeviceEventType { HAPTIC_EVENT, STANDBY };
 
@@ -162,6 +163,8 @@ class EteeDeviceDriver : public IDeviceDriver {
 
   std::thread m_inputUpdateThread;
   std::thread m_poseUpdateThread;
+
+  RingBuffer m_batteryRingBuffer;
 
   short m_updateCount;
   std::chrono::milliseconds m_startUpdateCountTime;

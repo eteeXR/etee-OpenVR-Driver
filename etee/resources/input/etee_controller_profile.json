@@ -371,6 +371,14 @@
 			"binding_url": "bindings/steam.app.438100_etee_controller_with_raw_pose.json"
 		},
 		{
+			"app_key": "steam.app.438100",
+			"binding_url": "bindings/steam.app.438100_etee_controller_with_any_tracker_new_skeleton.json"
+		},
+		{
+			"app_key": "steam.app.438100",
+			"binding_url": "bindings/steam.app.438100_etee_controller_with_raw_pose_new_skeleton.json"
+		},
+		{
 			"app_key": "steam.app.457420",
 			"binding_url": "bindings/steam.app.457420_etee_controller.json"
 		},
@@ -409,6 +417,22 @@
 		{
 			"app_key": "steam.app.400940",
 			"binding_url": "bindings/steam.app.400940_etee_controller_with_any_tracker.json"
+		},
+		{
+			"app_key": "steam.app.448280",
+			"binding_url": "bindings/steam.app.448280_etee_controller_with_any_tracker.json"
+		},
+		{
+			"app_key": "steam.app.843390",
+			"binding_url": "bindings/steam.app.843390_etee_controller_with_any_tracker_righthand_locomotion.json"
+		},
+		{
+			"app_key": "steam.app.843390",
+			"binding_url": "bindings/steam.app.843390_etee_controller_with_any_tracker_righthand_teleport.json"
+		},
+		{
+			"app_key": "steam.app.843390",
+			"binding_url": "bindings/steam.app.843390_etee_controller_with_any_tracker_lefthand_locomotion.json"
 		}
 	]
 }
