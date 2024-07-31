@@ -1380,7 +1380,7 @@
    },
    "category" : "steamvr_input",
    "controller_type" : "etee_controller",
-   "description" : "Official VRChat bindings for etee Controllers, ready for SteamVR input 2.0 skeletons. Big shoutout to Hykke for making this compatibility possible. While in-game, press the System Button and select 'Show Controls' in the bottom left to view controller layout.",
+   "description" : "Official VRChat bindings for etee Controllers, ready for SteamVR input 2.0 skeletons. Big shoutout to Hekky for making this compatibility possible. While in-game, press the System Button and select 'Show Controls' in the bottom left to view controller layout.",
    "interaction_profile" : "",
    "name" : "[ANY TRACKER - NEW SKELETON] Default VRChat configuration for etee Controller V4_1",
    "options" : {
