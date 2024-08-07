@@ -1,96 +1,116 @@
 {
-  "driver_etee": {
-    "left_enabled": true,
-    "right_enabled": true,
-    "override_serial_port": false,
-    "serial_port": 2
-  },
-  "driver_etee_version" : {
-    "major_num" : 1,
-    "minor_num" : 4,
-    "patch_num" : 9,
-    "build_label" : "alpha",
-    "build_label_num" : 1
-  },
-  "etee_tracker_pose_settings": {
-    "right_x_offset_position": 0.0,
-    "right_y_offset_position": 0.0,
-    "right_z_offset_position": 0.0,
+    "driver_etee": {
+        "left_enabled": true,
+        "right_enabled": true,
+        "override_serial_port": false,
+        "serial_port": 2
+    },
+    "driver_etee_version": {
+        "major_num": 1,
+        "minor_num": 5,
+        "patch_num": 0,
+        "build_label": "alpha",
+        "build_label_num": 1
+    },
+    "etee_tracker_pose_settings": {
+        "right_x_offset_position": 0.0,
+        "right_y_offset_position": 0.0,
+        "right_z_offset_position": 0.0,
 
-    "right_x_offset_rotation": 0.0,
-    "right_y_offset_rotation": 0.0,
-    "right_z_offset_rotation": 180.0,
+        "right_x_offset_rotation": 0.0,
+        "right_y_offset_rotation": 0.0,
+        "right_z_offset_rotation": 180.0,
 
-    "left_x_offset_position": 0.0,
-    "left_y_offset_position": 0.0,
-    "left_z_offset_position": -0.00542,
+        "left_x_offset_position": 0.0,
+        "left_y_offset_position": 0.0,
+        "left_z_offset_position": -0.00542,
 
-    "left_x_offset_rotation": 0.0,
-    "left_y_offset_rotation": 0.0,
-    "left_z_offset_rotation": 0.0
-  },
-  "vive_tracker_smart_adaptor_pose_settings": {
-    "x_offset_position": 0.0,
-    "y_offset_position": -0.05,
-    "z_offset_position": 0.02,
+        "left_x_offset_rotation": 0.0,
+        "left_y_offset_rotation": 0.0,
+        "left_z_offset_rotation": 0.0
+    },
+    "etee_back_tracker_pose_settings": {
+        "right_x_offset_position": -0.46,
+        "right_y_offset_position": 0.08,
+        "right_z_offset_position": -0.046,
 
-    "x_offset_rotation": 180.0,
-    "y_offset_rotation": 0.0,
-    "z_offset_rotation": 0.0
-  },
-  "vive_ultimate_tracker_smart_adaptor_pose_settings": {
-    "x_offset_position": 0.0,
-    "y_offset_position": -0.021,
-    "z_offset_position": 0.07,
+        "right_x_offset_rotation": -97,
+        "right_y_offset_rotation": -10,
+        "right_z_offset_rotation": -90,
 
-    "x_offset_rotation": 0.0,
-    "y_offset_rotation": 90.0,
-    "z_offset_rotation": 0.0
-  },
-  "tundra_tracker_smart_adaptor_pose_settings": {
-    "x_offset_position": 0.05,
-    "y_offset_position": 0.0,
-    "z_offset_position": 0.02,
+        "left_x_offset_position": -0.038,
+        "left_y_offset_position": 0.08,
+        "left_z_offset_position": 0.042,
 
-    "x_offset_rotation": 270.0,
-    "y_offset_rotation": 0.0,
-    "z_offset_rotation": 0.0
-  },
-  "vive_tracker_basic_adaptor_pose_settings": {
-    "right_x_offset_position": -0.043442,
-    "right_y_offset_position": 0.0,
-    "right_z_offset_position": 0.065678,
+        "left_x_offset_rotation": 97,
+        "left_y_offset_rotation": -19,
+        "left_z_offset_rotation": -95
+    },
+    "vive_tracker_smart_adaptor_pose_settings": {
+        "x_offset_position": 0.0,
+        "y_offset_position": -0.05,
+        "z_offset_position": 0.02,
 
-    "right_x_offset_rotation": 44.1,
-    "right_y_offset_rotation": -2.6695,
-    "right_z_offset_rotation": 97.9,
+        "x_offset_rotation": 180.0,
+        "y_offset_rotation": 0.0,
+        "z_offset_rotation": 0.0
+    },
+    "vive_ultimate_tracker_smart_adaptor_pose_settings": {
+        "x_offset_position": 0.0,
+        "y_offset_position": -0.021,
+        "z_offset_position": 0.07,
 
-    "left_x_offset_position": 0.042453,
-    "left_y_offset_position": 0.0,
-    "left_z_offset_position": 0.065678,
+        "x_offset_rotation": 0.0,
+        "y_offset_rotation": 90.0,
+        "z_offset_rotation": 0.0
+    },
+    "tundra_tracker_smart_adaptor_pose_settings": {
+        "x_offset_position": 0.05,
+        "y_offset_position": 0.0,
+        "z_offset_position": 0.02,
 
-    "left_x_offset_rotation": -44.053,
-    "left_y_offset_rotation": -2.6695,
-    "left_z_offset_rotation": 262.109
-  },
-  "tundra_tracker_basic_adaptor_pose_settings": {
-    "right_x_offset_position": 0.0,
-    "right_y_offset_position": -0.056,
-    "right_z_offset_position": 0.065678,
+        "x_offset_rotation": 270.0,
+        "y_offset_rotation": 0.0,
+        "z_offset_rotation": 0.0
+    },
+    "vive_tracker_basic_adaptor_pose_settings": {
+        "right_x_offset_position": -0.043442,
+        "right_y_offset_position": 0.0,
+        "right_z_offset_position": 0.065678,
 
-    "right_x_offset_rotation": 44.1,
-    "right_y_offset_rotation": 272.6695,
-    "right_z_offset_rotation": 90.0,
+        "right_x_offset_rotation": 44.1,
+        "right_y_offset_rotation": -2.6695,
+        "right_z_offset_rotation": 97.9,
 
-    "left_x_offset_position": 0.0,
-    "left_y_offset_position": 0.056,
-    "left_z_offset_position": 0.065678,
+        "left_x_offset_position": 0.042453,
+        "left_y_offset_position": 0.0,
+        "left_z_offset_position": 0.065678,
 
-    "left_x_offset_rotation": 134.1,
-    "left_y_offset_rotation": 92.6695,
-    "left_z_offset_rotation": 90.0
-  },
-  "etee_haptic_settings": {
-    "enabled": true
-  }
+        "left_x_offset_rotation": -44.053,
+        "left_y_offset_rotation": -2.6695,
+        "left_z_offset_rotation": 262.109
+    },
+    "tundra_tracker_basic_adaptor_pose_settings": {
+        "right_x_offset_position": 0.0,
+        "right_y_offset_position": -0.056,
+        "right_z_offset_position": 0.065678,
+
+        "right_x_offset_rotation": 44.1,
+        "right_y_offset_rotation": 272.6695,
+        "right_z_offset_rotation": 90.0,
+
+        "left_x_offset_position": 0.0,
+        "left_y_offset_position": 0.056,
+        "left_z_offset_position": 0.065678,
+
+        "left_x_offset_rotation": 134.1,
+        "left_y_offset_rotation": 92.6695,
+        "left_z_offset_rotation": 90.0
+    },
+    "etee_haptic_settings": {
+        "enabled": true
+    },
+    "etee_controller_offset": {
+        "tracker_pose": "main"
+    }
 }
