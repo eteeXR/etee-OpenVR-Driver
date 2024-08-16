@@ -36,6 +36,7 @@ class DeviceProvider : public vr::IServerTrackedDeviceProvider {
   void HandleDongleStateUpdate(VRDongleState dongleState);
   void HandleControllerStateUpdate(VRHandedControllerState_t controllerState);
   void HandleDeviceEvent(const vr::ETrackedControllerRole role, const DeviceEvent& event);
+  void HandleDriverSettingsChange();
 
   VRDeviceConfiguration m_leftConfiguration{};
   VRDeviceConfiguration m_rightConfiguration{};

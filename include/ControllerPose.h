@@ -18,6 +18,7 @@ class ControllerPose {
 
   void SetShadowEteeTracker(short deviceId, bool isRightHand);
   void SetAdaptorIsConnected(bool adaptorConnected, bool isRight);
+  void RediscoverTrackedDevice();
 
  private:
   void DiscoverTrackedDevice();

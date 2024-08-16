@@ -2,6 +2,7 @@
     "driver_etee": {
         "left_enabled": true,
         "right_enabled": true,
+        "reload_pose": false,
         "override_serial_port": false,
         "serial_port": 2
     },

@@ -135,6 +135,8 @@ class EteeDeviceDriver : public IDeviceDriver {
 
   VRControllerState GetControllerState();
 
+  void RediscoverTrackedDevice();
+
  private:
   void StartDevice();
   bool IsRightHand() const;

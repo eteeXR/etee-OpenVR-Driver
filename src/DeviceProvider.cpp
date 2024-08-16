@@ -237,9 +237,23 @@ const char* const* DeviceProvider::GetInterfaceVersions() {
   return vr::k_InterfaceVersions;
 }
 
+void DeviceProvider::HandleDriverSettingsChange() {
+  if (vr::VRSettings()->GetBool(c_driverSettingsSection, "reload_pose")) {
+    vr::VRSettings()->SetBool(c_driverSettingsSection, "reload_pose", false);
+
+    if (m_leftHand != nullptr && m_leftHand->IsActive()) m_leftHand->RediscoverTrackedDevice();
+    if (m_rightHand != nullptr && m_rightHand->IsActive()) m_rightHand->RediscoverTrackedDevice();
+  }
+}
+
 void DeviceProvider::RunFrame() {
   vr::VREvent_t pEvent{};
   while (vr::VRServerDriverHost()->PollNextEvent(&pEvent, sizeof(pEvent))) {
+    if (pEvent.eventType == vr::VREvent_AnyDriverSettingsChanged) {
+      HandleDriverSettingsChange();
+      continue;
+    }
+
     if (m_leftHand != nullptr && m_leftHand->IsActive()) m_leftHand->OnVREvent(pEvent);
     if (m_rightHand != nullptr && m_rightHand->IsActive()) m_rightHand->OnVREvent(pEvent);
   }

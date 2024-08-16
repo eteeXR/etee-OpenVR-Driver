@@ -494,6 +494,10 @@ VRControllerState EteeDeviceDriver::GetControllerState() {
   return m_deviceState;
 }
 
+void EteeDeviceDriver::RediscoverTrackedDevice() {
+  m_controllerPose->RediscoverTrackedDevice();
+}
+
 void EteeDeviceDriver::Deactivate() {
   if (m_isActive.exchange(false)) {
     m_poseUpdateThread.join();
