@@ -30,8 +30,6 @@ const char* c_viveTrackerManufacturer = "HTC";
 const char* c_tundraTrackerManufacturer = "Tundra Labs";
 
 const char* c_driverOffsetToggle = "etee_controller_offset";
-vr::CVRSettingHelper settings_helper(vr::VRSettings());
-const std::string poseOffset = settings_helper.GetString(c_driverOffsetToggle, "tracker_pose");
 
 ControllerPose::ControllerPose(VRPoseConfiguration configuration)
     : m_configuration(configuration),
@@ -42,6 +40,9 @@ ControllerPose::ControllerPose(VRPoseConfiguration configuration)
 
 void ControllerPose::DiscoverTrackedDevice() {
   if (m_eteeTrackerConnected) return;
+
+  vr::CVRSettingHelper settings_helper(vr::VRSettings());
+  const std::string poseOffset = settings_helper.GetString(c_driverOffsetToggle, "tracker_pose");
 
   for (int32_t i = 1; i < vr::k_unMaxTrackedDeviceCount; i++) {
     vr::PropertyContainerHandle_t container = vr::VRProperties()->TrackedDeviceToPropertyContainer(i);
