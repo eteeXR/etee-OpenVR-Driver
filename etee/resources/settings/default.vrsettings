@@ -8,7 +8,7 @@
     "driver_etee_version": {
         "major_num": 1,
         "minor_num": 5,
-        "patch_num": 0,
+        "patch_num": 1,
         "build_label": "beta",
         "build_label_num": 1
     },
