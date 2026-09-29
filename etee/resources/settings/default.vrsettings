@@ -7,7 +7,7 @@
     },
     "driver_etee_version": {
         "major_num": 1,
-        "minor_num": 5,
+        "minor_num": 6,
         "patch_num": 0,
         "build_label": "dev",
         "build_label_num": 1
@@ -28,6 +28,28 @@
         "left_x_offset_rotation": 0.0,
         "left_y_offset_rotation": 0.0,
         "left_z_offset_rotation": 0.0
+    },
+    "etee_app_pose_offset_settings": {
+        "profile_count": 1,
+
+        "profile0_process_name": "hlvr.exe",
+        "profile0_enabled": false,
+
+        "profile0_right_x_offset_position": 0.0,
+        "profile0_right_y_offset_position": 0.0,
+        "profile0_right_z_offset_position": 0.0,
+
+        "profile0_right_x_offset_rotation": 0.0,
+        "profile0_right_y_offset_rotation": 0.0,
+        "profile0_right_z_offset_rotation": 0.0,
+
+        "profile0_left_x_offset_position": 0.0,
+        "profile0_left_y_offset_position": 0.0,
+        "profile0_left_z_offset_position": 0.0,
+
+        "profile0_left_x_offset_rotation": 0.0,
+        "profile0_left_y_offset_rotation": 0.0,
+        "profile0_left_z_offset_rotation": 0.0
     },
     "etee_back_tracker_pose_settings": {
         "right_x_offset_position": -0.46,

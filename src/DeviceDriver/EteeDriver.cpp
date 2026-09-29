@@ -548,6 +548,10 @@ void EteeDeviceDriver::OnVREvent(const vr::VREvent_t& vrEvent) {
         break;
       }
     }
+    case vr::VREvent_SceneApplicationChanged: {
+      m_controllerPose->OnSceneApplicationChanged(vrEvent.data.process.pid);
+      break;
+    }
   }
 }
 

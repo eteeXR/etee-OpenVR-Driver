@@ -2,6 +2,11 @@
 
 #include <queue>
 #include <utility>
+#include <algorithm>
+#include <cctype>
+#include <string>
+
+#include <Windows.h>
 
 #include "TrackerDiscovery.h"
 #include "Util/DriverLog.h"
@@ -9,6 +14,32 @@
 #include "math.h"
 
 #define _USE_MATH_DEFINES
+
+namespace {
+// Returns the lowercase executable filename (e.g. "hlvr.exe") for a process, or empty string on failure.
+std::string GetProcessExecutableName(uint32_t pid) {
+  if (pid == 0) return "";
+
+  HANDLE process = OpenProcess(PROCESS_QUERY_LIMITED_INFORMATION, FALSE, pid);
+  if (process == nullptr) return "";
+
+  char path[MAX_PATH] = {0};
+  DWORD pathSize = MAX_PATH;
+  const bool gotPath = QueryFullProcessImageNameA(process, 0, path, &pathSize);
+  CloseHandle(process);
+  if (!gotPath) return "";
+
+  std::string pathStr(path);
+  const size_t lastSlash = pathStr.find_last_of("\\/");
+  std::string fileName = lastSlash == std::string::npos ? pathStr : pathStr.substr(lastSlash + 1);
+  std::transform(fileName.begin(), fileName.end(), fileName.begin(), [](unsigned char c) { return static_cast<char>(std::tolower(c)); });
+  return fileName;
+}
+
+// New per-app pose offset profiles are added purely by editing default.vrsettings - no code changes
+// needed. See the LoadAppOffsetProfiles() doc comment below for the settings schema.
+const char* c_appOffsetSettingsSection = "etee_app_pose_offset_settings";
+}  // namespace
 
 // Manufacturer and device type for etee trackers
 const char* c_eteeTrackerManufacturer = "TG0";  // Separate from the controller manufacturer
@@ -195,12 +226,22 @@ vr::DriverPose_t ControllerPose::UpdatePose() {
   }
    
   const vr::HmdVector3_t controllerPosition = trackerPosition + (m_configuration.offsetVector * -trackerToWorld * trackerRotation);
-  pose.vecPosition[0] = controllerPosition.v[0];
-  pose.vecPosition[1] = controllerPosition.v[1];
-  pose.vecPosition[2] = controllerPosition.v[2];
-
   const vr::HmdQuaternion_t controllerRotation = trackerRotation * m_configuration.angleOffsetQuaternion;
-  pose.qRotation = controllerRotation;
+
+  vr::HmdVector3_t finalPosition = controllerPosition;
+  vr::HmdQuaternion_t finalRotation = controllerRotation;
+
+  // Compensates a known per-game hand-anchoring offset; no-op unless a matching profile is armed (see LoadAppOffsetProfiles).
+  if (m_activeAppOffsetEnabled) {
+    finalPosition = finalPosition + (m_activeAppOffsetVector * -trackerToWorld * finalRotation);
+    finalRotation = finalRotation * m_activeAppAngleOffsetQuaternion;
+  }
+
+  pose.vecPosition[0] = finalPosition.v[0];
+  pose.vecPosition[1] = finalPosition.v[1];
+  pose.vecPosition[2] = finalPosition.v[2];
+
+  pose.qRotation = finalRotation;
 
   const vr::HmdVector3_t& trackerVelocity = trackerPose.vVelocity;
   pose.vecVelocity[0] = trackerVelocity.v[0];
@@ -233,6 +274,76 @@ void ControllerPose::SetAdaptorIsConnected(bool adaptorConnected, bool isRight) 
     m_adaptorConnRight = adaptorConnected;
   } else {
     m_adaptorConnLeft = adaptorConnected;
+  }
+}
+
+void ControllerPose::OnSceneApplicationChanged(uint32_t pid) {
+  if (!m_appOffsetProfilesLoaded) LoadAppOffsetProfiles();
+
+  const std::string processName = GetProcessExecutableName(pid);
+  const bool wasEnabled = m_activeAppOffsetEnabled;
+  m_activeAppOffsetEnabled = false;
+
+  for (const AppPoseOffsetProfile& profile : m_appOffsetProfiles) {
+    if (profile.enabled && profile.processName == processName) {
+      m_activeAppOffsetEnabled = true;
+      m_activeAppOffsetVector = profile.offsetVector;
+      m_activeAppAngleOffsetQuaternion = profile.angleOffsetQuaternion;
+      break;
+    }
+  }
+
+  if (m_activeAppOffsetEnabled != wasEnabled) {
+    DriverLog(
+        "Per-app pose offset %s for process '%s'",
+        m_activeAppOffsetEnabled ? "armed" : "disarmed",
+        processName.c_str());
+  }
+}
+
+// Loads per-app pose offset profiles from the etee_app_pose_offset_settings section of
+// default.vrsettings. JSON has no comment syntax, so the schema is documented here instead - this is
+// the only place a future developer needs to look to add a new game.
+//
+// Keys (N = 0, 1, 2, ... up to profile_count - 1):
+//   profile_count            (int)    total number of profileN_* blocks defined below
+//   profileN_process_name    (string) lowercase exe name of the game, e.g. hlvr.exe
+//   profileN_enabled         (bool)   master switch for this profile; false = always inert
+//   profileN_{right,left}_{x,y,z}_offset_position (float, metres) additive position offset
+//   profileN_{right,left}_{x,y,z}_offset_rotation (float, degrees) additive rotation offset
+//
+// Example: to add a profile for a game whose exe is example.exe, bump profile_count and add a
+// profile1_process_name: example.exe block (plus enabled/offset keys) alongside profile0.
+void ControllerPose::LoadAppOffsetProfiles() {
+  m_appOffsetProfilesLoaded = true;
+  const bool isRightHand = m_configuration.role == vr::TrackedControllerRole_RightHand;
+  vr::CVRSettingHelper settingsHelper(vr::VRSettings());
+
+  const int32_t profileCount = vr::VRSettings()->GetInt32(c_appOffsetSettingsSection, "profile_count");
+  for (int32_t i = 0; i < profileCount; i++) {
+    const std::string prefix = "profile" + std::to_string(i) + "_";
+
+    std::string processName = settingsHelper.GetString(c_appOffsetSettingsSection, prefix + "process_name");
+    if (processName.empty()) continue;
+    std::transform(processName.begin(), processName.end(), processName.begin(), [](unsigned char c) { return static_cast<char>(std::tolower(c)); });
+
+    AppPoseOffsetProfile profile;
+    profile.processName = processName;
+    profile.enabled = vr::VRSettings()->GetBool(c_appOffsetSettingsSection, (prefix + "enabled").c_str());
+
+    const std::string handPrefix = prefix + (isRightHand ? "right_" : "left_");
+    const float xPos = vr::VRSettings()->GetFloat(c_appOffsetSettingsSection, (handPrefix + "x_offset_position").c_str());
+    const float yPos = vr::VRSettings()->GetFloat(c_appOffsetSettingsSection, (handPrefix + "y_offset_position").c_str());
+    const float zPos = vr::VRSettings()->GetFloat(c_appOffsetSettingsSection, (handPrefix + "z_offset_position").c_str());
+    profile.offsetVector = {xPos, yPos, zPos};
+
+    const float xRot = vr::VRSettings()->GetFloat(c_appOffsetSettingsSection, (handPrefix + "x_offset_rotation").c_str());
+    const float yRot = vr::VRSettings()->GetFloat(c_appOffsetSettingsSection, (handPrefix + "y_offset_rotation").c_str());
+    const float zRot = vr::VRSettings()->GetFloat(c_appOffsetSettingsSection, (handPrefix + "z_offset_rotation").c_str());
+    profile.angleOffsetQuaternion = EulerToQuaternion(DegToRad(xRot), DegToRad(yRot), DegToRad(zRot));
+
+    DriverLog("Loaded per-app pose offset profile for process '%s' (enabled=%s)", profile.processName.c_str(), profile.enabled ? "true" : "false");
+    m_appOffsetProfiles.push_back(profile);
   }
 }
 
