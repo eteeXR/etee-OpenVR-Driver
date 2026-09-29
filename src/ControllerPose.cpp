@@ -265,7 +265,7 @@ void ControllerPose::SetShadowEteeTracker(short deviceId, bool isRightHand) {
 
   const char* c_driverOffsetToggle = "etee_controller_offset";
   vr::CVRSettingHelper settings_helper(vr::VRSettings());
-  const std::string poseOffset = settings_helper.GetString(c_driverOffsetToggle, "pose");
+  const std::string poseOffset = settings_helper.GetString(c_driverOffsetToggle, "tracker_pose");
 
   DebugDriverLog("Offsets applied: %s", isRightHand ? "right_x_offset_position" : "left_x_offset_position");
   DebugDriverLog("Backhand position is: %s", poseOffset);
