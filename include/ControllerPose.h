@@ -33,6 +33,10 @@ class ControllerPose {
   // Arms/disarms whichever configured per-app pose offset profile (if any) matches the given process.
   void OnSceneApplicationChanged(uint32_t pid);
 
+  // Suppresses the active per-app pose offset while the SteamVR dashboard is open, so the rendermodel
+  // shows the controller's true position there instead of the in-game compensated one.
+  void SetDashboardVisible(bool visible);
+
  private:
   void DiscoverTrackedDevice();
   void LoadAppOffsetProfiles();
@@ -52,6 +56,7 @@ class ControllerPose {
   bool m_activeAppOffsetEnabled = false;
   vr::HmdVector3_t m_activeAppOffsetVector{0, 0, 0};
   vr::HmdQuaternion_t m_activeAppAngleOffsetQuaternion{1, 0, 0, 0};
+  std::atomic<bool> m_dashboardVisible{false};
 
   VRPoseConfiguration m_configuration;
   VRControllerState m_state;

@@ -231,8 +231,10 @@ vr::DriverPose_t ControllerPose::UpdatePose() {
   vr::HmdVector3_t finalPosition = controllerPosition;
   vr::HmdQuaternion_t finalRotation = controllerRotation;
 
-  // Compensates a known per-game hand-anchoring offset; no-op unless a matching profile is armed (see LoadAppOffsetProfiles).
-  if (m_activeAppOffsetEnabled) {
+  // Compensates a known per-game hand-anchoring offset; no-op unless a matching profile is armed (see
+  // LoadAppOffsetProfiles), and suppressed while the dashboard is open so the rendermodel shows the
+  // controller's true position there instead of the in-game compensated one.
+  if (m_activeAppOffsetEnabled && !m_dashboardVisible) {
     finalPosition = finalPosition + (m_activeAppOffsetVector * -trackerToWorld * finalRotation);
     finalRotation = finalRotation * m_activeAppAngleOffsetQuaternion;
   }
@@ -299,6 +301,10 @@ void ControllerPose::OnSceneApplicationChanged(uint32_t pid) {
         m_activeAppOffsetEnabled ? "armed" : "disarmed",
         processName.c_str());
   }
+}
+
+void ControllerPose::SetDashboardVisible(bool visible) {
+  m_dashboardVisible = visible;
 }
 
 // Loads per-app pose offset profiles from the etee_app_pose_offset_settings section of

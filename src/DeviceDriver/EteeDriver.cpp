@@ -552,6 +552,14 @@ void EteeDeviceDriver::OnVREvent(const vr::VREvent_t& vrEvent) {
       m_controllerPose->OnSceneApplicationChanged(vrEvent.data.process.pid);
       break;
     }
+    case vr::VREvent_DashboardActivated: {
+      m_controllerPose->SetDashboardVisible(true);
+      break;
+    }
+    case vr::VREvent_DashboardDeactivated: {
+      m_controllerPose->SetDashboardVisible(false);
+      break;
+    }
   }
 }
 
