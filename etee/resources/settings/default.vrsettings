@@ -9,8 +9,8 @@
         "major_num": 1,
         "minor_num": 6,
         "patch_num": 0,
-        "build_label": "dev",
-        "build_label_num": 2
+        "build_label": "release",
+        "build_label_num": 0
     },
     "etee_tracker_pose_settings": {
         "right_x_offset_position": 0.0,
@@ -33,22 +33,22 @@
         "profile_count": 1,
 
         "profile0_process_name": "hlvr.exe",
-        "profile0_enabled": false,
+        "profile0_enabled": true,
 
-        "profile0_right_x_offset_position": 0.0,
-        "profile0_right_y_offset_position": 0.0,
-        "profile0_right_z_offset_position": 0.0,
+        "profile0_right_x_offset_position": -0.01,
+        "profile0_right_y_offset_position": -0.07,
+        "profile0_right_z_offset_position": -0.035,
 
         "profile0_right_x_offset_rotation": 0.0,
-        "profile0_right_y_offset_rotation": 0.0,
+        "profile0_right_y_offset_rotation": -40.0,
         "profile0_right_z_offset_rotation": 0.0,
 
-        "profile0_left_x_offset_position": 0.0,
-        "profile0_left_y_offset_position": 0.0,
-        "profile0_left_z_offset_position": 0.0,
+        "profile0_left_x_offset_position": 0.01,
+        "profile0_left_y_offset_position": -0.07,
+        "profile0_left_z_offset_position": -0.035,
 
         "profile0_left_x_offset_rotation": 0.0,
-        "profile0_left_y_offset_rotation": 0.0,
+        "profile0_left_y_offset_rotation": -40.0,
         "profile0_left_z_offset_rotation": 0.0
     },
     "etee_back_tracker_pose_settings": {
