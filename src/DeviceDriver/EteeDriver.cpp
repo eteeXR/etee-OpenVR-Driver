@@ -544,9 +544,8 @@ void EteeDeviceDriver::OnVREvent(const vr::VREvent_t& vrEvent) {
       if (vrEvent.data.hapticVibration.componentHandle == m_inputComponentHandles[ComponentIndex::HAPTIC] && m_configuration.haptic.enabled) {
         const HapticEventData data = OnHapticEvent(vrEvent.data.hapticVibration);
         m_deviceEventCallback({DeviceEventType::HAPTIC_EVENT, data});
-
-        break;
       }
+      break;
     }
     case vr::VREvent_SceneApplicationChanged: {
       m_controllerPose->OnSceneApplicationChanged(vrEvent.data.process.pid);
