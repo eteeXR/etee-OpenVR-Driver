@@ -2,10 +2,21 @@
 #include <openvr_driver.h>
 
 #include <memory>
+#include <string>
+#include <vector>
 
 #include "DeviceConfiguration.h"
 #include "Encode/EncodingManager.h"
 #include "TrackerDiscovery.h"
+
+// A data-driven, per-executable pose offset. New games are added purely via vrsettings (see
+// c_appOffsetSettingsSection in ControllerPose.cpp) - no code changes required.
+struct AppPoseOffsetProfile {
+  std::string processName;  // lowercase executable name, e.g. "hlvr.exe"
+  bool enabled = false;
+  vr::HmdVector3_t offsetVector{0, 0, 0};
+  vr::HmdQuaternion_t angleOffsetQuaternion{1, 0, 0, 0};
+};
 
 class ControllerPose {
  public:
@@ -19,8 +30,16 @@ class ControllerPose {
   void SetShadowEteeTracker(short deviceId, bool isRightHand);
   void SetAdaptorIsConnected(bool adaptorConnected, bool isRight);
 
+  // Arms/disarms whichever configured per-app pose offset profile (if any) matches the given process.
+  void OnSceneApplicationChanged(uint32_t pid);
+
+  // Suppresses the active per-app pose offset while the SteamVR dashboard is open, so the rendermodel
+  // shows the controller's true position there instead of the in-game compensated one.
+  void SetDashboardVisible(bool visible);
+
  private:
   void DiscoverTrackedDevice();
+  void LoadAppOffsetProfiles();
 
   vr::TrackedDevicePose_t GetTrackerPose();
   std::atomic<int> m_shadowTrackerId;
@@ -31,6 +50,13 @@ class ControllerPose {
 
   bool m_adaptorConnRight;
   bool m_adaptorConnLeft;
+
+  bool m_appOffsetProfilesLoaded = false;
+  std::vector<AppPoseOffsetProfile> m_appOffsetProfiles;
+  bool m_activeAppOffsetEnabled = false;
+  vr::HmdVector3_t m_activeAppOffsetVector{0, 0, 0};
+  vr::HmdQuaternion_t m_activeAppAngleOffsetQuaternion{1, 0, 0, 0};
+  std::atomic<bool> m_dashboardVisible{false};
 
   VRPoseConfiguration m_configuration;
   VRControllerState m_state;
