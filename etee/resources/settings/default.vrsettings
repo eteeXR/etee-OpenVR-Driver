@@ -7,9 +7,9 @@
     },
     "driver_etee_version": {
         "major_num": 1,
-        "minor_num": 5,
-        "patch_num": 0,
-        "build_label": "dev",
+        "minor_num": 6,
+        "patch_num": 2,
+        "build_label": "beta",
         "build_label_num": 1
     },
     "etee_tracker_pose_settings": {
@@ -28,6 +28,88 @@
         "left_x_offset_rotation": 0.0,
         "left_y_offset_rotation": 0.0,
         "left_z_offset_rotation": 0.0
+    },
+    "etee_app_pose_offset_settings": {
+        "profile_count": 4,
+
+        "profile0_process_name": "hlvr.exe",
+        "profile0_enabled": true,
+
+        "profile0_right_x_offset_position": -0.01,
+        "profile0_right_y_offset_position": -0.07,
+        "profile0_right_z_offset_position": -0.035,
+
+        "profile0_right_x_offset_rotation": 0.0,
+        "profile0_right_y_offset_rotation": -40.0,
+        "profile0_right_z_offset_rotation": 0.0,
+
+        "profile0_left_x_offset_position": 0.01,
+        "profile0_left_y_offset_position": -0.07,
+        "profile0_left_z_offset_position": -0.035,
+
+        "profile0_left_x_offset_rotation": 0.0,
+        "profile0_left_y_offset_rotation": -40.0,
+        "profile0_left_z_offset_rotation": 0.0,
+
+
+        "profile1_process_name": "knux.exe",
+        "profile1_enabled": true,
+
+        "profile1_right_x_offset_position": -0.01,
+        "profile1_right_y_offset_position": -0.07,
+        "profile1_right_z_offset_position": -0.035,
+
+        "profile1_right_x_offset_rotation": 0.0,
+        "profile1_right_y_offset_rotation": -40.0,
+        "profile1_right_z_offset_rotation": 0.0,
+
+        "profile1_left_x_offset_position": 0.01,
+        "profile1_left_y_offset_position": -0.07,
+        "profile1_left_z_offset_position": -0.035,
+
+        "profile1_left_x_offset_rotation": 0.0,
+        "profile1_left_y_offset_rotation": -40.0,
+        "profile1_left_z_offset_rotation": 0.0,
+
+
+        "profile2_process_name": "steamtours.exe",
+        "profile2_enabled": true,
+
+        "profile2_right_x_offset_position": -0.01,
+        "profile2_right_y_offset_position": -0.07,
+        "profile2_right_z_offset_position": -0.035,
+
+        "profile2_right_x_offset_rotation": 0.0,
+        "profile2_right_y_offset_rotation": -40.0,
+        "profile2_right_z_offset_rotation": 0.0,
+
+        "profile2_left_x_offset_position": 0.01,
+        "profile2_left_y_offset_position": -0.07,
+        "profile2_left_z_offset_position": -0.035,
+
+        "profile2_left_x_offset_rotation": 0.0,
+        "profile2_left_y_offset_rotation": -40.0,
+        "profile2_left_z_offset_rotation": 0.0,
+
+
+        "profile3_process_name": "beat saber.exe",
+        "profile3_enabled": true,
+
+        "profile3_right_x_offset_position": 0,
+        "profile3_right_y_offset_position": 0,
+        "profile3_right_z_offset_position": 0.1,
+
+        "profile3_right_x_offset_rotation": 0.0,
+        "profile3_right_y_offset_rotation": 0.0,
+        "profile3_right_z_offset_rotation": 0.0,
+
+        "profile3_left_x_offset_position": 0,
+        "profile3_left_y_offset_position": 0,
+        "profile3_left_z_offset_position": 0.1,
+
+        "profile3_left_x_offset_rotation": 0.0,
+        "profile3_left_y_offset_rotation": 0.0,
+        "profile3_left_z_offset_rotation": 0.0
     },
     "etee_back_tracker_pose_settings": {
         "right_x_offset_position": -0.46,

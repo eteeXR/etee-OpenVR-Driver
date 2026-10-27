@@ -4,14 +4,14 @@
 		"body": {
 			"filename": "etee_controller_left.obj",
 			"component_local": {
-				"origin": [0.000, 0.000, 0.000],
-				"rotate_xyz": [0.0, 0.0, 0.0]
+				"origin": [-0.02, -0.03, -0.062],
+				"rotate_xyz": [-20.0, 0.0, -10.0]
 			}
 		},
 		"skeleton_root": {
 			"component_local": {
-				"origin": [0.0, 0.000, 0.000],
-				"rotate_xyz": [0.0, 0.0, 0.0]
+				"origin": [-0.02, -0.03, -0.062],
+				"rotate_xyz": [-20.0, 0.0, -10.0]
 			}
 		},
 		"status": {
