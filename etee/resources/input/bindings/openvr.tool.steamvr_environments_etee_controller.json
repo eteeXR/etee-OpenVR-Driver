@@ -4,6 +4,8 @@
    "app_key" : "openvr.tool.steamvr_environments",
    "bindings" : {
       "/actions/default" : {
+         "poses" : [],
+         "skeleton" : [],
          "sources" : [
             {
                "inputs" : {
@@ -12,6 +14,7 @@
                   }
                },
                "mode" : "button",
+               "parameters" : {},
                "path" : "/user/hand/left/input/ring"
             },
             {
@@ -21,6 +24,7 @@
                   }
                },
                "mode" : "button",
+               "parameters" : {},
                "path" : "/user/hand/right/input/ring"
             },
             {
@@ -30,11 +34,15 @@
                   }
                },
                "mode" : "trackpad",
+               "parameters" : {},
                "path" : "/user/hand/left/input/thumbpad"
             },
             {
                "inputs" : {
                   "double" : {
+                     "output" : "/actions/default/in/togglemenu"
+                  },
+                  "held" : {
                      "output" : "/actions/default/in/showinventory"
                   }
                },
@@ -80,6 +88,7 @@
                   }
                },
                "mode" : "trigger",
+               "parameters" : {},
                "path" : "/user/hand/left/input/grip"
             },
             {
@@ -97,23 +106,12 @@
             },
             {
                "inputs" : {
-                  "double" : {
-                     "output" : "/actions/default/in/togglemenu"
-                  }
-               },
-               "mode" : "button",
-               "parameters" : {
-                  "force_input" : ""
-               },
-               "path" : "/user/hand/left/input/proximity"
-            },
-            {
-               "inputs" : {
                   "click" : {
                      "output" : "/actions/default/in/lclick"
                   }
                },
                "mode" : "button",
+               "parameters" : {},
                "path" : "/user/hand/left/input/pinch"
             },
             {
@@ -123,6 +121,7 @@
                   }
                },
                "mode" : "trigger",
+               "parameters" : {},
                "path" : "/user/hand/right/input/grip"
             },
             {
@@ -132,6 +131,7 @@
                   }
                },
                "mode" : "button",
+               "parameters" : {},
                "path" : "/user/hand/right/input/grip"
             },
             {
@@ -141,24 +141,20 @@
                   }
                },
                "mode" : "button",
+               "parameters" : {},
                "path" : "/user/hand/right/input/pinch"
             },
             {
                "inputs" : {
                   "double" : {
                      "output" : "/actions/default/in/togglemenu"
-                  }
-               },
-               "mode" : "button",
-               "path" : "/user/hand/right/input/proximity"
-            },
-            {
-               "inputs" : {
-                  "double" : {
+                  },
+                  "held" : {
                      "output" : "/actions/default/in/showinventory"
                   }
                },
                "mode" : "button",
+               "parameters" : {},
                "path" : "/user/hand/right/input/slider"
             },
             {
@@ -168,6 +164,7 @@
                   }
                },
                "mode" : "trackpad",
+               "parameters" : {},
                "path" : "/user/hand/right/input/thumbpad"
             },
             {
@@ -177,6 +174,7 @@
                   }
                },
                "mode" : "button",
+               "parameters" : {},
                "path" : "/user/hand/left/input/pinch"
             },
             {
@@ -186,7 +184,28 @@
                   }
                },
                "mode" : "button",
+               "parameters" : {},
                "path" : "/user/hand/right/input/pinch"
+            },
+            {
+               "inputs" : {
+                  "double" : {
+                     "output" : "/actions/default/in/togglemenu"
+                  }
+               },
+               "mode" : "button",
+               "parameters" : {},
+               "path" : "/user/hand/left/input/proximity"
+            },
+            {
+               "inputs" : {
+                  "double" : {
+                     "output" : "/actions/default/in/togglemenu"
+                  }
+               },
+               "mode" : "button",
+               "parameters" : {},
+               "path" : "/user/hand/right/input/proximity"
             }
          ]
       },
@@ -241,6 +260,22 @@
             {
                "output" : "none",
                "path" : "/user/hand/right/pose/back"
+            },
+            {
+               "output" : "none",
+               "path" : "/user/hand/left/pose/vrchat"
+            },
+            {
+               "output" : "none",
+               "path" : "/user/hand/right/pose/vrchat"
+            },
+            {
+               "output" : "none",
+               "path" : "/user/hand/left/pose/handgrip"
+            },
+            {
+               "output" : "none",
+               "path" : "/user/hand/right/pose/handgrip"
             }
          ],
          "skeleton" : [
@@ -253,43 +288,28 @@
                "path" : "/user/hand/right/input/skeleton/right"
             }
          ],
-         "sources" : []
-      },
-      "/actions/move" : {
-         "chords" : [
-            {
-               "inputs" : [
-                  [ "/user/hand/left/input/point_independent", "click" ],
-                  [ "/user/hand/left/input/slider_up", "click" ]
-               ],
-               "output" : "/actions/move/in/teleport"
-            },
-            {
-               "inputs" : [
-                  [ "/user/hand/right/input/point_independent", "click" ],
-                  [ "/user/hand/right/input/slider_up", "click" ]
-               ],
-               "output" : "/actions/move/in/teleport"
-            }
-         ],
          "sources" : [
             {
-               "inputs" : {
-                  "east" : {
-                     "output" : "/actions/move/in/turnright"
-                  },
-                  "west" : {
-                     "output" : "/actions/move/in/turnleft"
-                  }
-               },
-               "mode" : "dpad",
-               "parameters" : {
-                  "deadzone_pct" : "80",
-                  "overlap_pct" : "20",
-                  "sub_mode" : "click"
-               },
+               "inputs" : {},
+               "mode" : "trackpad",
+               "parameters" : {},
                "path" : "/user/hand/left/input/thumbpad"
             },
+            {
+               "inputs" : {},
+               "mode" : "dpad",
+               "parameters" : {
+                  "sub_mode" : "click"
+               },
+               "path" : "/user/hand/right/input/thumbpad"
+            }
+         ]
+      },
+      "/actions/move" : {
+         "chords" : [],
+         "poses" : [],
+         "skeleton" : [],
+         "sources" : [
             {
                "inputs" : {
                   "east" : {
@@ -310,26 +330,36 @@
             {
                "inputs" : {},
                "mode" : "button",
-               "path" : "/user/hand/left/input/point_independent"
-            },
-            {
-               "inputs" : {},
-               "mode" : "button",
+               "parameters" : {},
                "path" : "/user/hand/right/input/point_independent"
             },
             {
                "inputs" : {},
                "mode" : "button",
+               "parameters" : {},
                "path" : "/user/hand/left/input/slider_up"
             },
             {
                "inputs" : {},
                "mode" : "button",
+               "parameters" : {},
                "path" : "/user/hand/right/input/slider_up"
+            },
+            {
+               "inputs" : {
+                  "held" : {
+                     "output" : "/actions/move/in/teleport"
+                  }
+               },
+               "mode" : "button",
+               "parameters" : {},
+               "path" : "/user/hand/left/input/thumbpad"
             }
          ]
       },
       "/actions/prop_tool" : {
+         "poses" : [],
+         "skeleton" : [],
          "sources" : [
             {
                "inputs" : {
@@ -338,6 +368,7 @@
                   }
                },
                "mode" : "trigger",
+               "parameters" : {},
                "path" : "/user/hand/left/input/index"
             },
             {
@@ -347,6 +378,7 @@
                   }
                },
                "mode" : "trigger",
+               "parameters" : {},
                "path" : "/user/hand/right/input/index"
             },
             {
@@ -453,6 +485,7 @@
                   }
                },
                "mode" : "trackpad",
+               "parameters" : {},
                "path" : "/user/hand/left/input/thumbpad"
             },
             {
@@ -465,6 +498,7 @@
                   }
                },
                "mode" : "trackpad",
+               "parameters" : {},
                "path" : "/user/hand/right/input/thumbpad"
             },
             {
@@ -474,6 +508,7 @@
                   }
                },
                "mode" : "trigger",
+               "parameters" : {},
                "path" : "/user/hand/left/input/pinch"
             },
             {
@@ -483,6 +518,7 @@
                   }
                },
                "mode" : "trigger",
+               "parameters" : {},
                "path" : "/user/hand/right/input/pinch"
             },
             {
@@ -492,6 +528,7 @@
                   }
                },
                "mode" : "button",
+               "parameters" : {},
                "path" : "/user/hand/left/input/slider"
             },
             {
@@ -501,11 +538,64 @@
                   }
                },
                "mode" : "button",
+               "parameters" : {},
                "path" : "/user/hand/right/input/slider"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/prop_tool/in/use"
+                  },
+                  "pull" : {
+                     "output" : "/actions/prop_tool/in/trigger"
+                  }
+               },
+               "mode" : "trigger",
+               "parameters" : {},
+               "path" : "/user/hand/left/input/finger/index"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/prop_tool/in/use"
+                  },
+                  "pull" : {
+                     "output" : "/actions/prop_tool/in/trigger"
+                  }
+               },
+               "mode" : "trigger",
+               "parameters" : {},
+               "path" : "/user/hand/right/input/finger/index"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/prop_tool/in/drop"
+                  }
+               },
+               "mode" : "button",
+               "parameters" : {
+                  "click_activate_threshold" : "0.8"
+               },
+               "path" : "/user/hand/left/input/finger/thumb"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/prop_tool/in/drop"
+                  }
+               },
+               "mode" : "button",
+               "parameters" : {
+                  "click_activate_threshold" : "0.8"
+               },
+               "path" : "/user/hand/right/input/finger/thumb"
             }
          ]
       },
       "/actions/scroll_discrete" : {
+         "poses" : [],
+         "skeleton" : [],
          "sources" : [
             {
                "inputs" : {
@@ -514,6 +604,7 @@
                   }
                },
                "mode" : "scroll",
+               "parameters" : {},
                "path" : "/user/hand/left/input/slider"
             },
             {
@@ -523,11 +614,14 @@
                   }
                },
                "mode" : "scroll",
+               "parameters" : {},
                "path" : "/user/hand/right/input/slider"
             }
          ]
       },
       "/actions/scroll_smooth" : {
+         "poses" : [],
+         "skeleton" : [],
          "sources" : [
             {
                "inputs" : {
@@ -560,8 +654,11 @@
    },
    "category" : "steamvr_input",
    "controller_type" : "etee_controller",
-   "description" : "Official TG0 Home bindings for etee Controllers. While in-game, press the System Button and select 'Show Controls' in the bottom left to view controller layout.",
-   "name" : "Default SteamVR Home configuration for etee Controller",
-   "options" : {},
+   "description" : "Updated SteamVR Home bindings for etee Controllers. Left trackpad: hold to teleport. Right trackpad: press left/right to turn. Hold slider for tool selection. Double tap tap zone to toggle the Home menu. Index finger operates tools. Thumb squeeze drops tools, with an 80% activation threshold. Removed the previous teleport chords to prevent conflicts with tool selection.",
+   "interaction_profile" : "",
+   "name" : "default-steamvr-home-bindings-etee-controllers",
+   "options" : {
+      "simulated_controller_type" : "knuckles"
+   },
    "simulated_actions" : []
 }
