@@ -385,7 +385,7 @@
             },
             {
                "inputs" : {
-                  "held" : {
+                  "double" : {
                      "output" : "/actions/dev/in/togglemenu"
                   }
                },
@@ -706,13 +706,9 @@
                "path" : "/user/hand/left/input/thumbpad"
             },
             {
-               "inputs" : {
-                  "double" : {
-                     "output" : "/actions/move/in/adjustheight"
-                  }
-               },
+               "inputs" : {},
                "mode" : "button",
-               "path" : "/user/hand/left/input/slider"
+               "path" : "/user/hand/left/input/finger/thumb"
             },
             {
                "inputs" : {},
