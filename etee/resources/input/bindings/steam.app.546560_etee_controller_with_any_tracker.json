@@ -298,6 +298,62 @@
                   }
                },
                "mode" : "button",
+               "parameters" : {
+                  "click_activate_threshold" : "0.7",
+                  "click_deactivate_threshold" : "0.65",
+                  "force_input" : "value"
+               },
+               "path" : "/user/hand/left/input/finger/index"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/dev/in/menudismiss"
+                  }
+               },
+               "mode" : "button",
+               "parameters" : {
+                  "click_activate_threshold" : "0.7",
+                  "click_deactivate_threshold" : "0.65",
+                  "force_input" : "value"
+               },
+               "path" : "/user/hand/left/input/finger/index"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/dev/in/menuinteract"
+                  }
+               },
+               "mode" : "button",
+               "parameters" : {
+                  "click_activate_threshold" : "0.7",
+                  "click_deactivate_threshold" : "0.65",
+                  "force_input" : "value"
+               },
+               "path" : "/user/hand/right/input/finger/index"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/dev/in/menudismiss"
+                  }
+               },
+               "mode" : "button",
+               "parameters" : {
+                  "click_activate_threshold" : "0.7",
+                  "click_deactivate_threshold" : "0.65",
+                  "force_input" : "value"
+               },
+               "path" : "/user/hand/right/input/finger/index"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/dev/in/menuinteract"
+                  }
+               },
+               "mode" : "button",
                "path" : "/user/hand/left/input/pinch"
             },
             {
@@ -329,12 +385,12 @@
             },
             {
                "inputs" : {
-                  "double" : {
+                  "held" : {
                      "output" : "/actions/dev/in/togglemenu"
                   }
                },
                "mode" : "button",
-               "path" : "/user/hand/left/input/proximity"
+               "path" : "/user/hand/left/input/slider"
             }
          ]
       },
@@ -440,20 +496,20 @@
             },
             {
                "inputs" : {
-                  "pull" : {
+                  "force" : {
                      "output" : "/actions/interact/in/squeezexengrenade"
                   }
                },
-               "mode" : "trigger",
+               "mode" : "force_sensor",
                "path" : "/user/hand/right/input/grip"
             },
             {
                "inputs" : {
-                  "pull" : {
+                  "force" : {
                      "output" : "/actions/interact/in/squeezexengrenade"
                   }
                },
-               "mode" : "trigger",
+               "mode" : "force_sensor",
                "path" : "/user/hand/left/input/grip"
             },
             {
@@ -612,7 +668,7 @@
                },
                "mode" : "dpad",
                "parameters" : {
-                  "deadzone_pct" : "95",
+                  "deadzone_pct" : "60",
                   "overlap_pct" : "0",
                   "sticky" : "true",
                   "sub_mode" : "touch"
@@ -633,7 +689,7 @@
                },
                "mode" : "dpad",
                "parameters" : {
-                  "deadzone_pct" : "95",
+                  "deadzone_pct" : "60",
                   "overlap_pct" : "0",
                   "sticky" : "true",
                   "sub_mode" : "touch"
