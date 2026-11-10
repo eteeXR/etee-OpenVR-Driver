@@ -40,7 +40,7 @@
          "sources" : [
             {
                "inputs" : {
-                  "double" : {
+                  "click" : {
                      "output" : "/actions/ue/in/valveindex_left_a_click"
                   }
                },
@@ -53,7 +53,7 @@
             },
             {
                "inputs" : {
-                  "double" : {
+                  "click" : {
                      "output" : "/actions/ue/in/valveindex_left_b_click"
                   }
                },
@@ -81,6 +81,27 @@
                },
                "mode" : "force_sensor",
                "path" : "/user/hand/left/input/grip"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/ue/in/valveindex_left_trigger_click"
+                  }
+               },
+               "mode" : "button",
+               "parameters" : {
+                  "haptic_amplitude" : 0
+               },
+               "path" : "/user/hand/left/input/pinch"
+            },
+            {
+               "inputs" : {
+                  "pull" : {
+                     "output" : "/actions/ue/in/valveindex_left_trigger_axis"
+                  }
+               },
+               "mode" : "trigger",
+               "path" : "/user/hand/left/input/pinch"
             },
             {
                "inputs" : {
@@ -228,7 +249,7 @@
             },
             {
                "inputs" : {
-                  "double" : {
+                  "click" : {
                      "output" : "/actions/ue/in/valveindex_right_a_click"
                   }
                },
@@ -241,7 +262,7 @@
             },
             {
                "inputs" : {
-                  "double" : {
+                  "click" : {
                      "output" : "/actions/ue/in/valveindex_right_b_click"
                   }
                },
@@ -272,6 +293,58 @@
             },
             {
                "inputs" : {
+                  "click" : {
+                     "output" : "/actions/ue/in/valveindex_right_trigger_click"
+                  }
+               },
+               "mode" : "button",
+               "parameters" : {
+                  "haptic_amplitude" : 0
+               },
+               "path" : "/user/hand/right/input/pinch"
+            },
+            {
+               "inputs" : {
+                  "pull" : {
+                     "output" : "/actions/ue/in/valveindex_right_trigger_axis"
+                  }
+               },
+               "mode" : "trigger",
+               "path" : "/user/hand/right/input/pinch"
+            },
+            {
+               "inputs" : {
+                  "position_x" : {
+                     "output" : "/actions/ue/in/valveindex_right_thumbstick_x"
+                  }
+               },
+               "mode" : "trackpad",
+               "path" : "/user/hand/right/input/thumbpad"
+            },
+            {
+               "inputs" : {
+                  "position_y" : {
+                     "output" : "/actions/ue/in/valveindex_right_thumbstick_y"
+                  }
+               },
+               "mode" : "trackpad",
+               "path" : "/user/hand/right/input/thumbpad"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/ue/in/valveindex_right_thumbstick_click"
+                  }
+               },
+               "mode" : "button",
+               "parameters" : {
+                  "force_input" : "click",
+                  "haptic_amplitude" : 0
+               },
+               "path" : "/user/hand/right/input/thumbpad"
+            },
+            {
+               "inputs" : {
                   "touch" : {
                      "output" : "/actions/ue/in/valveindex_right_thumbstick_touch"
                   }
@@ -284,16 +357,102 @@
             },
             {
                "inputs" : {
-                  "position_x" : {
-                     "output" : "/actions/ue/in/valveindex_right_thumbstick_x"
+                  "east" : {
+                     "output" : "/actions/ue/in/valveindex_right_thumbstick_right"
+                  },
+                  "north" : {
+                     "output" : "/actions/ue/in/valveindex_right_thumbstick_up"
+                  },
+                  "south" : {
+                     "output" : "/actions/ue/in/valveindex_right_thumbstick_down"
+                  },
+                  "west" : {
+                     "output" : "/actions/ue/in/valveindex_right_thumbstick_left"
                   }
                },
-               "mode" : "joystick",
+               "mode" : "dpad_touch",
                "parameters" : {
-                  "deadzone_pct" : 70,
-                  "maxzone_pct" : 100,
-                  "exponent" : 2,
-                  "sticky_click" : false
+                  "click_activate_threshold" : 0.5,
+                  "click_deactivate_threshold" : 0.400000006,
+                  "deadzone_pct" : 50,
+                  "haptic_amplitude" : 0,
+                  "haptic_duration" : 0,
+                  "haptic_frequency" : 0,
+                  "off_haptic_amplitude" : 0,
+                  "off_haptic_duration" : 0,
+                  "off_haptic_frequency" : 0,
+                  "overlap_pct" : 2.782753519183795e-06,
+                  "sticky" : false
+               },
+               "path" : "/user/hand/right/input/thumbpad"
+            },
+            {
+               "inputs" : {
+                  "position_x" : {
+                     "output" : "/actions/ue/in/valveindex_right_trackpad_x"
+                  }
+               },
+               "mode" : "trackpad",
+               "path" : "/user/hand/right/input/thumbpad"
+            },
+            {
+               "inputs" : {
+                  "position_y" : {
+                     "output" : "/actions/ue/in/valveindex_right_trackpad_y"
+                  }
+               },
+               "mode" : "trackpad",
+               "path" : "/user/hand/right/input/thumbpad"
+            },
+            {
+               "inputs" : {
+                  "force" : {
+                     "output" : "/actions/ue/in/valveindex_right_trackpad_force"
+                  }
+               },
+               "mode" : "force_sensor",
+               "path" : "/user/hand/right/input/thumbpad"
+            },
+            {
+               "inputs" : {
+                  "touch" : {
+                     "output" : "/actions/ue/in/valveindex_right_trackpad_touch"
+                  }
+               },
+               "mode" : "button",
+               "parameters" : {
+                  "haptic_amplitude" : 0
+               },
+               "path" : "/user/hand/right/input/thumbpad"
+            },
+            {
+               "inputs" : {
+                  "east" : {
+                     "output" : "/actions/ue/in/valveindex_right_trackpad_right"
+                  },
+                  "north" : {
+                     "output" : "/actions/ue/in/valveindex_right_trackpad_up"
+                  },
+                  "south" : {
+                     "output" : "/actions/ue/in/valveindex_right_trackpad_down"
+                  },
+                  "west" : {
+                     "output" : "/actions/ue/in/valveindex_right_trackpad_left"
+                  }
+               },
+               "mode" : "dpad_click",
+               "parameters" : {
+                  "click_activate_threshold" : 0.5,
+                  "click_deactivate_threshold" : 0.400000006,
+                  "deadzone_pct" : 50,
+                  "haptic_amplitude" : 0,
+                  "haptic_duration" : 0,
+                  "haptic_frequency" : 0,
+                  "off_haptic_amplitude" : 0,
+                  "off_haptic_duration" : 0,
+                  "off_haptic_frequency" : 0,
+                  "overlap_pct" : 2.782753519183795e-06,
+                  "sticky" : false
                },
                "path" : "/user/hand/right/input/thumbpad"
             },
@@ -305,20 +464,20 @@
                },
                "mode" : "button",
                "parameters" : {
-                  "click_activate_threshold" : "0.8",
-                  "click_deactivate_threshold" : "0.75",
-                  "force_input" : "force",
+                  "click_activate_threshold" : "0.7",
+                  "click_deactivate_threshold" : "0.65",
+                  "force_input" : "value",
                   "haptic_amplitude" : 0
                },
                "path" : "/user/hand/left/input/finger/index"
             },
             {
                "inputs" : {
-                  "force" : {
+                  "pull" : {
                      "output" : "/actions/ue/in/valveindex_left_trigger_axis"
                   }
                },
-               "mode" : "force_sensor",
+               "mode" : "trigger",
                "path" : "/user/hand/left/input/finger/index"
             },
             {
@@ -341,20 +500,20 @@
                },
                "mode" : "button",
                "parameters" : {
-                  "click_activate_threshold" : "0.8",
-                  "click_deactivate_threshold" : "0.75",
-                  "force_input" : "force",
+                  "click_activate_threshold" : "0.7",
+                  "click_deactivate_threshold" : "0.65",
+                  "force_input" : "value",
                   "haptic_amplitude" : 0
                },
                "path" : "/user/hand/right/input/finger/index"
             },
             {
                "inputs" : {
-                  "force" : {
+                  "pull" : {
                      "output" : "/actions/ue/in/valveindex_right_trigger_axis"
                   }
                },
-               "mode" : "force_sensor",
+               "mode" : "trigger",
                "path" : "/user/hand/right/input/finger/index"
             },
             {
@@ -377,5 +536,5 @@
    "interaction_profile" : "/interaction_profiles/valve/index_controller",
    "name" : "Draft Pavlov OpenXR configuration for etee Controller",
    "app_key" : "steam.app.555160",
-   "description" : "TG0 Pavlov OpenXR diagnostic bindings. Index-finger force provides trigger/select on either hand; pinch trigger mappings are disabled to isolate firing. Grip controls grabbing. Left trackpad provides movement and stick click. Right trackpad horizontal position provides turning through joystick mode with a 70% deadzone and exponent 2. Double tap slider up/down for Index A/B functions. Pending in-game validation."
+   "description" : "TG0 Pavlov OpenXR test bindings. Pinch or index-finger squeeze provides trigger/select on either hand. Grip controls grabbing. Left trackpad provides movement and stick click; right trackpad provides turning. Slider up/down provide Index A/B functions. Pending in-game validation."
 }

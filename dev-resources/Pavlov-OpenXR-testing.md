@@ -3,7 +3,38 @@
 Saved 6 November 2026 on `bindings/pavlov-openxr`. This is unfinished work,
 not a release-ready preset.
 
-## Current implementation
+## Follow-up test adjustment: 10 November 2026
+
+- Latest user-requested rollback: restored the earliest saved OpenXR test
+  binding from `TG0-Pavlov-turning-only-dcd8d1a1931d4f99add669436aa4a755/previous-binding.json`
+  in the local temporary directory. It has 38 sources, pinch plus index-value
+  triggers (digital index thresholds 70%/65%), single-click slider A/B actions,
+  and the original right-pad stick and trackpad mappings. This predates the
+  turning-only and sensitivity changes. Their original overlap and accidental
+  activation issues may return. Pavlov offsets remain disabled. Re-test required.
+- Previous rollback (superseded above): both value-based variants failed to select Pavlov
+  menu items, including after reload. Restored the force-based index mappings
+  from checkpoint `91b63d0`, which the user previously confirmed selected items.
+  Re-test that baseline after restarting; no resolution of the inward pose is
+  claimed. The earlier diagnostic changes below are history, not active settings.
+- Latest diagnostic: Home's right Tool Trigger reads 0.00 off, 0.30-0.40 resting,
+  and 1.00 with a light squeeze. Tool Use also changes TRUE/FALSE correctly.
+- The separate value-based click conversion failed to select Pavlov menu items.
+  Replaced it on both hands with Home's tested combined `trigger` source:
+  native finger click to Pavlov trigger click and finger pull to trigger axis,
+  with empty parameters. Custom 80%/75% click thresholds are no longer applied.
+  Trigger touch remains unchanged. Pavlov menu and firing tests are pending.
+- User confirmed index-force squeezing selects main-menu items. Reaching the
+  slider while holding a gun changes grip enough to drop the gun; magazine
+  release remains unverified.
+- Earlier in this session, both index triggers were changed to finger value rather than
+  force. Digital click still activates at 80% and releases at 75%; the continuous
+  axis supplies raw finger value, so these thresholds do not gate analog firing.
+- Trigger touch and other controls are unchanged. Test menu selection and
+  single-shot/automatic firing, including immediate release, before accepting
+  this adjustment. The checkpoint details and hash below describe 6 November.
+
+## 6 November checkpoint implementation
 
 - Replaced the obsolete SteamVR Input draft with Pavlov's current OpenXR
   `/actions/controllers` and `/actions/ue` actions, using the Index interaction profile.
