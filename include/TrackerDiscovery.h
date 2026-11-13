@@ -3,6 +3,7 @@
 #include <atomic>
 #include <functional>
 #include <map>
+#include <mutex>
 #include <memory>
 
 #include "Hooks/HookReceiver.h"
@@ -43,6 +44,9 @@ class TrackerDiscovery : IHookReceiver {
   std::map<vr::VRInputComponentHandle_t, InputComponentInfo> m_inputComponentDeviceIdMap;
   std::map<vr::PropertyContainerHandle_t, int> m_propertyContainerDeviceIdMap;
   std::map<int, TrackerStatus> m_trackerIdStatus;
+  std::string m_leftTrackerSerial;
+  std::string m_rightTrackerSerial;
+  std::mutex m_stateMutex;
 
   std::atomic<bool> m_active;
 };

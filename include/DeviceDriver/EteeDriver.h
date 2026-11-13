@@ -2,6 +2,7 @@
 #include <openvr_driver.h>
 
 #include <atomic>
+#include <cstdint>
 #include <chrono>
 #include <functional>
 #include <memory>
@@ -140,6 +141,18 @@ class EteeDeviceDriver : public IDeviceDriver {
   bool IsRightHand() const;
   void PoseUpdateThread();
   void InputUpdateThread();
+  bool TryCreateBooleanComponent(ComponentIndex index, const char* path, bool critical);
+  bool TryCreateScalarComponent(
+      ComponentIndex index, const char* path, vr::EVRScalarType scalarType, vr::EVRScalarUnits scalarUnits, bool critical);
+  bool TryCreateHapticComponent(ComponentIndex index, const char* path, bool critical);
+  bool TryCreateSkeletonComponent(bool isRightHand, bool critical);
+  bool HasAllCriticalComponents() const;
+  bool WasComponentCreated(ComponentIndex index) const;
+  void UpdateBooleanComponentSafe(ComponentIndex index, bool value);
+  void UpdateScalarComponentSafe(ComponentIndex index, float value);
+  void UpdateSkeletonComponentSafe(vr::EVRSkeletalMotionRange range);
+  bool IsInputComponentHandleValid(ComponentIndex index) const;
+  bool ShouldLogInvalidHandle(ComponentIndex index);
 
   std::atomic<bool> m_isActive;
   std::atomic<uint32_t> m_driverId;
@@ -152,7 +165,7 @@ class EteeDeviceDriver : public IDeviceDriver {
 
   std::unique_ptr<ControllerPose> m_controllerPose;
   std::shared_ptr<BoneAnimator> m_boneAnimator;
-  vr::PropertyContainerHandle_t m_props;
+  vr::PropertyContainerHandle_t m_props{vr::k_ulInvalidPropertyContainer};
 
   std::atomic<VRControllerState> m_deviceState;
 
@@ -168,4 +181,11 @@ class EteeDeviceDriver : public IDeviceDriver {
 
   short m_updateCount;
   std::chrono::milliseconds m_startUpdateCountTime;
+
+  std::atomic<uint64_t> m_invalidHandleWarningMask{0};
+  std::atomic<uint64_t> m_createdComponentMask{0};
+  std::atomic<uint64_t> m_failedCreateComponentMask{0};
+  std::atomic<bool> m_loggedFirstInputThreadCycle{false};
+  std::atomic<bool> m_loggedFirstPoseThreadCycle{false};
+  std::atomic<bool> m_loggedFirstOnInputUpdate{false};
 };
