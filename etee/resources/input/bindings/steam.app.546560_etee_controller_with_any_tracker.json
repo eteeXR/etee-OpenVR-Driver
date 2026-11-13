@@ -910,9 +910,9 @@
    },
    "category" : "steamvr_input",
    "controller_type" : "etee_controller",
-   "description" : "Official HLA bindings for etee Controllers. While in-game, press the System Button and select 'Show Controls' in the bottom left to view controller layout.",
+   "description" : "Official Half-Life: Alyx bindings for etee Controllers. Double-tap the left slider to open the menu. Grip-force input supports pressure-sensitive interactions.",
    "interaction_profile" : "",
-   "name" : "[ANY TRACKER] Default Half-Life: Alyx configuration for etee Controller V3_1",
+   "name" : "[ANY TRACKER] Default Half-Life: Alyx configuration for etee Controller",
    "options" : {},
    "simulated_actions" : []
 }
