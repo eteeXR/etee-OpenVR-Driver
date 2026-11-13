@@ -654,9 +654,9 @@
    },
    "category" : "steamvr_input",
    "controller_type" : "etee_controller",
-   "description" : "Updated SteamVR Home bindings for etee Controllers. Left trackpad: hold to teleport. Right trackpad: press left/right to turn. Hold slider for tool selection. Double tap tap zone to toggle the Home menu. Index finger operates tools. Thumb squeeze drops tools, with an 80% activation threshold. Removed the previous teleport chords to prevent conflicts with tool selection.",
+   "description" : "Official SteamVR Home bindings for etee Controllers. Hold the left trackpad to teleport. Press the right trackpad left/right to turn. Hold the slider for tool selection and double-tap it to open the menu. Use your index finger to operate tools and squeeze your thumb to drop them.",
    "interaction_profile" : "",
-   "name" : "default-steamvr-home-bindings-etee-controllers",
+   "name" : "[ANY TRACKER] Default SteamVR Home configuration for etee Controller",
    "options" : {
       "simulated_controller_type" : "knuckles"
    },
