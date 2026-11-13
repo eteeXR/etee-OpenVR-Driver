@@ -910,7 +910,7 @@
    },
    "category" : "steamvr_input",
    "controller_type" : "etee_controller",
-   "description" : "Official Half-Life: Alyx bindings for etee Controllers. Double-tap the left slider to open the menu. Grip-force input supports pressure-sensitive interactions.",
+   "description" : "Official Half-Life: Alyx bindings for etee Controllers. Double-tap and hold the left slider to open the menu. Grip-force input supports pressure-sensitive interactions.",
    "interaction_profile" : "",
    "name" : "[ANY TRACKER] Default Half-Life: Alyx configuration for etee Controller",
    "options" : {},
