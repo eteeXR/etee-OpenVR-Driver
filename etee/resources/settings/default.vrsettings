@@ -30,7 +30,7 @@
         "left_z_offset_rotation": 0.0
     },
     "etee_app_pose_offset_settings": {
-        "profile_count": 4,
+        "profile_count": 5,
 
         "profile0_process_name": "hlvr.exe",
         "profile0_enabled": true,
@@ -109,7 +109,27 @@
 
         "profile3_left_x_offset_rotation": 0.0,
         "profile3_left_y_offset_rotation": 0.0,
-        "profile3_left_z_offset_rotation": 0.0
+        "profile3_left_z_offset_rotation": 0.0,
+
+
+        "profile4_process_name": "bonelab_steam_windows64.exe",
+        "profile4_enabled": true,
+
+        "profile4_right_x_offset_position": -0.01,
+        "profile4_right_y_offset_position": 0.02,
+        "profile4_right_z_offset_position": 0.045,
+
+        "profile4_right_x_offset_rotation": 0.0,
+        "profile4_right_y_offset_rotation": -90.0,
+        "profile4_right_z_offset_rotation": 0.0,
+
+        "profile4_left_x_offset_position": 0.01,
+        "profile4_left_y_offset_position": 0.02,
+        "profile4_left_z_offset_position": 0.045,
+
+        "profile4_left_x_offset_rotation": 0.0,
+        "profile4_left_y_offset_rotation": -90.0,
+        "profile4_left_z_offset_rotation": 0.0
     },
     "etee_back_tracker_pose_settings": {
         "right_x_offset_position": -0.46,
