@@ -275,6 +275,10 @@
 	},
 	"default_bindings": [
 		{
+			"app_key": "steam.app.1592190",
+			"binding_url": "bindings/steam.app.1592190_etee_controller_with_any_tracker.json"
+		},
+		{
 			"app_key": "openvr.tool.steamvr_environments",
 			"binding_url": "bindings/openvr.tool.steamvr_environments_etee_controller.json"
 		},
