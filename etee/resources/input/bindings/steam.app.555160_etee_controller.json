@@ -40,26 +40,15 @@
          "sources" : [
             {
                "inputs" : {
-                  "click" : {
+                  "double" : {
+                     "output" : "/actions/ue/in/valveindex_left_a_click"
+                  },
+                  "long" : {
                      "output" : "/actions/ue/in/valveindex_left_a_click"
                   }
                },
                "mode" : "button",
                "parameters" : {
-                  "force_input" : "click",
-                  "haptic_amplitude" : 0
-               },
-               "path" : "/user/hand/left/input/slider_up"
-            },
-            {
-               "inputs" : {
-                  "click" : {
-                     "output" : "/actions/ue/in/valveindex_left_b_click"
-                  }
-               },
-               "mode" : "button",
-               "parameters" : {
-                  "force_input" : "click",
                   "haptic_amplitude" : 0
                },
                "path" : "/user/hand/left/input/slider_down"
@@ -71,16 +60,22 @@
                   }
                },
                "mode" : "trigger",
-               "path" : "/user/hand/left/input/grip"
+               "path" : "/user/hand/left/input/finger/middle"
             },
             {
                "inputs" : {
-                  "force" : {
+                  "click" : {
                      "output" : "/actions/ue/in/valveindex_left_grip_force"
                   }
                },
-               "mode" : "force_sensor",
-               "path" : "/user/hand/left/input/grip"
+               "mode" : "button",
+               "parameters" : {
+                  "click_activate_threshold" : 0.55,
+                  "click_deactivate_threshold" : 0.20,
+                  "force_input" : "value",
+                  "haptic_amplitude" : 0
+               },
+               "path" : "/user/hand/left/input/finger/middle"
             },
             {
                "inputs" : {
@@ -125,6 +120,19 @@
                "inputs" : {
                   "click" : {
                      "output" : "/actions/ue/in/valveindex_left_thumbstick_click"
+                  }
+               },
+               "mode" : "button",
+               "parameters" : {
+                  "force_input" : "click",
+                  "haptic_amplitude" : 0
+               },
+               "path" : "/user/hand/left/input/thumbpad"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/ue/in/valveindex_left_a_click"
                   }
                },
                "mode" : "button",
@@ -249,26 +257,15 @@
             },
             {
                "inputs" : {
-                  "click" : {
+                  "double" : {
+                     "output" : "/actions/ue/in/valveindex_right_a_click"
+                  },
+                  "long" : {
                      "output" : "/actions/ue/in/valveindex_right_a_click"
                   }
                },
                "mode" : "button",
                "parameters" : {
-                  "force_input" : "click",
-                  "haptic_amplitude" : 0
-               },
-               "path" : "/user/hand/right/input/slider_up"
-            },
-            {
-               "inputs" : {
-                  "click" : {
-                     "output" : "/actions/ue/in/valveindex_right_b_click"
-                  }
-               },
-               "mode" : "button",
-               "parameters" : {
-                  "force_input" : "click",
                   "haptic_amplitude" : 0
                },
                "path" : "/user/hand/right/input/slider_down"
@@ -280,16 +277,22 @@
                   }
                },
                "mode" : "trigger",
-               "path" : "/user/hand/right/input/grip"
+               "path" : "/user/hand/right/input/finger/middle"
             },
             {
                "inputs" : {
-                  "force" : {
+                  "click" : {
                      "output" : "/actions/ue/in/valveindex_right_grip_force"
                   }
                },
-               "mode" : "force_sensor",
-               "path" : "/user/hand/right/input/grip"
+               "mode" : "button",
+               "parameters" : {
+                  "click_activate_threshold" : 0.55,
+                  "click_deactivate_threshold" : 0.20,
+                  "force_input" : "value",
+                  "haptic_amplitude" : 0
+               },
+               "path" : "/user/hand/right/input/finger/middle"
             },
             {
                "inputs" : {
@@ -334,6 +337,19 @@
                "inputs" : {
                   "click" : {
                      "output" : "/actions/ue/in/valveindex_right_thumbstick_click"
+                  }
+               },
+               "mode" : "button",
+               "parameters" : {
+                  "force_input" : "click",
+                  "haptic_amplitude" : 0
+               },
+               "path" : "/user/hand/right/input/thumbpad"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/ue/in/valveindex_right_a_click"
                   }
                },
                "mode" : "button",
@@ -459,13 +475,13 @@
             {
                "inputs" : {
                   "click" : {
-                     "output" : "/actions/ue/in/valveindex_left_trigger_click"
+                     "output" : "/actions/ue/in/fire"
                   }
                },
                "mode" : "button",
                "parameters" : {
-                  "click_activate_threshold" : "0.7",
-                  "click_deactivate_threshold" : "0.65",
+                  "click_activate_threshold" : 0.70,
+                  "click_deactivate_threshold" : 0.55,
                   "force_input" : "value",
                   "haptic_amplitude" : 0
                },
@@ -495,13 +511,13 @@
             {
                "inputs" : {
                   "click" : {
-                     "output" : "/actions/ue/in/valveindex_right_trigger_click"
+                     "output" : "/actions/ue/in/fire"
                   }
                },
                "mode" : "button",
                "parameters" : {
-                  "click_activate_threshold" : "0.7",
-                  "click_deactivate_threshold" : "0.65",
+                  "click_activate_threshold" : 0.70,
+                  "click_deactivate_threshold" : 0.55,
                   "force_input" : "value",
                   "haptic_amplitude" : 0
                },
