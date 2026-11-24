@@ -1,7 +1,40 @@
 # Pavlov OpenXR binding checkpoint
 
-Saved 6 November 2026 on `bindings/pavlov-openxr`. This is unfinished work,
-not a release-ready preset.
+## Tested configuration: 24 November 2026
+
+Branch: `bindings/pavlov-openxr`. User tested with Valve Index and etee
+controllers in Pavlov training/shooting range. This section supersedes the
+historical checkpoints below.
+
+- User confirms firing, menu selection, grip/release, weapon-wheel activation,
+  turning and movement work without the earlier control overlap.
+- Index finger directly supplies trigger axis; click activates at 70% and
+  releases at 55%. These thresholds do not gate the continuous trigger axis.
+  Removed pinch trigger mappings and corrected nonexistent `/actions/ue/in/fire`.
+- Middle-finger pull directly supplies grip axis and grip force. No simulated
+  actions or custom grip thresholds remain in the final configuration.
+- Left/right pads supply joystick X/Y with 20%/35% deadzones respectively.
+  Left pad retains stick-click and other existing Index trackpad mappings.
+- Right pad supplies only turning and wheel-selection axes. Right lower-slider
+  double tap sends right stick-click and trackpad-touch for wheel activation;
+  this avoids ordinary pad touches and palm contact opening the wheel.
+- Side finger/thumb single click sends Index B on both hands for magazine
+  release/contextual actions. Upper slider single click sends A. Left lower
+  slider is unbound. User reports online instructions support holding the
+  thumb input for menu behaviour; pause/menu behaviour outside training remains
+  unverified, so this is not a confirmed universal pause-menu gesture.
+- User earlier observed thumb input raising index values, a released middle value
+  sometimes remaining at 0.13, and right-controller disconnects. The final test
+  reports controls working, but these observations are not hardware fixes.
+- Still to verify separately: sprint, complete reload/fire-mode coverage,
+  haptics and pause/menu behaviour outside the shooting range.
+- Name follows the BONELAB preset convention; description explains current
+  physical controls and contextual A/B behaviour without promising sprint.
+- JSON/mapping checks pass; the installed eteeConnect binding matches the repo.
+
+## Historical tests and diagnostics
+
+The following records describe earlier configurations, not the final mappings.
 
 ## Follow-up test adjustment: 10 November 2026
 
@@ -52,7 +85,7 @@ not a release-ready preset.
 - A Pavlov per-app offset slot exists but is disabled, with all offsets zero.
   The experimental additional 45-degree rotation is no longer applied.
 
-## Latest test evidence
+## 6 November test evidence
 
 - User reports picking up, dropping and turning work in the latest test.
 - Magazine replacement/reloading could not be figured out; it is unresolved.
@@ -69,7 +102,7 @@ not a release-ready preset.
   have identical SHA-256 hashes:
   `2C955145EC4A6153C6692485F472650C318CE797DB0B67340481761F1A99372F`.
 
-## Resume here
+## Historical follow-up checklist (6 November)
 
 1. Confirm the active etee controller binding in SteamVR and inspect its latest
    log entries before changing offsets. The tracker has a separate binding.
