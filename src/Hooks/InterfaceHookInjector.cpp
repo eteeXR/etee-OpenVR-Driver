@@ -1,10 +1,12 @@
 #include "Hooks/InterfaceHookInjector.h"
 
+#include <mutex>
 #include "Util/DriverLog.h"
 #include "Hooks/HookReceiver.h"
 #include "Hooks/Hooking.h"
 
 static IHookReceiver *HookReceiver = nullptr;
+static std::mutex HookMutex;
 
 static Hook<void *(*)(vr::IVRDriverContext *, const char *, vr::EVRInitError *)> GetGenericInterfaceHook("IVRDriverContext::GetGenericInterface");
 
@@ -50,6 +52,7 @@ static void *DetourGetGenericInterface(vr::IVRDriverContext *_this, const char *
   auto originalInterface = GetGenericInterfaceHook.originalFunc(_this, pchInterfaceVersion, peError);
 
   std::string iface(pchInterfaceVersion);
+  std::lock_guard<std::mutex> lock(HookMutex);
   if (iface == "IVRDriverInput_003") {
     if (!IHook::Exists(CreateBooleanComponent003.name)) {
       CreateBooleanComponent003.CreateHookInObjectVTable(originalInterface, 0, &DetourCreateBooleanComponent);

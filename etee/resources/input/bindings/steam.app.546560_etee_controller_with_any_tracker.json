@@ -298,6 +298,62 @@
                   }
                },
                "mode" : "button",
+               "parameters" : {
+                  "click_activate_threshold" : "0.7",
+                  "click_deactivate_threshold" : "0.65",
+                  "force_input" : "value"
+               },
+               "path" : "/user/hand/left/input/finger/index"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/dev/in/menudismiss"
+                  }
+               },
+               "mode" : "button",
+               "parameters" : {
+                  "click_activate_threshold" : "0.7",
+                  "click_deactivate_threshold" : "0.65",
+                  "force_input" : "value"
+               },
+               "path" : "/user/hand/left/input/finger/index"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/dev/in/menuinteract"
+                  }
+               },
+               "mode" : "button",
+               "parameters" : {
+                  "click_activate_threshold" : "0.7",
+                  "click_deactivate_threshold" : "0.65",
+                  "force_input" : "value"
+               },
+               "path" : "/user/hand/right/input/finger/index"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/dev/in/menudismiss"
+                  }
+               },
+               "mode" : "button",
+               "parameters" : {
+                  "click_activate_threshold" : "0.7",
+                  "click_deactivate_threshold" : "0.65",
+                  "force_input" : "value"
+               },
+               "path" : "/user/hand/right/input/finger/index"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/dev/in/menuinteract"
+                  }
+               },
+               "mode" : "button",
                "path" : "/user/hand/left/input/pinch"
             },
             {
@@ -334,7 +390,7 @@
                   }
                },
                "mode" : "button",
-               "path" : "/user/hand/left/input/proximity"
+               "path" : "/user/hand/left/input/slider"
             }
          ]
       },
@@ -440,20 +496,20 @@
             },
             {
                "inputs" : {
-                  "pull" : {
+                  "force" : {
                      "output" : "/actions/interact/in/squeezexengrenade"
                   }
                },
-               "mode" : "trigger",
+               "mode" : "force_sensor",
                "path" : "/user/hand/right/input/grip"
             },
             {
                "inputs" : {
-                  "pull" : {
+                  "force" : {
                      "output" : "/actions/interact/in/squeezexengrenade"
                   }
                },
-               "mode" : "trigger",
+               "mode" : "force_sensor",
                "path" : "/user/hand/left/input/grip"
             },
             {
@@ -612,7 +668,7 @@
                },
                "mode" : "dpad",
                "parameters" : {
-                  "deadzone_pct" : "95",
+                  "deadzone_pct" : "60",
                   "overlap_pct" : "0",
                   "sticky" : "true",
                   "sub_mode" : "touch"
@@ -633,7 +689,7 @@
                },
                "mode" : "dpad",
                "parameters" : {
-                  "deadzone_pct" : "95",
+                  "deadzone_pct" : "60",
                   "overlap_pct" : "0",
                   "sticky" : "true",
                   "sub_mode" : "touch"
@@ -650,13 +706,9 @@
                "path" : "/user/hand/left/input/thumbpad"
             },
             {
-               "inputs" : {
-                  "double" : {
-                     "output" : "/actions/move/in/adjustheight"
-                  }
-               },
+               "inputs" : {},
                "mode" : "button",
-               "path" : "/user/hand/left/input/slider"
+               "path" : "/user/hand/left/input/finger/thumb"
             },
             {
                "inputs" : {},
@@ -858,9 +910,9 @@
    },
    "category" : "steamvr_input",
    "controller_type" : "etee_controller",
-   "description" : "Official HLA bindings for etee Controllers. While in-game, press the System Button and select 'Show Controls' in the bottom left to view controller layout.",
+   "description" : "Official Half-Life: Alyx bindings for etee Controllers. Double-tap and hold the left slider to open the menu. Grip-force input supports pressure-sensitive interactions.",
    "interaction_profile" : "",
-   "name" : "[ANY TRACKER] Default Half-Life: Alyx configuration for etee Controller V3_1",
+   "name" : "[ANY TRACKER] Default Half-Life: Alyx configuration for etee Controller",
    "options" : {},
    "simulated_actions" : []
 }

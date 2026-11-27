@@ -8,8 +8,6 @@
 static const std::string isRightHandedInputName = "/input/is_right_handed/click";
 static const std::string trackerConnectionInputName = "/input/tracker_connection/click";
 
-std::string eteeTrackerLeftSerNum, eteeTrackerRightSerNum;
-
 static std::array<std::string, 2> expectedInputNames = {isRightHandedInputName, trackerConnectionInputName};
 
 int TrackerDiscovery::FindTrackerDeviceIdByContainer(vr::PropertyContainerHandle_t ulContainer) {
@@ -42,6 +40,7 @@ void TrackerDiscovery::StartDiscovery(std::function<void(vr::ETrackedControllerR
 void TrackerDiscovery::TrackedDeviceAdded(const char* pchDeviceSerialNumber, vr::ETrackedDeviceClass eDeviceClass, vr::ITrackedDeviceServerDriver* pDriver) {}
 
 void TrackerDiscovery::CreateBooleanComponent(vr::PropertyContainerHandle_t ulContainer, const char* pchName, vr::VRInputComponentHandle_t* pHandle) {
+  std::lock_guard<std::mutex> lock(m_stateMutex);
   if (std::find(expectedInputNames.begin(), expectedInputNames.end(), std::string(pchName)) != expectedInputNames.end()) {
     int deviceId = FindTrackerDeviceIdByContainer(ulContainer);
     if (deviceId != -1) {
@@ -52,54 +51,65 @@ void TrackerDiscovery::CreateBooleanComponent(vr::PropertyContainerHandle_t ulCo
 
 void TrackerDiscovery::UpdateHandSerialNumber(bool isRight, std::string serialNum) {
   if (isRight) {
-    eteeTrackerRightSerNum = serialNum;
+    m_rightTrackerSerial = serialNum;
   } else {
-    eteeTrackerLeftSerNum = serialNum;
+    m_leftTrackerSerial = serialNum;
   } 
 }
 
 // This function only runs when the controller is connected to the tracker,
 // and the controller data is sent through SPI to the tracker and subsequently to SteamVR
 void TrackerDiscovery::UpdateBooleanComponent(vr::VRInputComponentHandle_t ulComponent, bool bNewValue, double fTimeOffset) {
-  if (m_inputComponentDeviceIdMap.count(ulComponent) > 0) {
-    InputComponentInfo& inputInfo = m_inputComponentDeviceIdMap.at(ulComponent);
-    
-    // Loop runs only when the tracker input values changed or if both controllers have been assigned to the same tracker (controller bug).
-    if (eteeTrackerRightSerNum != eteeTrackerLeftSerNum && inputInfo.lastValue == bNewValue) return;
+  bool shouldNotify = false;
+  vr::ETrackedControllerRole notifyRole = vr::TrackedControllerRole_Invalid;
+  int notifyDeviceId = -1;
 
-    // Check the device serial number
-    vr::PropertyContainerHandle_t container = vr::VRProperties()->TrackedDeviceToPropertyContainer(inputInfo.deviceId);
-    std::string deviceSerialNumber = vr::VRProperties()->GetStringProperty(container, vr::ETrackedDeviceProperty::Prop_SerialNumber_String);
+  {
+    std::lock_guard<std::mutex> lock(m_stateMutex);
 
-    // If the tracker data values have changed
-    DriverLog(
-        "Tracker was updated: Id: %i, Serial Number: %s, Name: %s, Value: %s",
-        inputInfo.deviceId,
-        deviceSerialNumber.c_str(),
-        inputInfo.name.c_str(),
-        bNewValue ? "True" : "False");
+    if (m_inputComponentDeviceIdMap.count(ulComponent) > 0) {
+      InputComponentInfo& inputInfo = m_inputComponentDeviceIdMap.at(ulComponent);
 
-    if (!m_trackerIdStatus.count(inputInfo.deviceId)) m_trackerIdStatus[inputInfo.deviceId] = {};
+      // Loop runs only when the tracker input values changed or if both controllers have been assigned to the same tracker (controller bug).
+      if (m_rightTrackerSerial != m_leftTrackerSerial && inputInfo.lastValue == bNewValue) return;
 
-    TrackerStatus& status = m_trackerIdStatus.at(inputInfo.deviceId);
+      // Check the device serial number
+      vr::PropertyContainerHandle_t container = vr::VRProperties()->TrackedDeviceToPropertyContainer(inputInfo.deviceId);
+      std::string deviceSerialNumber = vr::VRProperties()->GetStringProperty(container, vr::ETrackedDeviceProperty::Prop_SerialNumber_String);
 
-    // If the input being read is isRightHanded
-    if (inputInfo.name == isRightHandedInputName) {
-      status.role = bNewValue ? vr::TrackedControllerRole_RightHand : vr::TrackedControllerRole_LeftHand;
+      // If the tracker data values have changed
+      DriverLog(
+          "Tracker was updated: Id: %i, Serial Number: %s, Name: %s, Value: %s",
+          inputInfo.deviceId,
+          deviceSerialNumber.c_str(),
+          inputInfo.name.c_str(),
+          bNewValue ? "True" : "False");
 
-      bool isRightHandedVal = bNewValue ? true : false;
-      UpdateHandSerialNumber(isRightHandedVal, deviceSerialNumber);  // Update serial number of handed trackers
+      if (!m_trackerIdStatus.count(inputInfo.deviceId)) m_trackerIdStatus[inputInfo.deviceId] = {};
+
+      TrackerStatus& status = m_trackerIdStatus.at(inputInfo.deviceId);
+
+      // If the input being read is isRightHanded
+      if (inputInfo.name == isRightHandedInputName) {
+        status.role = bNewValue ? vr::TrackedControllerRole_RightHand : vr::TrackedControllerRole_LeftHand;
+
+        bool isRightHandedVal = bNewValue ? true : false;
+        UpdateHandSerialNumber(isRightHandedVal, deviceSerialNumber);  // Update serial number of handed trackers
+      }
+
+      // If the input being read is trackerConnection
+      if (inputInfo.name == trackerConnectionInputName) {
+        status.trackerConnected = bNewValue;
+      }
+
+      inputInfo.lastValue = bNewValue;
+
+      if (!status.trackerConnected || !status.role) return;  // only update state if a tracker is connected
+      shouldNotify = true;
+      notifyRole = status.role;
+      notifyDeviceId = inputInfo.deviceId;
     }
-
-    // If the input being read is trackerConnection
-    if (inputInfo.name == trackerConnectionInputName) {
-      status.trackerConnected = bNewValue;
-    }
-
-    inputInfo.lastValue = bNewValue;
-
-    if (!status.trackerConnected || !status.role) return;  // only update state if a tracker is connected
-
-    m_callback(status.role, inputInfo.deviceId);
   }
+
+  if (shouldNotify) m_callback(notifyRole, notifyDeviceId);
 }
