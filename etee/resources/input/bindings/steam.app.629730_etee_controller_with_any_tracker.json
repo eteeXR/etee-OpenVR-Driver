@@ -68,6 +68,15 @@
             },
             {
                "inputs" : {
+                  "pull" : {
+                     "output" : "/actions/default/in/telekinesispull"
+                  }
+               },
+               "mode" : "trigger",
+               "path" : "/user/hand/left/input/finger/ring"
+            },
+            {
+               "inputs" : {
                   "click" : {
                      "output" : "/actions/default/in/movepress"
                   },
@@ -92,6 +101,15 @@
                   "value_release_threshold" : "0.55"
                },
                "path" : "/user/hand/right/input/grip"
+            },
+            {
+               "inputs" : {
+                  "pull" : {
+                     "output" : "/actions/default/in/telekinesispull"
+                  }
+               },
+               "mode" : "trigger",
+               "path" : "/user/hand/right/input/finger/ring"
             },
             {
                "inputs" : {
@@ -157,38 +175,20 @@
             {
                "inputs" : {
                   "pull" : {
-                     "output" : "/actions/default/in/telekinesispull"
+                     "output" : "/actions/default/in/telekinesisrepel"
                   }
                },
                "mode" : "trigger",
-               "path" : "/user/hand/left/input/pinch"
+               "path" : "/user/hand/left/input/finger/middle"
             },
             {
                "inputs" : {
                   "pull" : {
-                     "output" : "/actions/default/in/telekinesispull"
+                     "output" : "/actions/default/in/telekinesisrepel"
                   }
                },
                "mode" : "trigger",
-               "path" : "/user/hand/right/input/pinch"
-            },
-            {
-               "inputs" : {
-                  "force" : {
-                     "output" : "/actions/default/in/telekinesisrepel"
-                  }
-               },
-               "mode" : "force_sensor",
-               "path" : "/user/hand/left/input/thumbpad"
-            },
-            {
-               "inputs" : {
-                  "force" : {
-                     "output" : "/actions/default/in/telekinesisrepel"
-                  }
-               },
-               "mode" : "force_sensor",
-               "path" : "/user/hand/right/input/thumbpad"
+               "path" : "/user/hand/right/input/finger/middle"
             },
             {
                "inputs" : {
@@ -222,9 +222,6 @@
             },
             {
                "inputs" : {
-                  "double" : {
-                     "output" : "/actions/default/in/menu"
-                  },
                   "touch" : {
                      "output" : "/actions/default/in/spellselector"
                   }
@@ -234,6 +231,9 @@
             },
             {
                "inputs" : {
+                  "double" : {
+                     "output" : "/actions/default/in/menu"
+                  },
                   "click" : {
                      "output" : "/actions/default/in/clickui"
                   }
@@ -343,8 +343,8 @@
                      "output" : "/actions/default/in/telekinesis"
                   }
                },
-               "mode" : "button",
-               "path" : "/user/hand/left/input/point_independent"
+               "mode" : "trigger",
+               "path" : "/user/hand/left/input/pinch_thumbfinger"
             },
             {
                "inputs" : {
@@ -352,8 +352,8 @@
                      "output" : "/actions/default/in/telekinesis"
                   }
                },
-               "mode" : "button",
-               "path" : "/user/hand/right/input/point_independent"
+               "mode" : "trigger",
+               "path" : "/user/hand/right/input/pinch_thumbfinger"
             }
          ]
       },
