@@ -275,6 +275,10 @@
 	},
 	"default_bindings": [
 		{
+			"app_key": "steam.app.1592190",
+			"binding_url": "bindings/steam.app.1592190_etee_controller_with_any_tracker.json"
+		},
+		{
 			"app_key": "openvr.tool.steamvr_environments",
 			"binding_url": "bindings/openvr.tool.steamvr_environments_etee_controller.json"
 		},
@@ -365,18 +369,6 @@
 		{
 			"app_key": "steam.app.438100",
 			"binding_url": "bindings/steam.app.438100_etee_controller_with_any_tracker.json"
-		},
-		{
-			"app_key": "steam.app.438100",
-			"binding_url": "bindings/steam.app.438100_etee_controller_with_raw_pose.json"
-		},
-		{
-			"app_key": "steam.app.438100",
-			"binding_url": "bindings/steam.app.438100_etee_controller_with_any_tracker_new_skeleton.json"
-		},
-		{
-			"app_key": "steam.app.438100",
-			"binding_url": "bindings/steam.app.438100_etee_controller_with_raw_pose_new_skeleton.json"
 		},
 		{
 			"app_key": "steam.app.457420",
