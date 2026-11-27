@@ -30,7 +30,7 @@
         "left_z_offset_rotation": 0.0
     },
     "etee_app_pose_offset_settings": {
-        "profile_count": 5,
+        "profile_count": 6,
 
         "profile0_process_name": "hlvr.exe",
         "profile0_enabled": true,
@@ -129,7 +129,27 @@
 
         "profile4_left_x_offset_rotation": 0.0,
         "profile4_left_y_offset_rotation": -90.0,
-        "profile4_left_z_offset_rotation": 0.0
+        "profile4_left_z_offset_rotation": 0.0,
+        
+        
+        "profile5_process_name": "pavlov-win64-shipping.exe",
+        "profile5_enabled": false,
+        
+        "profile5_left_x_offset_position": 0.0,
+        "profile5_left_x_offset_rotation": 0.0,
+        "profile5_left_y_offset_position": 0.0,
+        
+        "profile5_left_y_offset_rotation": 0.0,
+        "profile5_left_z_offset_position": 0.0,
+        "profile5_left_z_offset_rotation": 0.0,
+        
+        "profile5_right_x_offset_position": 0.0,
+        "profile5_right_x_offset_rotation": 0.0,
+        "profile5_right_y_offset_position": 0.0,
+        
+        "profile5_right_y_offset_rotation": 0.0,
+        "profile5_right_z_offset_position": 0.0,
+        "profile5_right_z_offset_rotation": 0.0
     },
     "etee_back_tracker_pose_settings": {
         "right_x_offset_position": -0.46,
