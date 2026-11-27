@@ -1,0 +1,462 @@
+{
+   "bindings": {
+      "/actions/valveindexcontroller": {
+         "chords": [],
+         "eyetracking": [],
+         "haptics": [
+            {
+               "output": "/actions/valveindexcontroller/out/haptic",
+               "path": "/user/hand/left/output/haptic"
+            },
+            {
+               "output": "/actions/valveindexcontroller/out/haptic",
+               "path": "/user/hand/right/output/haptic"
+            }
+         ],
+         "poses": [
+            {
+               "output": "/actions/valveindexcontroller/in/devicepose",
+               "path": "/user/hand/left/pose/grip"
+            },
+            {
+               "output": "/actions/valveindexcontroller/in/devicepose",
+               "path": "/user/hand/right/pose/grip"
+            },
+            {
+               "output": "/actions/valveindexcontroller/in/pointer",
+               "path": "/user/hand/left/pose/tip"
+            },
+            {
+               "output": "/actions/valveindexcontroller/in/pointer",
+               "path": "/user/hand/right/pose/tip"
+            },
+            {
+               "output": "/actions/valveindexcontroller/in/pokepose",
+               "path": "/user/hand/left/pose/openxr_poke"
+            },
+            {
+               "output": "/actions/valveindexcontroller/in/pokepose",
+               "path": "/user/hand/right/pose/openxr_poke"
+            },
+            {
+               "output": "/actions/valveindexcontroller/in/pinchpose",
+               "path": "/user/hand/left/pose/openxr_pinch"
+            },
+            {
+               "output": "/actions/valveindexcontroller/in/pinchpose",
+               "path": "/user/hand/right/pose/openxr_pinch"
+            },
+            {
+               "output": "/actions/valveindexcontroller/in/palmpose",
+               "path": "/user/hand/left/pose/openxr_handmodel"
+            },
+            {
+               "output": "/actions/valveindexcontroller/in/palmpose",
+               "path": "/user/hand/right/pose/openxr_handmodel"
+            }
+         ],
+         "sources": [
+            {
+               "inputs": {
+                  "click": {
+                     "output": "/actions/valveindexcontroller/in/system"
+                  }
+               },
+               "mode": "button",
+               "parameters": {
+                  "force_input": "click",
+                  "haptic_amplitude": 0
+               },
+               "path": "/user/hand/left/input/system"
+            },
+            {
+               "inputs": {
+                  "click": {
+                     "output": "/actions/valveindexcontroller/in/system"
+                  }
+               },
+               "mode": "button",
+               "parameters": {
+                  "force_input": "click",
+                  "haptic_amplitude": 0
+               },
+               "path": "/user/hand/right/input/system"
+            },
+            {
+               "inputs": {
+                  "click": {
+                     "output": "/actions/valveindexcontroller/in/primarybutton"
+                  }
+               },
+               "mode": "button",
+               "parameters": {
+                  "force_input": "click",
+                  "haptic_amplitude": 0
+               },
+               "path": "/user/hand/left/input/slider_up"
+            },
+            {
+               "inputs": {
+                  "click": {
+                     "output": "/actions/valveindexcontroller/in/primarybutton"
+                  }
+               },
+               "mode": "button",
+               "parameters": {
+                  "force_input": "click",
+                  "haptic_amplitude": 0
+               },
+               "path": "/user/hand/right/input/slider_up"
+            },
+            {
+               "inputs": {
+                  "double": {
+                     "output": "/actions/valveindexcontroller/in/secondarybutton"
+                  }
+               },
+               "mode": "button",
+               "parameters": {
+                  "force_input": "click",
+                  "haptic_amplitude": 0
+               },
+               "path": "/user/hand/left/input/slider_down"
+            },
+            {
+               "inputs": {
+                  "double": {
+                     "output": "/actions/valveindexcontroller/in/secondarybutton"
+                  }
+               },
+               "mode": "button",
+               "parameters": {
+                  "force_input": "click",
+                  "haptic_amplitude": 0
+               },
+               "path": "/user/hand/right/input/slider_down"
+            },
+            {
+               "inputs": {
+                  "position": {
+                     "output": "/actions/valveindexcontroller/in/thumbstick"
+                  }
+               },
+               "mode": "trackpad",
+               "path": "/user/hand/left/input/thumbpad"
+            },
+            {
+               "inputs": {
+                  "click": {
+                     "output": "/actions/valveindexcontroller/in/thumbstickclicked"
+                  }
+               },
+               "mode": "button",
+               "parameters": {
+                  "force_input": "click",
+                  "haptic_amplitude": 0
+               },
+               "path": "/user/hand/left/input/thumbpad"
+            },
+            {
+               "inputs": {
+                  "touch": {
+                     "output": "/actions/valveindexcontroller/in/thumbsticktouched"
+                  }
+               },
+               "mode": "button",
+               "parameters": {
+                  "haptic_amplitude": 0
+               },
+               "path": "/user/hand/left/input/thumbpad"
+            },
+            {
+               "inputs": {
+                  "position": {
+                     "output": "/actions/valveindexcontroller/in/trackpad"
+                  }
+               },
+               "mode": "trackpad",
+               "path": "/user/hand/left/input/thumbpad"
+            },
+            {
+               "inputs": {
+                  "force": {
+                     "output": "/actions/valveindexcontroller/in/trackpadforce"
+                  }
+               },
+               "mode": "force_sensor",
+               "path": "/user/hand/left/input/thumbpad"
+            },
+            {
+               "inputs": {
+                  "touch": {
+                     "output": "/actions/valveindexcontroller/in/trackpadtouched"
+                  }
+               },
+               "mode": "button",
+               "parameters": {
+                  "haptic_amplitude": 0
+               },
+               "path": "/user/hand/left/input/thumbpad"
+            },
+            {
+               "inputs": {
+                  "click": {
+                     "output": "/actions/valveindexcontroller/in/grippressed"
+                  }
+               },
+               "mode": "button",
+               "parameters": {
+                  "force_input": "value",
+                  "click_activate_threshold": "0.55",
+                  "click_deactivate_threshold": "0.2",
+                  "haptic_amplitude": 0
+               },
+               "path": "/user/hand/left/input/finger/middle"
+            },
+            {
+               "inputs": {
+                  "click": {
+                     "output": "/simactions/1"
+                  }
+               },
+               "mode": "button",
+               "parameters": {
+                  "force_input": "value",
+                  "click_activate_threshold": "0.55",
+                  "click_deactivate_threshold": "0.2",
+                  "haptic_amplitude": 0
+               },
+               "path": "/user/hand/left/input/finger/middle"
+            },
+            {
+               "inputs": {
+                  "click": {
+                     "output": "/simactions/2"
+                  }
+               },
+               "mode": "button",
+               "parameters": {
+                  "force_input": "value",
+                  "click_activate_threshold": "0.55",
+                  "click_deactivate_threshold": "0.2",
+                  "haptic_amplitude": 0
+               },
+               "path": "/user/hand/left/input/finger/middle"
+            },
+            {
+               "inputs": {
+                  "click": {
+                     "output": "/actions/valveindexcontroller/in/triggerpressed"
+                  }
+               },
+               "mode": "button",
+               "parameters": {
+                  "force_input": "value",
+                  "click_activate_threshold": "0.7",
+                  "click_deactivate_threshold": "0.55",
+                  "haptic_amplitude": 0
+               },
+               "path": "/user/hand/left/input/finger/index"
+            },
+            {
+               "inputs": {
+                  "click": {
+                     "output": "/simactions/3"
+                  }
+               },
+               "mode": "button",
+               "parameters": {
+                  "force_input": "value",
+                  "click_activate_threshold": "0.7",
+                  "click_deactivate_threshold": "0.55",
+                  "haptic_amplitude": 0
+               },
+               "path": "/user/hand/left/input/finger/index"
+            },
+            {
+               "inputs": {
+                  "touch": {
+                     "output": "/actions/valveindexcontroller/in/triggertouched"
+                  }
+               },
+               "mode": "button",
+               "path": "/user/hand/left/input/finger/index",
+               "parameters": {
+                  "haptic_amplitude": 0
+               }
+            },
+            {
+               "inputs": {
+                  "click": {
+                     "output": "/actions/valveindexcontroller/in/grippressed"
+                  }
+               },
+               "mode": "button",
+               "parameters": {
+                  "force_input": "value",
+                  "click_activate_threshold": "0.55",
+                  "click_deactivate_threshold": "0.2",
+                  "haptic_amplitude": 0
+               },
+               "path": "/user/hand/right/input/finger/middle"
+            },
+            {
+               "inputs": {
+                  "click": {
+                     "output": "/simactions/4"
+                  }
+               },
+               "mode": "button",
+               "parameters": {
+                  "force_input": "value",
+                  "click_activate_threshold": "0.55",
+                  "click_deactivate_threshold": "0.2",
+                  "haptic_amplitude": 0
+               },
+               "path": "/user/hand/right/input/finger/middle"
+            },
+            {
+               "inputs": {
+                  "click": {
+                     "output": "/simactions/5"
+                  }
+               },
+               "mode": "button",
+               "parameters": {
+                  "force_input": "value",
+                  "click_activate_threshold": "0.55",
+                  "click_deactivate_threshold": "0.2",
+                  "haptic_amplitude": 0
+               },
+               "path": "/user/hand/right/input/finger/middle"
+            },
+            {
+               "inputs": {
+                  "click": {
+                     "output": "/actions/valveindexcontroller/in/triggerpressed"
+                  }
+               },
+               "mode": "button",
+               "parameters": {
+                  "force_input": "value",
+                  "click_activate_threshold": "0.7",
+                  "click_deactivate_threshold": "0.55",
+                  "haptic_amplitude": 0
+               },
+               "path": "/user/hand/right/input/finger/index"
+            },
+            {
+               "inputs": {
+                  "click": {
+                     "output": "/simactions/6"
+                  }
+               },
+               "mode": "button",
+               "parameters": {
+                  "force_input": "value",
+                  "click_activate_threshold": "0.7",
+                  "click_deactivate_threshold": "0.55",
+                  "haptic_amplitude": 0
+               },
+               "path": "/user/hand/right/input/finger/index"
+            },
+            {
+               "inputs": {
+                  "touch": {
+                     "output": "/actions/valveindexcontroller/in/triggertouched"
+                  }
+               },
+               "mode": "button",
+               "path": "/user/hand/right/input/finger/index",
+               "parameters": {
+                  "haptic_amplitude": 0
+               }
+            },
+            {
+               "inputs": {
+                  "position": {
+                     "output": "/actions/valveindexcontroller/in/thumbstick"
+                  }
+               },
+               "mode": "joystick",
+               "parameters": {
+                  "deadzone_pct": 60,
+                  "maxzone_pct": 100,
+                  "exponent": 1
+               },
+               "path": "/user/hand/right/input/thumbpad"
+            },
+            {
+               "inputs": {
+                  "center": {
+                     "output": "/actions/valveindexcontroller/in/thumbstickclicked"
+                  }
+               },
+               "mode": "dpad_click",
+               "parameters": {
+                  "deadzone_pct": 40,
+                  "haptic_amplitude": 0,
+                  "sticky": false
+               },
+               "path": "/user/hand/right/input/thumbpad"
+            },
+            {
+               "inputs": {
+                  "touch": {
+                     "output": "/actions/valveindexcontroller/in/thumbsticktouched"
+                  }
+               },
+               "mode": "button",
+               "parameters": {
+                  "haptic_amplitude": 0
+               },
+               "path": "/user/hand/right/input/thumbpad"
+            }
+         ]
+      }
+   },
+   "category": "openxr",
+   "controller_type": "etee_controller",
+   "interaction_profile": "/interaction_profiles/valve/index_controller",
+   "name": "[ANY TRACKER] Default BONELAB configuration for etee Controller",
+   "app_key": "steam.app.1592190",
+   "description": "Official BONELAB bindings for etee Controllers. Curl the middle finger to grab; straighten it to release. Squeeze the index finger to shoot/select without thumb contact. Left trackpad moves. Right trackpad turns outside a 60% centre deadzone; return to centre between turns and select snap turning in-game if available. Right trackpad centre click retains stick-click. Upper slider retains A/X actions. Double-tap and hold the lower slider to open the inventory/menu (B/Y); release after selection.",
+   "simulated_actions": [
+      {
+         "id": 1,
+         "name": "Left middle-finger grab",
+         "type": "fake_trigger",
+         "output": "/actions/valveindexcontroller/in/grip"
+      },
+      {
+         "id": 2,
+         "name": "Left middle-finger grip signal",
+         "type": "fake_trigger",
+         "output": "/actions/valveindexcontroller/in/gripforce"
+      },
+      {
+         "id": 3,
+         "name": "Left index-finger trigger",
+         "type": "fake_trigger",
+         "output": "/actions/valveindexcontroller/in/trigger"
+      },
+      {
+         "id": 4,
+         "name": "Right middle-finger grab",
+         "type": "fake_trigger",
+         "output": "/actions/valveindexcontroller/in/grip"
+      },
+      {
+         "id": 5,
+         "name": "Right middle-finger grip signal",
+         "type": "fake_trigger",
+         "output": "/actions/valveindexcontroller/in/gripforce"
+      },
+      {
+         "id": 6,
+         "name": "Right index-finger trigger",
+         "type": "fake_trigger",
+         "output": "/actions/valveindexcontroller/in/trigger"
+      }
+   ]
+}
